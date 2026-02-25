@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+docs/
+main.js
+question-data.js
+
+# OS files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*
