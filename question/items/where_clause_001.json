@@ -1,0 +1,17 @@
+{
+  "id": "where_clause_001",
+  "question": "`where` 句を使う主な理由として適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "実行速度を上げるため" },
+    { "id": "b", "text": "複雑なトレイト境界を読みやすく記述するため" },
+    { "id": "c", "text": "所有権を無効化するため" },
+    { "id": "d", "text": "`match` の代わりに使うため" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`where` を使うと長いトレイト境界を関数シグネチャから分離できます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch10-01-syntax.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["generics", "where-clause"]
+}

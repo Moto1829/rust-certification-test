@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rust Certification Test</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Rust Certification Test</h1>
+      <p class="description">Rust学習向けの日本語クイズです。難易度と出題数を選んで開始できます。</p>
+
+      <section id="setup-section" class="card">
+        <h2>出題設定</h2>
+        <div class="field-row">
+          <label for="difficulty">難易度</label>
+          <select id="difficulty">
+            <option value="all">すべて</option>
+            <option value="beginner">beginner</option>
+            <option value="intermediate">intermediate</option>
+            <option value="advanced">advanced</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <label for="question-count">出題数</label>
+          <select id="question-count">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+
+        <p id="setup-message" class="message"></p>
+        <button id="start-btn" type="button">クイズ開始</button>
+      </section>
+
+      <section id="quiz-section" class="card hidden" aria-live="polite">
+        <div class="quiz-header">
+          <p id="progress"></p>
+          <p id="score-preview"></p>
+        </div>
+        <h2 id="question-text"></h2>
+        <div id="choices" class="choices"></div>
+        <div id="feedback" class="feedback"></div>
+        <button id="next-btn" type="button" class="hidden">次の問題へ</button>
+      </section>
+
+      <section id="result-section" class="card hidden">
+        <h2>結果</h2>
+        <p id="result-summary"></p>
+        <h3>振り返り</h3>
+        <ul id="review-list" class="review-list"></ul>
+      </section>
+    </main>
+
+    <script src="./question-data.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

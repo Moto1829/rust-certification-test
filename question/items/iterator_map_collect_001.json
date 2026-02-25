@@ -1,0 +1,17 @@
+{
+  "id": "iterator_map_collect_001",
+  "question": "`iter().map(...).collect()` の説明として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`map` はその場で元のコレクションを書き換える" },
+    { "id": "b", "text": "`collect` で目的のコレクション型へ変換できる" },
+    { "id": "c", "text": "`iter` は所有権を常に奪う" },
+    { "id": "d", "text": "`map` は `unsafe` でしか使えない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`collect` はイテレータの要素を指定されたコレクション型に集約します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch13-02-iterators.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["iterator", "collection"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "drop_trait_001",
+  "question": "`Drop` トレイトの説明として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "値のスコープ終了時に後始末処理を定義できる" },
+    { "id": "b", "text": "コピー動作を高速化する" },
+    { "id": "c", "text": "借用規則を緩和する" },
+    { "id": "d", "text": "非同期処理を自動化する" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`Drop` はリソース解放などの破棄時処理をカスタマイズするために使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch15-03-drop.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["drop", "resource-management"]
+}

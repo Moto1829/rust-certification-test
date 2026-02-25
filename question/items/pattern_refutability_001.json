@@ -1,0 +1,17 @@
+{
+  "id": "pattern_refutability_001",
+  "question": "反駁可能（refutable）パターンを使う場所として適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`let` 文の左辺のみ" },
+    { "id": "b", "text": "`if let` や `while let` の条件" },
+    { "id": "c", "text": "関数名の定義" },
+    { "id": "d", "text": "`const` 宣言のみ" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "反駁可能パターンは一致失敗の可能性があるため、条件分岐構文で使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch18-02-refutability.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["pattern", "refutability"]
+}

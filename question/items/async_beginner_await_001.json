@@ -1,0 +1,17 @@
+{
+  "id": "async_beginner_await_001",
+  "question": "`await` の役割として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "Futureの完了を待ち、結果を取り出す" },
+    { "id": "b", "text": "変数を可変化する" },
+    { "id": "c", "text": "所有権を複製する" },
+    { "id": "d", "text": "エラーを必ず無視する" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`await` はFutureが完了するまで待機し、完了後の値を取得します。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/01_getting_started/04_async_await_primer.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["async", "await", "future"]
+}

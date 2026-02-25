@@ -1,0 +1,32 @@
+{
+  "id": "iterator_enumerate_001",
+  "question": "`enumerate()` の戻り値の形式として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`(index, item)` のペア"
+    },
+    {
+      "id": "b",
+      "text": "`item` のみ"
+    },
+    {
+      "id": "c",
+      "text": "`bool`"
+    },
+    {
+      "id": "d",
+      "text": "`Result`"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`enumerate` はインデックス付きイテレーションを提供します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "iterator",
+    "enumerate"
+  ]
+}

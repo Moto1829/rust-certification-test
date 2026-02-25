@@ -1,0 +1,17 @@
+{
+  "id": "lifetime_annotation_001",
+  "question": "ライフタイム注釈が必要になる主な場面はどれですか？",
+  "choices": [
+    { "id": "a", "text": "所有権を持つ値だけを返す関数" },
+    { "id": "b", "text": "複数参照の関係をコンパイラに明示する必要がある関数" },
+    { "id": "c", "text": "整数演算を行う関数" },
+    { "id": "d", "text": "常に `String` を返す関数" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "どの参照がどのスコープまで有効かの関係を明示するためにライフタイム注釈を使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch10-03-lifetime-syntax.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["lifetime", "borrowing"]
+}

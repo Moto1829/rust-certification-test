@@ -1,0 +1,17 @@
+{
+  "id": "vec_push_capacity_001",
+  "question": "`Vec<T>` に `push` を繰り返したときに起こりうることとして正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "要素数が増えても再確保は起こらない" },
+    { "id": "b", "text": "必要に応じて内部バッファが再確保される" },
+    { "id": "c", "text": "常にスタック領域だけを使う" },
+    { "id": "d", "text": "`push` は所有権を必要としない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "容量を超えると `Vec` は再確保して容量を拡張する場合があります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch08-01-vectors.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["vec", "memory"]
+}

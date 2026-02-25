@@ -1,0 +1,32 @@
+{
+  "id": "trait_object_001",
+  "question": "トレイトオブジェクト `&dyn Trait` の特徴として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "静的ディスパッチのみ"
+    },
+    {
+      "id": "b",
+      "text": "実行時ディスパッチで異なる実装を扱える"
+    },
+    {
+      "id": "c",
+      "text": "ジェネリクスより常に高速"
+    },
+    {
+      "id": "d",
+      "text": "参照では使えない"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`dyn Trait` は実行時ディスパッチを使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "trait-object",
+    "dispatch"
+  ]
+}

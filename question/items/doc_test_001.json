@@ -1,0 +1,32 @@
+{
+  "id": "doc_test_001",
+  "question": "Rustのドキュメントテストの説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "コメント内コード例をテストとして実行できる"
+    },
+    {
+      "id": "b",
+      "text": "READMEのみ対象"
+    },
+    {
+      "id": "c",
+      "text": "nightlyでしか使えない"
+    },
+    {
+      "id": "d",
+      "text": "出力比較はできない"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`///` のコード例はドキュメントテストとして実行可能です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "doc",
+    "test"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "cargo_test_filter_001",
+  "question": "`cargo test` で特定テストだけ実行する方法として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "テスト名の一部を引数に渡す"
+    },
+    {
+      "id": "b",
+      "text": "常に全件実行のみ"
+    },
+    {
+      "id": "c",
+      "text": "`cargo build` を使う"
+    },
+    {
+      "id": "d",
+      "text": "featureを無効化する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`cargo test <name>` でフィルタ実行できます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "cargo",
+    "test"
+  ]
+}

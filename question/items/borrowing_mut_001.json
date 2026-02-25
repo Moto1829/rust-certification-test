@@ -1,0 +1,17 @@
+{
+  "id": "borrowing_mut_001",
+  "question": "可変参照 `&mut T` に関する説明として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "同時に複数の可変参照を常に作れる" },
+    { "id": "b", "text": "可変参照がある間は不変参照を作れない" },
+    { "id": "c", "text": "可変参照は所有権を奪う" },
+    { "id": "d", "text": "可変参照は `unsafe` でしか使えない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "同じ値に対して同時に複数の可変参照、または可変参照と不変参照の共存は基本的にできません。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["borrowing", "mutable-reference"]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "impl_trait_return_001",
+  "question": "`-> impl Trait` の意味として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "指定トレイトを実装した具体型を返す"
+    },
+    {
+      "id": "b",
+      "text": "任意型を返してよい"
+    },
+    {
+      "id": "c",
+      "text": "動的ディスパッチ専用"
+    },
+    {
+      "id": "d",
+      "text": "型推論を完全無効化"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "呼び出し側にはトレイトとして見せつつ、実際は具体型を返します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "impl-trait",
+    "return-type"
+  ]
+}

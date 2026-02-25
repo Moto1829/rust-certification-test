@@ -1,0 +1,17 @@
+{
+  "id": "if_let_001",
+  "question": "`if let` を使う主な利点として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`match` より常に高速" },
+    { "id": "b", "text": "1つのパターンだけを簡潔に扱える" },
+    { "id": "c", "text": "網羅性チェックが不要になる" },
+    { "id": "d", "text": "列挙型以外には使えない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`if let` は特定パターンだけを簡潔に扱う構文です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch06-03-if-let.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["if-let", "pattern"]
+}

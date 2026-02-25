@@ -1,0 +1,32 @@
+{
+  "id": "macro_vec_001",
+  "question": "`vec![1, 2, 3]` のような書き方の分類として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "構造体リテラル"
+    },
+    {
+      "id": "b",
+      "text": "宣言的マクロ呼び出し"
+    },
+    {
+      "id": "c",
+      "text": "属性マクロ"
+    },
+    {
+      "id": "d",
+      "text": "手続き型マクロのみ"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`vec!` は標準ライブラリの宣言的マクロです。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "macro",
+    "vec"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "borrow_checker_scope_001",
+  "question": "借用チェッカーに関する説明として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "実行時にのみ借用違反を検出する" },
+    { "id": "b", "text": "参照の生存範囲と可変性ルールをコンパイル時に検証する" },
+    { "id": "c", "text": "unsafeコードでは常に無効化される" },
+    { "id": "d", "text": "所有権モデルとは独立している" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "借用チェッカーは参照の有効範囲や可変/不変の整合性をコンパイル時に検証します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["borrow-checker", "scope"]
+}

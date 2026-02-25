@@ -1,0 +1,17 @@
+{
+  "id": "generic_fn_001",
+  "question": "ジェネリック関数 `fn f<T>(x: T)` の説明として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`T` は実行時にだけ決まる" },
+    { "id": "b", "text": "`T` はコンパイル時に具体型へ単相化される" },
+    { "id": "c", "text": "`T` は常に参照型" },
+    { "id": "d", "text": "ジェネリクスは列挙型に使えない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Rustのジェネリクスはコンパイル時に単相化されます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch10-01-syntax.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["generics", "monomorphization"]
+}

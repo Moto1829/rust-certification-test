@@ -1,0 +1,16 @@
+{
+  "name": "rust-certification-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "new:question": "node scripts/new-question-template.mjs",
+    "sync:index": "node scripts/sync-question-index.mjs",
+    "validate:questions": "node scripts/validate-questions.mjs",
+    "report:questions": "node scripts/report-questions.mjs",
+    "build": "npm run sync:index && npm run validate:questions && tsc && cp index.html styles.css 404.html docs/ && rm -rf docs/question && node scripts/generate-question-data.mjs && cp docs/main.js main.js && cp docs/question-data.js question-data.js",
+    "dev": "npm run build && python3 -m http.server 4173 --directory docs"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}

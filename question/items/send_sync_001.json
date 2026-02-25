@@ -1,0 +1,17 @@
+{
+  "id": "send_sync_001",
+  "question": "`Send` と `Sync` の説明として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`Send` は共有参照のスレッド間共有を保証する" },
+    { "id": "b", "text": "`Sync` は型自身を別スレッドへ移動できることを保証する" },
+    { "id": "c", "text": "`Send` は所有権移動のスレッド間安全性、`Sync` は共有参照のスレッド間安全性" },
+    { "id": "d", "text": "どちらも非推奨トレイト" }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "`Send` は値の移動、`Sync` は `&T` の共有が安全であることを表します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch16-04-extensible-concurrency-sync-and-send.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["concurrency", "send-sync"]
+}

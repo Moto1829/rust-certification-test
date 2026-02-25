@@ -1,0 +1,17 @@
+{
+  "id": "enum_match_001",
+  "question": "`match` 式の説明として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "全パターンを網羅しなくてもコンパイルできる" },
+    { "id": "b", "text": "`_` パターンで残りをまとめて扱える" },
+    { "id": "c", "text": "`if` より常に高速である" },
+    { "id": "d", "text": "列挙型にしか使えない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`match` は網羅性が必要で、`_` を使うと未列挙パターンをまとめて処理できます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch06-02-match.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["enum", "match"]
+}

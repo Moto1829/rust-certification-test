@@ -1,0 +1,17 @@
+{
+  "id": "module_use_001",
+  "question": "`use` 文の主な目的として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "クレートをインストールする" },
+    { "id": "b", "text": "長いパスをスコープ内に導入して簡潔に参照する" },
+    { "id": "c", "text": "所有権を移動する" },
+    { "id": "d", "text": "モジュールを公開状態にする" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`use` は名前解決を簡潔にするための導入宣言です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["module", "use"]
+}

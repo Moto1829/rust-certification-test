@@ -1,0 +1,32 @@
+{
+  "id": "trait_default_impl_001",
+  "question": "トレイトのデフォルト実装について正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "実装側で常に上書き必須"
+    },
+    {
+      "id": "b",
+      "text": "デフォルト実装をそのまま利用できる"
+    },
+    {
+      "id": "c",
+      "text": "列挙型では使えない"
+    },
+    {
+      "id": "d",
+      "text": "外部クレートでは定義できない"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "トレイトはメソッドにデフォルト実装を持てます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "trait",
+    "default-impl"
+  ]
+}

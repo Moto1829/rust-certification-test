@@ -1,0 +1,33 @@
+{
+  "id": "unsafe_contract_001",
+  "question": "`unsafe fn` を設計する際に重要な点として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "前提条件を文書化しなくてよい"
+    },
+    {
+      "id": "b",
+      "text": "呼び出し側が守るべき安全性契約を明示する"
+    },
+    {
+      "id": "c",
+      "text": "テスト不要"
+    },
+    {
+      "id": "d",
+      "text": "通常関数と全く同じ扱い"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`unsafe fn` は安全性契約を明確にし、呼び出し側責務を示す必要があります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/",
+    "https://www.lurklurk.org/effective-rust/"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "unsafe",
+    "api-design"
+  ]
+}

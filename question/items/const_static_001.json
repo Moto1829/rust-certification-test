@@ -1,0 +1,17 @@
+{
+  "id": "const_static_001",
+  "question": "`const` と `static` の違いとして正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`const` はインライン展開される値、`static` は固定アドレスの領域を持つ" },
+    { "id": "b", "text": "`static` はコンパイル時評価できない" },
+    { "id": "c", "text": "`const` は可変グローバル専用" },
+    { "id": "d", "text": "両者は完全に同じ" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`const` は各使用箇所で値として扱われ、`static` は実体メモリを持つ静的領域です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch03-01-variables-and-mutability.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["const", "static"]
+}

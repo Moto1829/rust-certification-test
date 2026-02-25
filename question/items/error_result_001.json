@@ -1,0 +1,17 @@
+{
+  "id": "error_result_001",
+  "question": "回復可能なエラー処理にRustで一般的に使う型はどれですか？",
+  "choices": [
+    { "id": "a", "text": "Option<T>" },
+    { "id": "b", "text": "bool" },
+    { "id": "c", "text": "Result<T, E>" },
+    { "id": "d", "text": "panic!" }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "回復可能なエラーは `Result<T, E>` を返して呼び出し側に処理を委ねるのが基本です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["error-handling", "result"]
+}

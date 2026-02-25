@@ -1,0 +1,17 @@
+{
+  "id": "async_join_001",
+  "question": "複数の非同期処理を同時に待機する目的で使われるアプローチとして適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "逐次 `await` しか選べない" },
+    { "id": "b", "text": "`join` 系の組み合わせで複数 Future をまとめて待つ" },
+    { "id": "c", "text": "`unsafe` でポーリングを書く" },
+    { "id": "d", "text": "`clone` で速度を上げる" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "複数Futureを同時に進行させたい場合、join系ユーティリティが有効です。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/06_multiple_futures/01_chapter.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["async", "join"]
+}

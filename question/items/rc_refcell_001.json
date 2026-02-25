@@ -1,0 +1,32 @@
+{
+  "id": "rc_refcell_001",
+  "question": "単一スレッドで共有可変性を実現する定番の組み合わせはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`Rc<T>` + `RefCell<T>`"
+    },
+    {
+      "id": "b",
+      "text": "`Arc<T>` + `Mutex<T>`"
+    },
+    {
+      "id": "c",
+      "text": "`Box<T>` + `Cell<T>` のみ"
+    },
+    {
+      "id": "d",
+      "text": "`String` + `Vec<T>`"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "単一スレッドでは `Rc<RefCell<T>>` がよく使われます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "rc",
+    "refcell"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "arc_mutex_001",
+  "question": "複数スレッドから可変な共有データに安全にアクセスする典型的な組み合わせはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`Rc<T>` + `RefCell<T>`" },
+    { "id": "b", "text": "`Arc<T>` + `Mutex<T>`" },
+    { "id": "c", "text": "`Box<T>` + `Cell<T>`" },
+    { "id": "d", "text": "`String` + `Vec<T>`" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`Arc` で所有権共有、`Mutex` で排他制御を行うのが一般的です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch16-03-shared-state.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["concurrency", "arc", "mutex"]
+}

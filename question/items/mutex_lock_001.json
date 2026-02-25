@@ -1,0 +1,32 @@
+{
+  "id": "mutex_lock_001",
+  "question": "`Mutex<T>` の `lock()` の戻り値を扱う際の基本として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "常に成功するので無視してよい"
+    },
+    {
+      "id": "b",
+      "text": "`LockResult` を通じて毒化状態も考慮する"
+    },
+    {
+      "id": "c",
+      "text": "`lock` は値をコピーして返す"
+    },
+    {
+      "id": "d",
+      "text": "`unsafe` 必須"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`Mutex` は毒化の可能性があるため `LockResult` を扱います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "mutex",
+    "lock"
+  ]
+}

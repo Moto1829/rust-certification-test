@@ -1,0 +1,17 @@
+{
+  "id": "ownership_move_001",
+  "question": "次のうち、所有権ムーブが発生するものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "i32 を関数に渡す" },
+    { "id": "b", "text": "String を関数に渡す" },
+    { "id": "c", "text": "&str を関数に渡す" },
+    { "id": "d", "text": "Copy トレイトを持つ型を代入する" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "String はヒープ領域を所有するため、値渡しで所有権がムーブします。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-01-what-is-ownership.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["ownership", "move"]
+}

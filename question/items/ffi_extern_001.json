@@ -1,0 +1,32 @@
+{
+  "id": "ffi_extern_001",
+  "question": "FFIで外部関数を宣言する際に使うキーワードはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`extern`"
+    },
+    {
+      "id": "b",
+      "text": "`foreign`"
+    },
+    {
+      "id": "c",
+      "text": "`import`"
+    },
+    {
+      "id": "d",
+      "text": "`native`"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "外部関数インターフェースには `extern` を使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "ffi",
+    "extern"
+  ]
+}

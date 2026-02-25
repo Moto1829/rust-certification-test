@@ -1,0 +1,17 @@
+{
+  "id": "ownership_slice_001",
+  "question": "`String` 全体の所有権を取らず、文字列の一部を扱いたいときに使う型はどれですか？",
+  "choices": [
+    { "id": "a", "text": "String" },
+    { "id": "b", "text": "Vec<char>" },
+    { "id": "c", "text": "&str" },
+    { "id": "d", "text": "Box<str>" }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "`&str` は文字列スライスであり、所有権を持たずに文字列データを参照できます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-03-slices.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["slice", "string"]
+}

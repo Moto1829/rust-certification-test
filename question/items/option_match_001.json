@@ -1,0 +1,17 @@
+{
+  "id": "option_match_001",
+  "question": "`Option<T>` から値を安全に取り出す方法として適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "常に `unwrap()` を使う" },
+    { "id": "b", "text": "`match` や `if let` で `Some`/`None` を分岐する" },
+    { "id": "c", "text": "`as` キャストで `T` に変換する" },
+    { "id": "d", "text": "`Option` はそのまま `T` として扱える" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`Option` は `None` の可能性があるため、`match` や `if let` で明示的に扱うのが安全です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch06-01-defining-an-enum.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["option", "match"]
+}

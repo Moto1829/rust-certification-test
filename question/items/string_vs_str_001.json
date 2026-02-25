@@ -1,0 +1,17 @@
+{
+  "id": "string_vs_str_001",
+  "question": "`String` と `&str` の違いとして正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`&str` は所有権を持ち、`String` は持たない" },
+    { "id": "b", "text": "`String` は可変な所有文字列で、`&str` は借用ビュー" },
+    { "id": "c", "text": "両者は完全に同じ型" },
+    { "id": "d", "text": "`String` はヒープを使わない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`String` は所有する可変な文字列データ、`&str` は文字列スライス参照です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch08-02-strings.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["string", "slice"]
+}

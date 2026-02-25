@@ -1,0 +1,32 @@
+{
+  "id": "result_and_then_001",
+  "question": "`and_then` の用途として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`Result` を連鎖し、成功時に次の `Result` を返す処理を繋ぐ"
+    },
+    {
+      "id": "b",
+      "text": "必ずエラーへ変換"
+    },
+    {
+      "id": "c",
+      "text": "panicを抑制"
+    },
+    {
+      "id": "d",
+      "text": "型注釈を削除"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`and_then` は成功値を使って後続の失敗可能処理を繋ぎます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "result",
+    "combinator"
+  ]
+}

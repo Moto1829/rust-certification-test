@@ -1,0 +1,17 @@
+{
+  "id": "ownership_clone_001",
+  "question": "`String` の値を元の変数でも引き続き使いたい場合、最も適切な方法はどれですか？",
+  "choices": [
+    { "id": "a", "text": "そのまま代入する" },
+    { "id": "b", "text": "`clone()` を使って明示的に複製する" },
+    { "id": "c", "text": "`mut` を付ける" },
+    { "id": "d", "text": "`Copy` を実装する" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`String` は `Copy` ではないため、所有権を保持したい場合は `clone()` で明示的に複製します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-01-what-is-ownership.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["ownership", "clone"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "async_beginner_concept_001",
+  "question": "Rustの `async`/`await` の基本的な目的として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "同期処理を完全に禁止する" },
+    { "id": "b", "text": "待ち時間のある処理を効率よく扱う" },
+    { "id": "c", "text": "所有権チェックを無効化する" },
+    { "id": "d", "text": "必ずマルチスレッド化する" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "async/await はI/O待ちなどの待機時間を有効活用して処理効率を上げるために使います。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["async", "await", "basics"]
+}

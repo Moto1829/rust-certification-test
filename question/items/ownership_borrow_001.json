@@ -1,0 +1,17 @@
+{
+  "id": "ownership_borrow_001",
+  "question": "次のうち、所有権をムーブせずに値へアクセスする方法として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "値を別変数へ代入する" },
+    { "id": "b", "text": "参照（&T）を渡す" },
+    { "id": "c", "text": "clone を毎回呼ぶ" },
+    { "id": "d", "text": "mut を付ける" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "参照を使うと所有権を移動せずに値へアクセスできます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["ownership", "borrowing"]
+}

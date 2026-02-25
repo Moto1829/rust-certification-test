@@ -1,0 +1,32 @@
+{
+  "id": "while_let_001",
+  "question": "`while let` の用途として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "条件に合う間だけパターンを繰り返し処理する"
+    },
+    {
+      "id": "b",
+      "text": "関数を定義する"
+    },
+    {
+      "id": "c",
+      "text": "型推論を無効化する"
+    },
+    {
+      "id": "d",
+      "text": "所有権を複製する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`while let` はパターン一致が続く間ループする構文です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "while-let",
+    "pattern"
+  ]
+}

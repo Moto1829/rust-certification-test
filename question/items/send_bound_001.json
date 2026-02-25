@@ -1,0 +1,32 @@
+{
+  "id": "send_bound_001",
+  "question": "スレッドへ値を渡す際に関係する主要トレイトはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`Send`"
+    },
+    {
+      "id": "b",
+      "text": "`Display`"
+    },
+    {
+      "id": "c",
+      "text": "`Iterator`"
+    },
+    {
+      "id": "d",
+      "text": "`Default`"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`Send` は値をスレッド間で安全に移動できることを表します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "send",
+    "thread"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "iterator_filter_001",
+  "question": "`iter().filter(...).map(...).collect()` のチェーンについて適切な説明はどれですか？",
+  "choices": [
+    { "id": "a", "text": "`collect` まで評価は遅延される" },
+    { "id": "b", "text": "`filter` は元コレクションを書き換える" },
+    { "id": "c", "text": "必ず `unsafe` が必要" },
+    { "id": "d", "text": "`map` の戻り値は常に `Vec`" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "イテレータアダプタは遅延評価され、`collect` などの終端操作で実行されます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch13-02-iterators.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["iterator", "lazy-evaluation"]
+}

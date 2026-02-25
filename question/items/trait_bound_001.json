@@ -1,0 +1,17 @@
+{
+  "id": "trait_bound_001",
+  "question": "`T: Display` のようなトレイト境界の意味として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`T` は列挙型でなければならない" },
+    { "id": "b", "text": "`T` は `Display` を実装している必要がある" },
+    { "id": "c", "text": "`T` は常に `String`" },
+    { "id": "d", "text": "`T` は参照だけを受け取る" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "トレイト境界は、型パラメータに必要な振る舞いを制約として表します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch10-02-traits.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["trait", "bounds"]
+}

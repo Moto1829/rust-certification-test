@@ -1,0 +1,17 @@
+{
+  "id": "result_question_mark_001",
+  "question": "`?` 演算子の挙動として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`Err` を検出すると現在の関数から早期リターンする" },
+    { "id": "b", "text": "`panic!` を必ず発生させる" },
+    { "id": "c", "text": "`Option` では使えない" },
+    { "id": "d", "text": "`Result` の型を `String` に固定する" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`?` はエラー伝播の糖衣構文で、失敗時は呼び出し元へ即座に返します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["result", "question-mark"]
+}

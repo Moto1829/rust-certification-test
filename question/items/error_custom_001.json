@@ -1,0 +1,32 @@
+{
+  "id": "error_custom_001",
+  "question": "独自エラー型を定義する利点として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "エラー原因を型で表現できる"
+    },
+    {
+      "id": "b",
+      "text": "エラー処理を不要にする"
+    },
+    {
+      "id": "c",
+      "text": "コンパイル時間を必ず短縮する"
+    },
+    {
+      "id": "d",
+      "text": "`Result` を使えなくなる"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "独自エラー型で失敗パターンを明確に扱えます。",
+  "sources": [
+    "https://www.lurklurk.org/effective-rust/"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "error",
+    "custom-type"
+  ]
+}

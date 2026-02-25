@@ -1,0 +1,17 @@
+{
+  "id": "crate_pub_001",
+  "question": "`pub` を付ける効果として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "その要素を外部モジュールから参照可能にする" },
+    { "id": "b", "text": "型を自動で `Clone` にする" },
+    { "id": "c", "text": "コンパイルをスキップする" },
+    { "id": "d", "text": "ライフタイムを省略できる" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "デフォルトは非公開で、`pub` で公開範囲を広げます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["module", "visibility"]
+}

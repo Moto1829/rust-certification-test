@@ -1,0 +1,17 @@
+{
+  "id": "lifetime_struct_001",
+  "question": "参照をフィールドに持つ構造体にライフタイムが必要な理由として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "構造体サイズを小さくするため" },
+    { "id": "b", "text": "参照先の有効期間との関係を明示するため" },
+    { "id": "c", "text": "GCを有効化するため" },
+    { "id": "d", "text": "unsafeを回避するため不要" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "参照を含む型では、参照先が生きている期間を型レベルで表現する必要があります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch10-03-lifetime-syntax.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["lifetime", "struct"]
+}

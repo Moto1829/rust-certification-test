@@ -1,0 +1,17 @@
+{
+  "id": "async_beginner_future_001",
+  "question": "`async fn` を呼び出した直後に得られるものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "即時に計算済みの戻り値" },
+    { "id": "b", "text": "Future（後で完了する計算）" },
+    { "id": "c", "text": "必ずスレッドID" },
+    { "id": "d", "text": "コンパイルエラー" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`async fn` は呼び出し時に Future を返し、実際の進行は `await` などで駆動されます。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/01_getting_started/04_async_await_primer.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["async", "future", "basics"]
+}

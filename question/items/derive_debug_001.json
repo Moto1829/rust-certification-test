@@ -1,0 +1,32 @@
+{
+  "id": "derive_debug_001",
+  "question": "`#[derive(Debug)]` の目的として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "デバッグ表示用フォーマットを自動実装する"
+    },
+    {
+      "id": "b",
+      "text": "本番最適化を強制する"
+    },
+    {
+      "id": "c",
+      "text": "型サイズを固定化"
+    },
+    {
+      "id": "d",
+      "text": "所有権を共有化"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`{:?}` で表示可能にするための導出です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "derive",
+    "debug"
+  ]
+}
