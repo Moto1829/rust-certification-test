@@ -1,0 +1,17 @@
+{
+  "id": "extern_c_abi_001",
+  "question": "FFIで `extern \"C\"` を指定する主目的として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "所有権ルールを無効化する" },
+    { "id": "b", "text": "呼び出し規約（ABI）をC互換に固定する" },
+    { "id": "c", "text": "自動的にメモリ安全になる" },
+    { "id": "d", "text": "`unsafe` が不要になる" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "言語境界ではABI一致が必須で、`extern \"C\"` はその契約を明示します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch19-01-unsafe-rust.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["ffi", "extern", "abi"]
+}

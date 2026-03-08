@@ -1,0 +1,17 @@
+{
+  "id": "slice_str_type_001",
+  "question": "文字列スライスの型として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`str`" },
+    { "id": "b", "text": "`&str`" },
+    { "id": "c", "text": "`StringSlice`" },
+    { "id": "d", "text": "`[char]`" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "文字列スライスは借用型であり、`&str` と表現します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-03-slices.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["slice", "string", "type"]
+}

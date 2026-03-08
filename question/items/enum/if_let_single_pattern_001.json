@@ -1,0 +1,17 @@
+{
+  "id": "if_let_single_pattern_001",
+  "question": "`if let` が特に有効な場面として適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "全パターンを厳密に網羅したいとき" },
+    { "id": "b", "text": "1つのパターンだけを扱い、その他は無視したいとき" },
+    { "id": "c", "text": "所有権を無効化したいとき" },
+    { "id": "d", "text": "型注釈を省略できないとき" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`if let` は `match` の簡潔版として、注目する1パターンの処理に向いています。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch06-03-if-let.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["if-let", "enum", "pattern"]
+}

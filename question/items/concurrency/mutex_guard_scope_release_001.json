@@ -1,0 +1,17 @@
+{
+  "id": "mutex_guard_scope_release_001",
+  "question": "`Mutex<T>` を `lock()` した後、ロック解放タイミングとして正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`lock()` 呼び出し直後に自動解放される" },
+    { "id": "b", "text": "`MutexGuard` がスコープを抜けてドロップされたとき解放される" },
+    { "id": "c", "text": "`unlock()` 関数を明示的に呼ぶ必要がある" },
+    { "id": "d", "text": "スレッド終了時まで解放されない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "RustではRAIIにより、ガードの寿命がロック寿命を決めます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch16-03-shared-state.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["concurrency", "mutex", "guard", "scope"]
+}

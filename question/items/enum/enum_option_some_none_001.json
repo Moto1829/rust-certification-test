@@ -1,0 +1,17 @@
+{
+  "id": "enum_option_some_none_001",
+  "question": "`Option<T>` のバリアントとして正しい組み合わせはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`Ok` と `Err`" },
+    { "id": "b", "text": "`True` と `False`" },
+    { "id": "c", "text": "`Some(T)` と `None`" },
+    { "id": "d", "text": "`Left` と `Right`" }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "`Option` は値がある状態 `Some` と、値がない状態 `None` を表します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch06-01-defining-an-enum.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["enum", "option"]
+}

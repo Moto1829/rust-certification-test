@@ -1,0 +1,17 @@
+{
+  "id": "if_expression_type_001",
+  "question": "`if` 式を変数に代入する場合のルールとして正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`if` と `else` の式は同じ型である必要がある" },
+    { "id": "b", "text": "`if` 側だけ型が合っていればよい" },
+    { "id": "c", "text": "`else` は必ず省略しなければならない" },
+    { "id": "d", "text": "`if` 式は値を返せない" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`if` 式は式として評価されるため、分岐ごとの結果型が一致している必要があります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch03-05-control-flow.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["if", "control-flow", "type"]
+}

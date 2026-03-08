@@ -1,0 +1,17 @@
+{
+  "id": "hashmap_get_option_001",
+  "question": "`HashMap` の `get` メソッドの戻り値として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`Option<&V>`" },
+    { "id": "b", "text": "`V`" },
+    { "id": "c", "text": "`Result<V, E>`" },
+    { "id": "d", "text": "`bool`" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "キーが存在しない可能性があるため、`get` は `Option` を返します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch08-03-hash-maps.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["hashmap", "option", "collections"]
+}

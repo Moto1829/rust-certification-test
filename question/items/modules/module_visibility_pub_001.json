@@ -1,0 +1,17 @@
+{
+  "id": "module_visibility_pub_001",
+  "question": "モジュール項目を外部から参照可能にするために使うキーワードはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`extern`" },
+    { "id": "b", "text": "`pub`" },
+    { "id": "c", "text": "`open`" },
+    { "id": "d", "text": "`visible`" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Rustでは可視性を広げるために `pub` を付けます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch07-02-defining-modules-to-control-scope-and-privacy.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["module", "visibility", "pub"]
+}

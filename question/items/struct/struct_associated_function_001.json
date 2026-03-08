@@ -1,0 +1,17 @@
+{
+  "id": "struct_associated_function_001",
+  "question": "`Self::new(...)` のような関連関数（associated function）の特徴として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`self` 引数を必ず取る" },
+    { "id": "b", "text": "インスタンスなしで型に対して呼び出せる" },
+    { "id": "c", "text": "トレイトでしか定義できない" },
+    { "id": "d", "text": "戻り値を返せない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "関連関数はメソッドと異なり `self` を受け取らず、型名経由で呼び出します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch05-03-method-syntax.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["struct", "associated-function", "impl"]
+}

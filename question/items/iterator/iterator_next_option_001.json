@@ -1,0 +1,17 @@
+{
+  "id": "iterator_next_option_001",
+  "question": "イテレータの `next()` メソッドの戻り値として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`bool`" },
+    { "id": "b", "text": "`Result<T, E>`" },
+    { "id": "c", "text": "`Option<Item>`" },
+    { "id": "d", "text": "`Vec<Item>`" }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "次の要素があれば `Some(item)`、終端なら `None` を返すため `Option` です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch13-02-iterators.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["iterator", "next", "option"]
+}

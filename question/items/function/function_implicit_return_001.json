@@ -1,0 +1,17 @@
+{
+  "id": "function_implicit_return_001",
+  "question": "関数の末尾で値を返すとき、Rustで正しい書き方はどれですか？",
+  "choices": [
+    { "id": "a", "text": "末尾の式をセミコロンなしで書く" },
+    { "id": "b", "text": "末尾の式に必ずセミコロンを付ける" },
+    { "id": "c", "text": "`return` キーワードなしでは返せない" },
+    { "id": "d", "text": "値はタプルでしか返せない" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "末尾式は暗黙に返り値になります。セミコロンを付けると文になり値を返しません。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch03-03-how-functions-work.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["function", "return", "expression"]
+}

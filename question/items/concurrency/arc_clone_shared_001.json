@@ -1,0 +1,17 @@
+{
+  "id": "arc_clone_shared_001",
+  "question": "`Arc::clone(&arc)` の意味として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "中身を深いコピーで複製する" },
+    { "id": "b", "text": "参照カウント付き所有権を複製し、同じデータを共有する" },
+    { "id": "c", "text": "`Mutex` と同等の排他制御を行う" },
+    { "id": "d", "text": "常に `Send` 制約を外せる" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`Arc::clone` は実データの複製ではなく、参照カウントを増やして共有所有を作ります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch16-03-shared-state.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["concurrency", "arc", "ownership"]
+}

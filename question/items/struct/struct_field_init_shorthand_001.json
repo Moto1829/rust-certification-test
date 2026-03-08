@@ -1,0 +1,17 @@
+{
+  "id": "struct_field_init_shorthand_001",
+  "question": "構造体初期化時のフィールド初期化省略記法（field init shorthand）が使える条件はどれですか？",
+  "choices": [
+    { "id": "a", "text": "変数名とフィールド名が同じとき" },
+    { "id": "b", "text": "可変構造体のときだけ" },
+    { "id": "c", "text": "`pub` フィールドのときだけ" },
+    { "id": "d", "text": "タプル構造体でのみ使える" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`username: username` のような記述は `username` と省略できます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch05-01-defining-structs.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["struct", "field-init-shorthand"]
+}

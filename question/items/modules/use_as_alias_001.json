@@ -1,0 +1,17 @@
+{
+  "id": "use_as_alias_001",
+  "question": "`use std::io::Result as IoResult;` の主な目的として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "型を新規定義する" },
+    { "id": "b", "text": "インポートした項目に別名を付ける" },
+    { "id": "c", "text": "モジュールを公開化する" },
+    { "id": "d", "text": "クレートをビルドする" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`as` は名前衝突回避や可読性向上のために別名を導入する仕組みです。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["module", "use", "alias"]
+}

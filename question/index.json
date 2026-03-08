@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-03-08T10:22:06.292Z",
-  "count": 115,
+  "generatedAt": "2026-03-08T10:58:55.378Z",
+  "count": 151,
   "items": [
+    {
+      "id": "arc_clone_shared_001",
+      "path": "question/items/concurrency/arc_clone_shared_001.json",
+      "title": "`Arc::clone(&arc)` の意味として正しいものはどれですか？",
+      "category": "concurrency",
+      "difficulty": "advanced"
+    },
     {
       "id": "arc_mutex_001",
       "path": "question/items/concurrency/arc_mutex_001.json",
@@ -157,6 +164,13 @@
       "difficulty": "intermediate"
     },
     {
+      "id": "channel_disconnected_001",
+      "path": "question/items/concurrency/channel_disconnected_001.json",
+      "title": "`mpsc::Receiver::recv()` 実行時、送信側がすべてドロップされていてキューも空の場合の挙動として正しいものはどれですか？",
+      "category": "concurrency",
+      "difficulty": "advanced"
+    },
+    {
       "id": "channel_send_recv_001",
       "path": "question/items/concurrency/channel_send_recv_001.json",
       "title": "mpscチャネルの基本動作として正しいものはどれですか？",
@@ -262,6 +276,20 @@
       "difficulty": "intermediate"
     },
     {
+      "id": "enum_option_some_none_001",
+      "path": "question/items/enum/enum_option_some_none_001.json",
+      "title": "`Option<T>` のバリアントとして正しい組み合わせはどれですか？",
+      "category": "enum",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "enum_variant_data_001",
+      "path": "question/items/enum/enum_variant_data_001.json",
+      "title": "列挙型の各バリアントについて正しい説明はどれですか？",
+      "category": "enum",
+      "difficulty": "beginner"
+    },
+    {
       "id": "error_custom_001",
       "path": "question/items/error_handling/error_custom_001.json",
       "title": "独自エラー型を定義する利点として適切なのはどれですか？",
@@ -276,11 +304,39 @@
       "difficulty": "beginner"
     },
     {
+      "id": "expect_message_001",
+      "path": "question/items/error_handling/expect_message_001.json",
+      "title": "`expect(\"failed to open\")` を使う主な利点はどれですか？",
+      "category": "error_handling",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "extern_c_abi_001",
+      "path": "question/items/ffi/extern_c_abi_001.json",
+      "title": "FFIで `extern \"C\"` を指定する主目的として正しいものはどれですか？",
+      "category": "ffi",
+      "difficulty": "advanced"
+    },
+    {
       "id": "ffi_extern_001",
       "path": "question/items/ffi/ffi_extern_001.json",
       "title": "FFIで外部関数を宣言する際に使うキーワードはどれですか？",
       "category": "ffi",
       "difficulty": "advanced"
+    },
+    {
+      "id": "function_expression_statement_001",
+      "path": "question/items/function/function_expression_statement_001.json",
+      "title": "Rustにおける「式」と「文」の違いとして正しいものはどれですか？",
+      "category": "function",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "function_implicit_return_001",
+      "path": "question/items/function/function_implicit_return_001.json",
+      "title": "関数の末尾で値を返すとき、Rustで正しい書き方はどれですか？",
+      "category": "function",
+      "difficulty": "beginner"
     },
     {
       "id": "function_return_tuple_001",
@@ -311,6 +367,13 @@
       "difficulty": "intermediate"
     },
     {
+      "id": "hashmap_get_option_001",
+      "path": "question/items/types_collections/hashmap_get_option_001.json",
+      "title": "`HashMap` の `get` メソッドの戻り値として正しいものはどれですか？",
+      "category": "types_collections",
+      "difficulty": "beginner"
+    },
+    {
       "id": "hashmap_insert_001",
       "path": "question/items/types_collections/hashmap_insert_001.json",
       "title": "`HashMap<K, V>` の `insert` に関する説明として正しいものはどれですか？",
@@ -318,10 +381,24 @@
       "difficulty": "beginner"
     },
     {
+      "id": "if_expression_type_001",
+      "path": "question/items/functions_control/if_expression_type_001.json",
+      "title": "`if` 式を変数に代入する場合のルールとして正しいものはどれですか？",
+      "category": "functions_control",
+      "difficulty": "beginner"
+    },
+    {
       "id": "if_let_001",
       "path": "question/items/functions_control/if_let_001.json",
       "title": "`if let` を使う主な利点として最も適切なのはどれですか？",
       "category": "functions_control",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "if_let_single_pattern_001",
+      "path": "question/items/enum/if_let_single_pattern_001.json",
+      "title": "`if let` が特に有効な場面として適切なのはどれですか？",
+      "category": "enum",
       "difficulty": "beginner"
     },
     {
@@ -346,6 +423,13 @@
       "difficulty": "advanced"
     },
     {
+      "id": "iterator_for_sugar_001",
+      "path": "question/items/iterator/iterator_for_sugar_001.json",
+      "title": "`for x in collection` に関する説明として正しいものはどれですか？",
+      "category": "iterator",
+      "difficulty": "beginner"
+    },
+    {
       "id": "iterator_into_iter_001",
       "path": "question/items/iterator/iterator_into_iter_001.json",
       "title": "`into_iter()` の説明として正しいものはどれですか？",
@@ -358,6 +442,13 @@
       "title": "`iter().map(...).collect()` の説明として正しいものはどれですか？",
       "category": "iterator",
       "difficulty": "intermediate"
+    },
+    {
+      "id": "iterator_next_option_001",
+      "path": "question/items/iterator/iterator_next_option_001.json",
+      "title": "イテレータの `next()` メソッドの戻り値として正しいものはどれですか？",
+      "category": "iterator",
+      "difficulty": "beginner"
     },
     {
       "id": "iterator_zip_001",
@@ -437,6 +528,20 @@
       "difficulty": "intermediate"
     },
     {
+      "id": "module_visibility_pub_001",
+      "path": "question/items/modules/module_visibility_pub_001.json",
+      "title": "モジュール項目を外部から参照可能にするために使うキーワードはどれですか？",
+      "category": "modules",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "mutex_guard_scope_release_001",
+      "path": "question/items/concurrency/mutex_guard_scope_release_001.json",
+      "title": "`Mutex<T>` を `lock()` した後、ロック解放タイミングとして正しいものはどれですか？",
+      "category": "concurrency",
+      "difficulty": "advanced"
+    },
+    {
       "id": "mutex_lock_001",
       "path": "question/items/concurrency/mutex_lock_001.json",
       "title": "`Mutex<T>` の `lock()` の戻り値を扱う際の基本として正しいものはどれですか？",
@@ -479,6 +584,13 @@
       "difficulty": "beginner"
     },
     {
+      "id": "ownership_dangling_reference_001",
+      "path": "question/items/ownership/ownership_dangling_reference_001.json",
+      "title": "ダングリング参照に関する説明として正しいものはどれですか？",
+      "category": "ownership",
+      "difficulty": "beginner"
+    },
+    {
       "id": "ownership_deref_001",
       "path": "question/items/ownership/ownership_deref_001.json",
       "title": "`*` によるデリファレンス演算の説明として正しいものはどれですか？",
@@ -500,6 +612,13 @@
       "difficulty": "beginner"
     },
     {
+      "id": "ownership_reference_scope_001",
+      "path": "question/items/ownership/ownership_reference_scope_001.json",
+      "title": "参照の有効範囲（スコープ）について正しい説明はどれですか？",
+      "category": "ownership",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "ownership_slice_001",
       "path": "question/items/ownership/ownership_slice_001.json",
       "title": "`String` 全体の所有権を取らず、文字列の一部を扱いたいときに使う型はどれですか？",
@@ -512,6 +631,13 @@
       "title": "クレートルートからの絶対パスで使うキーワードはどれですか？",
       "category": "modules",
       "difficulty": "intermediate"
+    },
+    {
+      "id": "pattern_at_binding_001",
+      "path": "question/items/pattern/pattern_at_binding_001.json",
+      "title": "`id @ 3..=7` のような `@` 束縛の用途として適切なのはどれですか？",
+      "category": "pattern",
+      "difficulty": "advanced"
     },
     {
       "id": "pattern_ignore_001",
@@ -598,6 +724,20 @@
       "difficulty": "beginner"
     },
     {
+      "id": "slice_range_end_exclusive_001",
+      "path": "question/items/slice/slice_range_end_exclusive_001.json",
+      "title": "`let s = &text[0..4];` の範囲指定について正しいものはどれですか？",
+      "category": "slice",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "slice_str_type_001",
+      "path": "question/items/slice/slice_str_type_001.json",
+      "title": "文字列スライスの型として正しいものはどれですか？",
+      "category": "slice",
+      "difficulty": "beginner"
+    },
+    {
       "id": "slice_utf8_001",
       "path": "question/items/slice/slice_utf8_001.json",
       "title": "UTF-8文字列スライスで注意すべき点として適切なのはどれですか？",
@@ -612,10 +752,45 @@
       "difficulty": "beginner"
     },
     {
+      "id": "string_push_str_001",
+      "path": "question/items/types_collections/string_push_str_001.json",
+      "title": "`String` の `push_str` メソッドに関する説明として正しいものはどれですか？",
+      "category": "types_collections",
+      "difficulty": "beginner"
+    },
+    {
       "id": "string_vs_str_001",
       "path": "question/items/types_collections/string_vs_str_001.json",
       "title": "`String` と `&str` の違いとして正しいものはどれですか？",
       "category": "types_collections",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "struct_associated_function_001",
+      "path": "question/items/struct/struct_associated_function_001.json",
+      "title": "`Self::new(...)` のような関連関数（associated function）の特徴として正しいものはどれですか？",
+      "category": "struct",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "struct_field_init_shorthand_001",
+      "path": "question/items/struct/struct_field_init_shorthand_001.json",
+      "title": "構造体初期化時のフィールド初期化省略記法（field init shorthand）が使える条件はどれですか？",
+      "category": "struct",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "struct_method_self_001",
+      "path": "question/items/struct/struct_method_self_001.json",
+      "title": "構造体メソッドの第一引数 `&self` の意味として正しいものはどれですか？",
+      "category": "struct",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "struct_tuple_001",
+      "path": "question/items/struct/struct_tuple_001.json",
+      "title": "タプル構造体（tuple struct）の特徴として正しいものはどれですか？",
+      "category": "struct",
       "difficulty": "beginner"
     },
     {
@@ -631,6 +806,13 @@
       "title": "Rustの単体テストで値の一致確認に一般的に使うマクロはどれですか？",
       "category": "tooling_testing",
       "difficulty": "beginner"
+    },
+    {
+      "id": "thread_handle_drop_detach_001",
+      "path": "question/items/thread/thread_handle_drop_detach_001.json",
+      "title": "`JoinHandle` を `join()` せずにドロップした場合の説明として最も適切なのはどれですか？",
+      "category": "thread",
+      "difficulty": "advanced"
     },
     {
       "id": "thread_join_001",
@@ -654,6 +836,20 @@
       "difficulty": "intermediate"
     },
     {
+      "id": "trait_bound_display_001",
+      "path": "question/items/traits_generics/trait_bound_display_001.json",
+      "title": "関数シグネチャで `T: std::fmt::Display` と書く意味として正しいものはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "trait_bound_plus_001",
+      "path": "question/items/traits_generics/trait_bound_plus_001.json",
+      "title": "ジェネリクスで `T: Display + Clone` と書く意味として正しいものはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "trait_default_impl_001",
       "path": "question/items/traits_generics/trait_default_impl_001.json",
       "title": "トレイトのデフォルト実装について正しいものはどれですか？",
@@ -673,6 +869,13 @@
       "title": "トレイトオブジェクト `&dyn Trait` の特徴として正しいものはどれですか？",
       "category": "traits_generics",
       "difficulty": "intermediate"
+    },
+    {
+      "id": "trait_object_object_safety_001",
+      "path": "question/items/traits_generics/trait_object_object_safety_001.json",
+      "title": "`dyn Trait` として使う際、オブジェクト安全性を損なう例として適切なのはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "advanced"
     },
     {
       "id": "trait_std_asref_001",
@@ -773,6 +976,41 @@
       "difficulty": "advanced"
     },
     {
+      "id": "unsafe_static_mut_sync_001",
+      "path": "question/items/unsafe/unsafe_static_mut_sync_001.json",
+      "title": "`static mut` を複数スレッドから扱う際の説明として正しいものはどれですか？",
+      "category": "unsafe",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "unsafe_trait_impl_contract_001",
+      "path": "question/items/unsafe/unsafe_trait_impl_contract_001.json",
+      "title": "`unsafe trait` を `unsafe impl` する際に最も重要な点はどれですか？",
+      "category": "unsafe",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "unwrap_panic_001",
+      "path": "question/items/error_handling/unwrap_panic_001.json",
+      "title": "`Result<T, E>` に対する `unwrap()` の挙動として正しいものはどれですか？",
+      "category": "error_handling",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "use_as_alias_001",
+      "path": "question/items/modules/use_as_alias_001.json",
+      "title": "`use std::io::Result as IoResult;` の主な目的として正しいものはどれですか？",
+      "category": "modules",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "use_nested_path_001",
+      "path": "question/items/modules/use_nested_path_001.json",
+      "title": "`use std::{cmp::Ordering, io};` の説明として正しいものはどれですか？",
+      "category": "modules",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "vec_push_capacity_001",
       "path": "question/items/types_collections/vec_push_capacity_001.json",
       "title": "`Vec<T>` に `push` を繰り返したときに起こりうることとして正しいものはどれですか？",
@@ -787,11 +1025,25 @@
       "difficulty": "beginner"
     },
     {
+      "id": "vector_index_panic_001",
+      "path": "question/items/types_collections/vector_index_panic_001.json",
+      "title": "`vec[100]` のように範囲外インデックスへアクセスしたときの挙動として正しいものはどれですか？",
+      "category": "types_collections",
+      "difficulty": "beginner"
+    },
+    {
       "id": "vector_iter_mut_001",
       "path": "question/items/vector/vector_iter_mut_001.json",
       "title": "`iter_mut()` の説明として正しいものはどれですか？",
       "category": "vector",
       "difficulty": "beginner"
+    },
+    {
+      "id": "weak_break_cycle_001",
+      "path": "question/items/rc/weak_break_cycle_001.json",
+      "title": "`Rc` を使うグラフ構造で循環参照リークを避ける設計として適切なのはどれですか？",
+      "category": "rc",
+      "difficulty": "advanced"
     },
     {
       "id": "where_clause_001",

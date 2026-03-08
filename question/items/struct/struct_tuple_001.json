@@ -1,0 +1,17 @@
+{
+  "id": "struct_tuple_001",
+  "question": "タプル構造体（tuple struct）の特徴として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "名前付きフィールドを持つ" },
+    { "id": "b", "text": "フィールドに名前はなく、位置（インデックス）でアクセスする" },
+    { "id": "c", "text": "列挙型の一種である" },
+    { "id": "d", "text": "必ず `Copy` になる" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "タプル構造体は型名を持ちつつ、内部フィールドは番号で参照します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch05-01-defining-structs.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["struct", "tuple-struct"]
+}

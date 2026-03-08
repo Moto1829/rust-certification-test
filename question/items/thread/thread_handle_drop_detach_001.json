@@ -1,0 +1,17 @@
+{
+  "id": "thread_handle_drop_detach_001",
+  "question": "`JoinHandle` を `join()` せずにドロップした場合の説明として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "子スレッドは必ず即時停止する" },
+    { "id": "b", "text": "子スレッドはデタッチされ、終了待機や結果取得ができなくなる" },
+    { "id": "c", "text": "親スレッドが必ずパニックする" },
+    { "id": "d", "text": "自動的に `join` が呼ばれる" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`JoinHandle` を保持しないと明示的な終了待機点を失うため、同期設計ミスの原因になります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch16-01-threads.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["thread", "join", "handle"]
+}

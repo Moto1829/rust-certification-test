@@ -1,0 +1,17 @@
+{
+  "id": "struct_method_self_001",
+  "question": "構造体メソッドの第一引数 `&self` の意味として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "インスタンスを不変借用して受け取る" },
+    { "id": "b", "text": "インスタンスの所有権を奪う" },
+    { "id": "c", "text": "インスタンスを必ず可変借用する" },
+    { "id": "d", "text": "静的メソッドでのみ使える" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`&self` は読み取り専用でインスタンスを借用するメソッド受け取り方です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch05-03-method-syntax.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["struct", "method", "self"]
+}

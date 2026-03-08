@@ -1,0 +1,17 @@
+{
+  "id": "expect_message_001",
+  "question": "`expect(\"failed to open\")` を使う主な利点はどれですか？",
+  "choices": [
+    { "id": "a", "text": "失敗時のパニックメッセージを明確にできる" },
+    { "id": "b", "text": "エラーを自動的に回復できる" },
+    { "id": "c", "text": "戻り値が `bool` になる" },
+    { "id": "d", "text": "`Result` が不要になる" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`expect` は失敗時に開発者が指定した文脈付きメッセージでパニックします。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["error-handling", "result", "expect"]
+}

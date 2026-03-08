@@ -1,0 +1,17 @@
+{
+  "id": "function_expression_statement_001",
+  "question": "Rustにおける「式」と「文」の違いとして正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "式は値を返し、文は主に処理を実行する" },
+    { "id": "b", "text": "文だけが値を返し、式は値を返さない" },
+    { "id": "c", "text": "Rustでは式と文は区別されない" },
+    { "id": "d", "text": "式は必ず `;` で終わる必要がある" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Rustでは式が値を持ち、文は値を返さない処理単位として扱われます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch03-03-how-functions-work.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["function", "expression", "statement"]
+}

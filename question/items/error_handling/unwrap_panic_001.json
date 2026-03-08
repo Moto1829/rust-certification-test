@@ -1,0 +1,17 @@
+{
+  "id": "unwrap_panic_001",
+  "question": "`Result<T, E>` に対する `unwrap()` の挙動として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`Err` のときデフォルト値を返す" },
+    { "id": "b", "text": "`Err` のときパニックする" },
+    { "id": "c", "text": "`Err` を自動で `String` に変換する" },
+    { "id": "d", "text": "常に `Option<T>` を返す" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`unwrap()` は `Ok` なら中身を取り出し、`Err` なら実行時パニックを発生させます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["result", "unwrap", "panic"]
+}

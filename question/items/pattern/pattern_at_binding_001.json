@@ -1,0 +1,17 @@
+{
+  "id": "pattern_at_binding_001",
+  "question": "`id @ 3..=7` のような `@` 束縛の用途として適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "値を捨てるための記法" },
+    { "id": "b", "text": "パターン一致を行いながら、その一致値を変数にも束縛する" },
+    { "id": "c", "text": "可変借用を強制する" },
+    { "id": "d", "text": "`match` 以外では使えないため非推奨" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`@` は条件付きマッチと値の再利用を同時に満たし、複雑な分岐の可読性を保ちます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch18-03-pattern-syntax.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["pattern", "match", "binding"]
+}

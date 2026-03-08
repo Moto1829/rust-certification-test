@@ -1,0 +1,17 @@
+{
+  "id": "unsafe_static_mut_sync_001",
+  "question": "`static mut` を複数スレッドから扱う際の説明として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "データ競合を防ぐ同期を自前で保証する必要がある" },
+    { "id": "b", "text": "`static mut` は自動的にスレッド安全になる" },
+    { "id": "c", "text": "`static mut` は読み取り専用である" },
+    { "id": "d", "text": "`Arc<Mutex<T>>` より常に安全" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`static mut` は共有可変状態を直接扱うため、競合回避責務が使用側にあります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch19-01-unsafe-rust.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["unsafe", "static-mut", "concurrency"]
+}

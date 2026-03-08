@@ -1,0 +1,17 @@
+{
+  "id": "unsafe_trait_impl_contract_001",
+  "question": "`unsafe trait` を `unsafe impl` する際に最も重要な点はどれですか？",
+  "choices": [
+    { "id": "a", "text": "実装速度を優先し、契約確認は不要" },
+    { "id": "b", "text": "コンパイラがすべての不変条件を自動検証する" },
+    { "id": "c", "text": "トレイトが要求する安全性不変条件を実装側で満たす責務がある" },
+    { "id": "d", "text": "`unsafe impl` はデバッグビルドでのみ有効" }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "`unsafe trait` の正しさはコンパイラだけで保証できないため、実装者が契約を満たす必要があります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch19-01-unsafe-rust.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["unsafe", "trait", "contract"]
+}

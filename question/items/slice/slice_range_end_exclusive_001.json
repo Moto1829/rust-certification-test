@@ -1,0 +1,17 @@
+{
+  "id": "slice_range_end_exclusive_001",
+  "question": "`let s = &text[0..4];` の範囲指定について正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "終端インデックス4は含まれる" },
+    { "id": "b", "text": "終端インデックス4は含まれない" },
+    { "id": "c", "text": "開始インデックス0は必ず省略する必要がある" },
+    { "id": "d", "text": "この記法は配列には使えない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Rustの範囲 `a..b` は半開区間で、`b` は含みません。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-03-slices.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["slice", "range"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ownership_dangling_reference_001",
+  "question": "ダングリング参照に関する説明として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "Rustはダングリング参照を実行時にのみ検出する" },
+    { "id": "b", "text": "Rustはコンパイル時にダングリング参照を防ぐ" },
+    { "id": "c", "text": "`unsafe` を使うと常に安全になる" },
+    { "id": "d", "text": "参照は所有権を持つのでダングリングしない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "借用規則とライフタイム解析により、無効な参照はコンパイル時に拒否されます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["ownership", "borrowing", "reference"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "channel_disconnected_001",
+  "question": "`mpsc::Receiver::recv()` 実行時、送信側がすべてドロップされていてキューも空の場合の挙動として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`Some(T)` を返す" },
+    { "id": "b", "text": "チャネル切断として `Err` を返す" },
+    { "id": "c", "text": "常にパニックする" },
+    { "id": "d", "text": "無期限にブロックし続ける" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "送信者が存在しない状態では新規メッセージが到着しないため、受信側は切断を `Err` で検知します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch16-02-message-passing.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["concurrency", "channel", "disconnect"]
+}

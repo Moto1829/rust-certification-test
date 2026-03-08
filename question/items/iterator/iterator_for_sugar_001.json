@@ -1,0 +1,17 @@
+{
+  "id": "iterator_for_sugar_001",
+  "question": "`for x in collection` に関する説明として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "内部的にイテレータを使って順に要素を処理する" },
+    { "id": "b", "text": "`for` は配列にしか使えない" },
+    { "id": "c", "text": "`for` は `unsafe` ブロック内でのみ使える" },
+    { "id": "d", "text": "必ず `while` より低速である" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`for` ループは `IntoIterator` を通じて反復処理を行う構文糖衣です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch13-02-iterators.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["iterator", "for", "intoiterator"]
+}

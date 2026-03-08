@@ -1,0 +1,17 @@
+{
+  "id": "string_push_str_001",
+  "question": "`String` の `push_str` メソッドに関する説明として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "引数の `&str` を末尾に追加する" },
+    { "id": "b", "text": "常に新しい `String` を返す" },
+    { "id": "c", "text": "文字列を先頭に追加する" },
+    { "id": "d", "text": "所有権を奪うため元の文字列は使えなくなる" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`push_str` は借用された文字列スライスを現在の `String` に追記します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch08-02-strings.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["string", "collections", "method"]
+}

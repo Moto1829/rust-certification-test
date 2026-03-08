@@ -1,0 +1,17 @@
+{
+  "id": "enum_variant_data_001",
+  "question": "列挙型の各バリアントについて正しい説明はどれですか？",
+  "choices": [
+    { "id": "a", "text": "すべて同じ型のデータしか持てない" },
+    { "id": "b", "text": "バリアントごとに異なる型の関連データを持てる" },
+    { "id": "c", "text": "データを持つバリアントは定義できない" },
+    { "id": "d", "text": "`enum` は `match` と併用できない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Rustの `enum` は、バリアントごとに異なる型や個数のデータを持てます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch06-01-defining-an-enum.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["enum", "variant", "data"]
+}

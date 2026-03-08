@@ -1,0 +1,17 @@
+{
+  "id": "use_nested_path_001",
+  "question": "`use std::{cmp::Ordering, io};` の説明として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`std` 以下の複数パスをまとめて導入できる" },
+    { "id": "b", "text": "`std` を再定義している" },
+    { "id": "c", "text": "この記法はマクロでしか使えない" },
+    { "id": "d", "text": "`Ordering` は無効な型名になる" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "ネストした `use` 記法を使うと共通プレフィックスをまとめて短く書けます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["module", "use", "path"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "weak_break_cycle_001",
+  "question": "`Rc` を使うグラフ構造で循環参照リークを避ける設計として適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "親または逆参照側を `Weak<T>` にする" },
+    { "id": "b", "text": "参照カウントを `unsafe` で直接書き換える" },
+    { "id": "c", "text": "`Rc<T>` を `Clone` しない" },
+    { "id": "d", "text": "循環参照はRustでは自動解決される" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "循環を強参照だけで構成すると解放不能になるため、片側を `Weak` にして所有関係を分離します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch15-06-reference-cycles.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["rc", "weak", "memory-leak"]
+}

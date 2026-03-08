@@ -1,0 +1,17 @@
+{
+  "id": "trait_object_object_safety_001",
+  "question": "`dyn Trait` として使う際、オブジェクト安全性を損なう例として適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`&self` を受け取るメソッドを定義する" },
+    { "id": "b", "text": "戻り値が `Self` のメソッドを必要とする" },
+    { "id": "c", "text": "メソッド内で `match` を使う" },
+    { "id": "d", "text": "`Display` を実装する" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`dyn Trait` では具体型が隠蔽されるため、`Self` 具体型を返す要件は通常そのまま扱えません。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch17-02-trait-objects.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["trait-object", "object-safety", "dispatch"]
+}

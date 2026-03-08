@@ -1,0 +1,17 @@
+{
+  "id": "trait_bound_display_001",
+  "question": "関数シグネチャで `T: std::fmt::Display` と書く意味として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`T` は常に整数型である" },
+    { "id": "b", "text": "`T` は表示用フォーマットに対応している必要がある" },
+    { "id": "c", "text": "`T` は `Clone` を自動実装する" },
+    { "id": "d", "text": "`T` は `unsafe` 型になる" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`Display` 境界を付けると、その型を `{}` で表示できることをコンパイル時に保証します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch10-02-traits.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["trait", "generics", "display"]
+}

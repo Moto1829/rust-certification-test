@@ -1,0 +1,17 @@
+{
+  "id": "ownership_reference_scope_001",
+  "question": "参照の有効範囲（スコープ）について正しい説明はどれですか？",
+  "choices": [
+    { "id": "a", "text": "参照は常に関数全体で有効" },
+    { "id": "b", "text": "参照は宣言位置から最後に使われる位置まで有効" },
+    { "id": "c", "text": "参照の有効範囲は実行時にだけ決まる" },
+    { "id": "d", "text": "可変参照にはスコープがない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "参照のスコープは字句的な範囲と利用箇所に基づいて扱われます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["ownership", "borrowing", "scope"]
+}

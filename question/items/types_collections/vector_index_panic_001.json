@@ -1,0 +1,17 @@
+{
+  "id": "vector_index_panic_001",
+  "question": "`vec[100]` のように範囲外インデックスへアクセスしたときの挙動として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`None` を返す" },
+    { "id": "b", "text": "空文字列を返す" },
+    { "id": "c", "text": "実行時にパニックする" },
+    { "id": "d", "text": "コンパイル時に常に検出される" }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "添字演算子による範囲外アクセスは実行時パニックになります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch08-01-vectors.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["vector", "index", "panic"]
+}
