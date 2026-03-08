@@ -1,0 +1,17 @@
+{
+  "id": "trait_std_clone_001",
+  "question": "`Clone` トレイトの説明として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "常に浅いコピーしかできない" },
+    { "id": "b", "text": "明示的に値の複製を行うためのトレイト" },
+    { "id": "c", "text": "`Copy` と同じで代入時に自動で呼ばれる" },
+    { "id": "d", "text": "参照型では実装できない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`Clone` は `clone()` を呼び出して明示的に複製を行うためのトレイトです。`Copy` のような暗黙コピーとは異なります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/appendix-03-derivable-traits.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["trait", "clone", "standard-trait"]
+}

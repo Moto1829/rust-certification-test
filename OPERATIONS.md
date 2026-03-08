@@ -1,8 +1,8 @@
 # Operations
 
 ## 問題追加フロー
-1. `npm run new:question -- <id> <difficulty>`
-2. `question/items/<id>.json` を編集
+1. `npm run new:question -- --id <id> --category-dir <category>`
+2. `question/items/<category>/<id>.json` を編集
 3. `npm run sync:index`
 4. `npm run validate:questions`
 5. `npm run report:questions`

@@ -1,0 +1,18 @@
+{
+  "id": "trait_std_hash_001",
+  "question": "`HashMap` のキー型に求められる主要トレイトの組み合わせとして適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`Hash` と `Eq`" },
+    { "id": "b", "text": "`Display` と `Clone`" },
+    { "id": "c", "text": "`Ord` と `Default`" },
+    { "id": "d", "text": "`Iterator` と `Send`" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`HashMap` はハッシュ値と等価性でキーを管理するため、キー型には通常 `Hash` と `Eq` が必要です。",
+  "sources": [
+    "https://doc.rust-lang.org/std/hash/trait.Hash.html#tymethod.hash",
+    "https://doc.rust-lang.org/std/cmp/trait.Eq.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["trait", "hash", "eq", "standard-trait"]
+}

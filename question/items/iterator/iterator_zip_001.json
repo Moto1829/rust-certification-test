@@ -1,0 +1,32 @@
+{
+  "id": "iterator_zip_001",
+  "question": "`zip()` の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "2つのイテレータを要素ごとに組にする"
+    },
+    {
+      "id": "b",
+      "text": "要素をソートする"
+    },
+    {
+      "id": "c",
+      "text": "非同期化する"
+    },
+    {
+      "id": "d",
+      "text": "要素数を増やす"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`zip` は2系列を対応づけたペア列にします。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch13-02-iterators.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "iterator",
+    "zip"
+  ]
+}

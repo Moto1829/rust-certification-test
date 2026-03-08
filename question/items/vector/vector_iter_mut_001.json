@@ -1,0 +1,32 @@
+{
+  "id": "vector_iter_mut_001",
+  "question": "`iter_mut()` の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "要素の可変参照を順に取得する"
+    },
+    {
+      "id": "b",
+      "text": "所有権を消費する"
+    },
+    {
+      "id": "c",
+      "text": "不変参照だけを返す"
+    },
+    {
+      "id": "d",
+      "text": "並列実行を強制する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`iter_mut` は各要素への可変参照を返すイテレータです。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch08-01-vectors.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "vector",
+    "iterator"
+  ]
+}

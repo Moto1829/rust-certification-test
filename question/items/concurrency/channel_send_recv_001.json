@@ -1,0 +1,32 @@
+{
+  "id": "channel_send_recv_001",
+  "question": "mpscチャネルの基本動作として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "送信側から受信側へ値を渡す"
+    },
+    {
+      "id": "b",
+      "text": "常に双方向通信"
+    },
+    {
+      "id": "c",
+      "text": "共有可変参照が必須"
+    },
+    {
+      "id": "d",
+      "text": "スレッド間では使えない"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "標準mpscは送信者から受信者へメッセージを渡します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch16-02-message-passing.html"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "concurrency",
+    "channel"
+  ]
+}

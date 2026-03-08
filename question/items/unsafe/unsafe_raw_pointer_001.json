@@ -1,0 +1,32 @@
+{
+  "id": "unsafe_raw_pointer_001",
+  "question": "生ポインタ（`*const T`, `*mut T`）の特徴として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "常に安全に参照できる"
+    },
+    {
+      "id": "b",
+      "text": "デリファレンスには `unsafe` が必要"
+    },
+    {
+      "id": "c",
+      "text": "nullを表せない"
+    },
+    {
+      "id": "d",
+      "text": "借用規則で完全管理される"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "生ポインタの参照外しは安全性を手動で担保する必要があります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch19-01-unsafe-rust.html"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "unsafe",
+    "raw-pointer"
+  ]
+}

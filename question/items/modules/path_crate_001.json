@@ -1,0 +1,32 @@
+{
+  "id": "path_crate_001",
+  "question": "クレートルートからの絶対パスで使うキーワードはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`crate`"
+    },
+    {
+      "id": "b",
+      "text": "`root`"
+    },
+    {
+      "id": "c",
+      "text": "`self`"
+    },
+    {
+      "id": "d",
+      "text": "`mod`"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`crate::` でクレートルート基準のパスになります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "module",
+    "path"
+  ]
+}

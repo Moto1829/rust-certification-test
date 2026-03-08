@@ -1,0 +1,17 @@
+{
+  "id": "trait_std_iterator_001",
+  "question": "`Iterator` トレイトに関する説明として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "必須実装メソッドは `collect` である" },
+    { "id": "b", "text": "`next()` が `Option<Item>` を返し、要素列を順に生成する" },
+    { "id": "c", "text": "すべてのイテレータは常に無限列である" },
+    { "id": "d", "text": "`Iterator` は `unsafe` コードでしか実装できない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`Iterator` の核は `next()` で、`Some(item)` を返して進み、終端で `None` を返します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch13-02-iterators.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["trait", "iterator", "standard-trait"]
+}

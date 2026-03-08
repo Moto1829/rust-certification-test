@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.com/question/quiz.schema.json",
-  "title": "Rust Certification Quiz Dataset",
+  "title": "Rust言語検定 クイズデータセット",
   "type": "array",
   "items": {
     "$ref": "#/$defs/quizItem"

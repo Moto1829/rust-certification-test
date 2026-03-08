@@ -1,0 +1,32 @@
+{
+  "id": "generic_struct_001",
+  "question": "ジェネリック構造体 `struct Point<T>` の利点として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "異なる具体型で再利用できる"
+    },
+    {
+      "id": "b",
+      "text": "型チェックを無効化できる"
+    },
+    {
+      "id": "c",
+      "text": "実行時のみ型が決まる"
+    },
+    {
+      "id": "d",
+      "text": "必ずヒープ確保される"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "ジェネリクスにより複数型で再利用可能です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch10-01-syntax.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "generics",
+    "struct"
+  ]
+}

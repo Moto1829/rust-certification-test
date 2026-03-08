@@ -1,0 +1,32 @@
+{
+  "id": "await_points_001",
+  "question": "`await` ポイントで起きることとして適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "タスクが一時停止し、再開可能な状態になる"
+    },
+    {
+      "id": "b",
+      "text": "必ずスレッドが増える"
+    },
+    {
+      "id": "c",
+      "text": "所有権チェックが無効になる"
+    },
+    {
+      "id": "d",
+      "text": "同期関数へ変換される"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`await` で中断/再開可能な状態機械として進行します。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/01_getting_started/04_async_await_primer.html"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "async",
+    "await"
+  ]
+}

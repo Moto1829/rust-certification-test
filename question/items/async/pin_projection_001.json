@@ -1,0 +1,34 @@
+{
+  "id": "pin_projection_001",
+  "question": "Pinを扱う際に気をつける点として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "内部フィールドへの移動を伴う操作で不変条件を壊さない"
+    },
+    {
+      "id": "b",
+      "text": "Pinは常に不要"
+    },
+    {
+      "id": "c",
+      "text": "Pinで借用規則がなくなる"
+    },
+    {
+      "id": "d",
+      "text": "Pinはスタックで使えない"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Pinの主眼は移動禁止前提の安全性維持です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch19-01-unsafe-rust.html",
+    "https://rust-lang.github.io/async-book/02_execution/02_future.html",
+    "https://www.lurklurk.org/effective-rust/borrows.html"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "pin",
+    "safety"
+  ]
+}

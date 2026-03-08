@@ -1,0 +1,32 @@
+{
+  "id": "match_guard_001",
+  "question": "`match` のガード条件（`if`）の用途として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "パターン一致後に追加条件を付ける"
+    },
+    {
+      "id": "b",
+      "text": "所有権チェックを無効化する"
+    },
+    {
+      "id": "c",
+      "text": "`match` を式でなく文に変える"
+    },
+    {
+      "id": "d",
+      "text": "`_` パターンを禁止する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "マッチガードはパターン一致後の追加判定に使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch06-02-match.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "match",
+    "guard"
+  ]
+}

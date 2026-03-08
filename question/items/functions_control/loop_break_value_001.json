@@ -1,0 +1,32 @@
+{
+  "id": "loop_break_value_001",
+  "question": "Rustの `loop` から値を返す方法として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`continue value` を使う"
+    },
+    {
+      "id": "b",
+      "text": "`break value` を使う"
+    },
+    {
+      "id": "c",
+      "text": "`return` でしか返せない"
+    },
+    {
+      "id": "d",
+      "text": "値を返すことはできない"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`loop` は `break` に値を渡すことで式として値を返せます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch03-05-control-flow.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "control-flow",
+    "loop"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "shadowing_001",
+  "question": "シャドーイング（`let x = ...` の再定義）の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "同じスコープで型を変えて再束縛できる"
+    },
+    {
+      "id": "b",
+      "text": "可変変数にしか使えない"
+    },
+    {
+      "id": "c",
+      "text": "コンパイルエラーになる"
+    },
+    {
+      "id": "d",
+      "text": "`mut` と常に同じ効果"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "シャドーイングは新しい束縛を作るため、型を変えることも可能です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch03-01-variables-and-mutability.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "binding",
+    "shadowing"
+  ]
+}

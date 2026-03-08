@@ -1,0 +1,32 @@
+{
+  "id": "array_tuple_001",
+  "question": "配列 `[T; N]` とタプル `(T, U)` の違いとして正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "配列は同種要素、タプルは異種要素を持てる"
+    },
+    {
+      "id": "b",
+      "text": "タプルは長さ固定ではない"
+    },
+    {
+      "id": "c",
+      "text": "配列は型を持たない"
+    },
+    {
+      "id": "d",
+      "text": "両者に違いはない"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "配列は同じ型の要素を固定長で持ち、タプルは異なる型を持てます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch03-02-data-types.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "array",
+    "tuple"
+  ]
+}

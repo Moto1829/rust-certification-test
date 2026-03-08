@@ -1,0 +1,33 @@
+{
+  "id": "vector_get_001",
+  "question": "`vec.get(i)` の利点として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "範囲外アクセス時に `Option` を返せる"
+    },
+    {
+      "id": "b",
+      "text": "常に panic する"
+    },
+    {
+      "id": "c",
+      "text": "所有権を移動する"
+    },
+    {
+      "id": "d",
+      "text": "インデックス不要"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`get` は安全なアクセス手段として `Option` を返します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch08-01-vectors.html",
+    "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.get"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "vector",
+    "option"
+  ]
+}

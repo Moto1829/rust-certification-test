@@ -1,0 +1,32 @@
+{
+  "id": "pattern_ignore_001",
+  "question": "パターン中の `_` の意味として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "その値を無視する"
+    },
+    {
+      "id": "b",
+      "text": "値を必ず保存する"
+    },
+    {
+      "id": "c",
+      "text": "型変換する"
+    },
+    {
+      "id": "d",
+      "text": "panicを発生"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`_` は不要な値を捨てるプレースホルダです。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch18-03-pattern-syntax.html#%E5%85%A8%E4%BD%93%E3%82%92%E7%84%A1%E8%A6%96%E3%81%99%E3%82%8B-_"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "pattern",
+    "underscore"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "trait_std_deref_001",
+  "question": "`Deref` トレイトの効果として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "ヒープ確保を自動で最適化する" },
+    { "id": "b", "text": "スマートポインタから参照先型へのデリファレンスを提供する" },
+    { "id": "c", "text": "所有権ルールを無効化する" },
+    { "id": "d", "text": "すべての型に暗黙実装される" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`Deref` を実装すると `*` 演算子や deref coercion によって参照先型として扱える場面が増えます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch15-02-deref.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["trait", "deref", "standard-trait"]
+}

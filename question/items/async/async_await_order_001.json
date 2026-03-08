@@ -1,0 +1,32 @@
+{
+  "id": "async_await_order_001",
+  "question": "`await` の評価順に関する説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`await` は常に別スレッドで並列実行される"
+    },
+    {
+      "id": "b",
+      "text": "単純に順に `await` すると直列的に待機する"
+    },
+    {
+      "id": "c",
+      "text": "`await` はFutureを即完了させる"
+    },
+    {
+      "id": "d",
+      "text": "`await` は所有権を無視する"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "順次 `await` は前の完了を待って次へ進みます。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/01_getting_started/04_async_await_primer.html"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "async",
+    "await"
+  ]
+}

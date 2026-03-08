@@ -7,12 +7,17 @@ const outputPath = path.join(projectRoot, "docs", "question-data.js");
 
 const indexText = await readFile(indexPath, "utf-8");
 const indexData = JSON.parse(indexText);
+const categoryById = new Map(indexData.items.map((item) => [item.id, item.category ?? "uncategorized"]));
 
 const questions = await Promise.all(
   indexData.items.map(async (item) => {
     const itemPath = path.join(projectRoot, item.path);
     const itemText = await readFile(itemPath, "utf-8");
-    return JSON.parse(itemText);
+    const question = JSON.parse(itemText);
+    return {
+      ...question,
+      category: categoryById.get(question.id) ?? "uncategorized"
+    };
   })
 );
 

@@ -1,5 +1,5 @@
-# rust-certification-test
-Rust-lang certification test tool
+# Rust言語検定
+Rust言語の学習向け検定クイズツール
 
 ## 概要
 このプロジェクトではRust言語の学習用にRust言語に関するクイズを出すツールを作成します。
@@ -14,8 +14,11 @@ Rust-lang certification test tool
 以下のサイトから出題します。(都度追加します。)
 
 - https://doc.rust-jp.rs/book-ja/
+  - github: https://github.com/rust-lang-ja/book-ja
 - https://www.lurklurk.org/effective-rust/
+  - github: https://github.com/dx13/effective-rust
 - https://rust-lang.github.io/async-book/
+  - github: https://github.com/rust-lang/async-book
 
 ## 出題仕様
 
@@ -38,7 +41,7 @@ Rust-lang certification test tool
 
 ## 問題データ構成
 
-- 問題は1問ごとに `question/items/<id>.json` へ配置します。
+- 問題は1問ごとに `question/items/<category>/<id>.json` へ配置します。
 - 問題一覧は `question/index.json` で管理します（`npm run sync:index` で自動更新）。
 - 難易度は `beginner` / `intermediate` / `advanced` を使用します。
 - 難易度の判定基準は `question/difficulty-guidelines.md` を参照します。
@@ -81,6 +84,7 @@ npm run dev
 
 - Finderで開く場合は、プロジェクトルートの `index.html` を開いてください。
 - 問題データだけ検証したい場合は `npm run validate:questions` を実行してください。
+- 出典リンク品質だけ検証したい場合は `npm run validate:sources` を実行してください。
 - 問題品質レポートを出す場合は `npm run report:questions` を実行してください（`reports/question-report.md` を生成）。
 
 ## 問題追加フロー
@@ -88,10 +92,10 @@ npm run dev
 1. ひな形ファイルを作成
 
 ```bash
-npm run new:question -- ownership_move_002 beginner
+npm run new:question -- --id q0106 --category-dir ownership
 ```
 
-2. 生成された `question/items/<id>.json` を編集
+2. 生成された `question/items/<category>/<id>.json` を編集
 
 3. インデックス同期と検証
 

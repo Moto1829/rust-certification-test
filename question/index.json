@@ -1,425 +1,811 @@
 {
-  "version": 1,
+  "generatedAt": "2026-03-08T10:22:06.292Z",
+  "count": 115,
   "items": [
     {
       "id": "arc_mutex_001",
-      "path": "question/items/arc_mutex_001.json"
+      "path": "question/items/concurrency/arc_mutex_001.json",
+      "title": "複数スレッドから可変な共有データに安全にアクセスする典型的な組み合わせはどれですか？",
+      "category": "concurrency",
+      "difficulty": "advanced"
     },
     {
       "id": "arc_rc_diff_001",
-      "path": "question/items/arc_rc_diff_001.json"
+      "path": "question/items/concurrency/arc_rc_diff_001.json",
+      "title": "`Rc<T>` と `Arc<T>` の違いとして正しいものはどれですか？",
+      "category": "concurrency",
+      "difficulty": "advanced"
     },
     {
       "id": "array_tuple_001",
-      "path": "question/items/array_tuple_001.json"
+      "path": "question/items/types_collections/array_tuple_001.json",
+      "title": "配列 `[T; N]` とタプル `(T, U)` の違いとして正しいものはどれですか？",
+      "category": "types_collections",
+      "difficulty": "beginner"
     },
     {
       "id": "async_await_order_001",
-      "path": "question/items/async_await_order_001.json"
+      "path": "question/items/async/async_await_order_001.json",
+      "title": "`await` の評価順に関する説明として正しいものはどれですか？",
+      "category": "async",
+      "difficulty": "advanced"
     },
     {
       "id": "async_await_ownership_001",
-      "path": "question/items/async_await_ownership_001.json"
+      "path": "question/items/async/async_await_ownership_001.json",
+      "title": "`async fn` 内で値の借用をまたいで `await` する際に注意すべき点として適切なのはどれですか？",
+      "category": "async",
+      "difficulty": "advanced"
     },
     {
       "id": "async_beginner_await_001",
-      "path": "question/items/async_beginner_await_001.json"
+      "path": "question/items/async/async_beginner_await_001.json",
+      "title": "`await` の役割として最も適切なのはどれですか？",
+      "category": "async",
+      "difficulty": "beginner"
     },
     {
       "id": "async_beginner_concept_001",
-      "path": "question/items/async_beginner_concept_001.json"
+      "path": "question/items/async/async_beginner_concept_001.json",
+      "title": "Rustの `async`/`await` の基本的な目的として最も適切なのはどれですか？",
+      "category": "async",
+      "difficulty": "beginner"
     },
     {
       "id": "async_beginner_future_001",
-      "path": "question/items/async_beginner_future_001.json"
+      "path": "question/items/async/async_beginner_future_001.json",
+      "title": "`async fn` を呼び出した直後に得られるものはどれですか？",
+      "category": "async",
+      "difficulty": "beginner"
     },
     {
       "id": "async_beginner_nonblocking_001",
-      "path": "question/items/async_beginner_nonblocking_001.json"
+      "path": "question/items/async/async_beginner_nonblocking_001.json",
+      "title": "非同期処理の利点として正しいものはどれですか？",
+      "category": "async",
+      "difficulty": "beginner"
     },
     {
       "id": "async_beginner_runtime_001",
-      "path": "question/items/async_beginner_runtime_001.json"
+      "path": "question/items/async/async_beginner_runtime_001.json",
+      "title": "RustでFutureを進めるために一般に必要なものはどれですか？",
+      "category": "async",
+      "difficulty": "beginner"
     },
     {
       "id": "async_cancel_001",
-      "path": "question/items/async_cancel_001.json"
+      "path": "question/items/async/async_cancel_001.json",
+      "title": "Futureのキャンセルに関する説明として適切なのはどれですか？",
+      "category": "async",
+      "difficulty": "advanced"
     },
     {
       "id": "async_future_poll_001",
-      "path": "question/items/async_future_poll_001.json"
+      "path": "question/items/async/async_future_poll_001.json",
+      "title": "`Future` の実行モデルについて最も適切な説明はどれですか？",
+      "category": "async",
+      "difficulty": "advanced"
     },
     {
       "id": "async_join_001",
-      "path": "question/items/async_join_001.json"
+      "path": "question/items/async/async_join_001.json",
+      "title": "複数の非同期処理を同時に待機する目的で使われるアプローチとして適切なのはどれですか？",
+      "category": "async",
+      "difficulty": "advanced"
     },
     {
       "id": "async_pin_001",
-      "path": "question/items/async_pin_001.json"
+      "path": "question/items/async/async_pin_001.json",
+      "title": "`Pin` が必要になる主な理由として最も適切なのはどれですか？",
+      "category": "async",
+      "difficulty": "advanced"
     },
     {
       "id": "async_runtime_001",
-      "path": "question/items/async_runtime_001.json"
+      "path": "question/items/async/async_runtime_001.json",
+      "title": "`async fn` を実行するために通常必要なものはどれですか？",
+      "category": "async",
+      "difficulty": "advanced"
     },
     {
       "id": "async_stream_001",
-      "path": "question/items/async_stream_001.json"
+      "path": "question/items/async/async_stream_001.json",
+      "title": "非同期ストリーム処理で重要な観点として適切なのはどれですか？",
+      "category": "async",
+      "difficulty": "advanced"
     },
     {
       "id": "await_points_001",
-      "path": "question/items/await_points_001.json"
+      "path": "question/items/async/await_points_001.json",
+      "title": "`await` ポイントで起きることとして適切なのはどれですか？",
+      "category": "async",
+      "difficulty": "advanced"
     },
     {
       "id": "borrow_checker_scope_001",
-      "path": "question/items/borrow_checker_scope_001.json"
+      "path": "question/items/borrow/borrow_checker_scope_001.json",
+      "title": "借用チェッカーに関する説明として最も適切なのはどれですか？",
+      "category": "borrow",
+      "difficulty": "intermediate"
     },
     {
       "id": "borrowing_mut_001",
-      "path": "question/items/borrowing_mut_001.json"
+      "path": "question/items/ownership/borrowing_mut_001.json",
+      "title": "可変参照 `&mut T` に関する説明として正しいものはどれですか？",
+      "category": "ownership",
+      "difficulty": "beginner"
     },
     {
       "id": "box_recursive_001",
-      "path": "question/items/box_recursive_001.json"
+      "path": "question/items/types_collections/box_recursive_001.json",
+      "title": "再帰的な型定義で `Box<T>` を使う理由として正しいものはどれですか？",
+      "category": "types_collections",
+      "difficulty": "intermediate"
     },
     {
       "id": "cargo_feature_001",
-      "path": "question/items/cargo_feature_001.json"
+      "path": "question/items/tooling_testing/cargo_feature_001.json",
+      "title": "Cargo feature の主な用途として適切なのはどれですか？",
+      "category": "tooling_testing",
+      "difficulty": "intermediate"
     },
     {
       "id": "cargo_test_filter_001",
-      "path": "question/items/cargo_test_filter_001.json"
+      "path": "question/items/tooling_testing/cargo_test_filter_001.json",
+      "title": "`cargo test` で特定テストだけ実行する方法として適切なのはどれですか？",
+      "category": "tooling_testing",
+      "difficulty": "intermediate"
     },
     {
       "id": "channel_send_recv_001",
-      "path": "question/items/channel_send_recv_001.json"
+      "path": "question/items/concurrency/channel_send_recv_001.json",
+      "title": "mpscチャネルの基本動作として正しいものはどれですか？",
+      "category": "concurrency",
+      "difficulty": "advanced"
     },
     {
       "id": "char_bytes_001",
-      "path": "question/items/char_bytes_001.json"
+      "path": "question/items/types_collections/char_bytes_001.json",
+      "title": "`chars()` と `bytes()` の違いとして正しいものはどれですか？",
+      "category": "types_collections",
+      "difficulty": "beginner"
     },
     {
       "id": "closure_capture_001",
-      "path": "question/items/closure_capture_001.json"
+      "path": "question/items/functions_control/closure_capture_001.json",
+      "title": "クロージャが環境をキャプチャする方法として存在するものはどれですか？",
+      "category": "functions_control",
+      "difficulty": "intermediate"
     },
     {
       "id": "closure_move_001",
-      "path": "question/items/closure_move_001.json"
+      "path": "question/items/functions_control/closure_move_001.json",
+      "title": "`move` クロージャの主な効果はどれですか？",
+      "category": "functions_control",
+      "difficulty": "intermediate"
     },
     {
       "id": "const_static_001",
-      "path": "question/items/const_static_001.json"
+      "path": "question/items/functions_control/const_static_001.json",
+      "title": "`const` と `static` の違いとして正しいものはどれですか？",
+      "category": "functions_control",
+      "difficulty": "intermediate"
     },
     {
       "id": "copy_trait_001",
-      "path": "question/items/copy_trait_001.json"
+      "path": "question/items/ownership/copy_trait_001.json",
+      "title": "`Copy` トレイトを実装する型の特徴はどれですか？",
+      "category": "ownership",
+      "difficulty": "beginner"
     },
     {
       "id": "crate_pub_001",
-      "path": "question/items/crate_pub_001.json"
+      "path": "question/items/modules/crate_pub_001.json",
+      "title": "`pub` を付ける効果として最も適切なのはどれですか？",
+      "category": "modules",
+      "difficulty": "intermediate"
     },
     {
       "id": "derive_debug_001",
-      "path": "question/items/derive_debug_001.json"
+      "path": "question/items/tooling_testing/derive_debug_001.json",
+      "title": "`#[derive(Debug)]` の目的として正しいものはどれですか？",
+      "category": "tooling_testing",
+      "difficulty": "beginner"
     },
     {
       "id": "doc_test_001",
-      "path": "question/items/doc_test_001.json"
+      "path": "question/items/tooling_testing/doc_test_001.json",
+      "title": "Rustのドキュメントテストの説明として正しいものはどれですか？",
+      "category": "tooling_testing",
+      "difficulty": "intermediate"
     },
     {
       "id": "drop_trait_001",
-      "path": "question/items/drop_trait_001.json"
+      "path": "question/items/ownership/drop_trait_001.json",
+      "title": "`Drop` トレイトの説明として最も適切なのはどれですか？",
+      "category": "ownership",
+      "difficulty": "intermediate"
     },
     {
       "id": "effective_api_001",
-      "path": "question/items/effective_api_001.json"
+      "path": "question/items/best_practices/effective_api_001.json",
+      "title": "有効なRust API設計の観点として適切なのはどれですか？",
+      "category": "best_practices",
+      "difficulty": "advanced"
     },
     {
       "id": "effective_error_message_001",
-      "path": "question/items/effective_error_message_001.json"
+      "path": "question/items/best_practices/effective_error_message_001.json",
+      "title": "良いエラーメッセージ設計の観点として適切なのはどれですか？",
+      "category": "best_practices",
+      "difficulty": "intermediate"
     },
     {
       "id": "effective_newtype_001",
-      "path": "question/items/effective_newtype_001.json"
+      "path": "question/items/best_practices/effective_newtype_001.json",
+      "title": "newtypeパターンの利点として適切なのはどれですか？",
+      "category": "best_practices",
+      "difficulty": "intermediate"
     },
     {
       "id": "enum_match_001",
-      "path": "question/items/enum_match_001.json"
+      "path": "question/items/enum/enum_match_001.json",
+      "title": "`match` 式の説明として正しいものはどれですか？",
+      "category": "enum",
+      "difficulty": "beginner"
     },
     {
       "id": "enum_option_map_001",
-      "path": "question/items/enum_option_map_001.json"
+      "path": "question/items/enum/enum_option_map_001.json",
+      "title": "`Option<T>` の `map` の説明として正しいものはどれですか？",
+      "category": "enum",
+      "difficulty": "intermediate"
     },
     {
       "id": "error_custom_001",
-      "path": "question/items/error_custom_001.json"
+      "path": "question/items/error_handling/error_custom_001.json",
+      "title": "独自エラー型を定義する利点として適切なのはどれですか？",
+      "category": "error_handling",
+      "difficulty": "intermediate"
     },
     {
       "id": "error_result_001",
-      "path": "question/items/error_result_001.json"
+      "path": "question/items/error_handling/error_result_001.json",
+      "title": "回復可能なエラー処理にRustで一般的に使う型はどれですか？",
+      "category": "error_handling",
+      "difficulty": "beginner"
     },
     {
       "id": "ffi_extern_001",
-      "path": "question/items/ffi_extern_001.json"
+      "path": "question/items/ffi/ffi_extern_001.json",
+      "title": "FFIで外部関数を宣言する際に使うキーワードはどれですか？",
+      "category": "ffi",
+      "difficulty": "advanced"
     },
     {
       "id": "function_return_tuple_001",
-      "path": "question/items/function_return_tuple_001.json"
+      "path": "question/items/function/function_return_tuple_001.json",
+      "title": "関数から複数値を返したいときの一般的手法はどれですか？",
+      "category": "function",
+      "difficulty": "beginner"
     },
     {
       "id": "future_poll_001",
-      "path": "question/items/future_poll_001.json"
+      "path": "question/items/async/future_poll_001.json",
+      "title": "`Future::poll` の戻り値として正しいものはどれですか？",
+      "category": "async",
+      "difficulty": "advanced"
     },
     {
       "id": "generic_fn_001",
-      "path": "question/items/generic_fn_001.json"
+      "path": "question/items/traits_generics/generic_fn_001.json",
+      "title": "ジェネリック関数 `fn f<T>(x: T)` の説明として正しいものはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
     },
     {
       "id": "generic_struct_001",
-      "path": "question/items/generic_struct_001.json"
+      "path": "question/items/traits_generics/generic_struct_001.json",
+      "title": "ジェネリック構造体 `struct Point<T>` の利点として適切なのはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
     },
     {
       "id": "hashmap_insert_001",
-      "path": "question/items/hashmap_insert_001.json"
+      "path": "question/items/types_collections/hashmap_insert_001.json",
+      "title": "`HashMap<K, V>` の `insert` に関する説明として正しいものはどれですか？",
+      "category": "types_collections",
+      "difficulty": "beginner"
     },
     {
       "id": "if_let_001",
-      "path": "question/items/if_let_001.json"
+      "path": "question/items/functions_control/if_let_001.json",
+      "title": "`if let` を使う主な利点として最も適切なのはどれですか？",
+      "category": "functions_control",
+      "difficulty": "beginner"
     },
     {
       "id": "impl_trait_return_001",
-      "path": "question/items/impl_trait_return_001.json"
+      "path": "question/items/traits_generics/impl_trait_return_001.json",
+      "title": "`-> impl Trait` の意味として正しいものはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
     },
     {
       "id": "iterator_enumerate_001",
-      "path": "question/items/iterator_enumerate_001.json"
+      "path": "question/items/iterator/iterator_enumerate_001.json",
+      "title": "`enumerate()` の戻り値の形式として正しいものはどれですか？",
+      "category": "iterator",
+      "difficulty": "intermediate"
     },
     {
       "id": "iterator_filter_001",
-      "path": "question/items/iterator_filter_001.json"
+      "path": "question/items/iterator/iterator_filter_001.json",
+      "title": "`iter().filter(...).map(...).collect()` のチェーンについて適切な説明はどれですか？",
+      "category": "iterator",
+      "difficulty": "advanced"
     },
     {
       "id": "iterator_into_iter_001",
-      "path": "question/items/iterator_into_iter_001.json"
+      "path": "question/items/iterator/iterator_into_iter_001.json",
+      "title": "`into_iter()` の説明として正しいものはどれですか？",
+      "category": "iterator",
+      "difficulty": "intermediate"
     },
     {
       "id": "iterator_map_collect_001",
-      "path": "question/items/iterator_map_collect_001.json"
+      "path": "question/items/iterator/iterator_map_collect_001.json",
+      "title": "`iter().map(...).collect()` の説明として正しいものはどれですか？",
+      "category": "iterator",
+      "difficulty": "intermediate"
     },
     {
       "id": "iterator_zip_001",
-      "path": "question/items/iterator_zip_001.json"
+      "path": "question/items/iterator/iterator_zip_001.json",
+      "title": "`zip()` の説明として正しいものはどれですか？",
+      "category": "iterator",
+      "difficulty": "intermediate"
     },
     {
       "id": "lifetime_annotation_001",
-      "path": "question/items/lifetime_annotation_001.json"
+      "path": "question/items/ownership/lifetime_annotation_001.json",
+      "title": "ライフタイム注釈が必要になる主な場面はどれですか？",
+      "category": "ownership",
+      "difficulty": "intermediate"
     },
     {
       "id": "lifetime_elision_001",
-      "path": "question/items/lifetime_elision_001.json"
+      "path": "question/items/ownership/lifetime_elision_001.json",
+      "title": "ライフタイム省略規則の目的として正しいものはどれですか？",
+      "category": "ownership",
+      "difficulty": "intermediate"
     },
     {
       "id": "lifetime_struct_001",
-      "path": "question/items/lifetime_struct_001.json"
+      "path": "question/items/ownership/lifetime_struct_001.json",
+      "title": "参照をフィールドに持つ構造体にライフタイムが必要な理由として正しいものはどれですか？",
+      "category": "ownership",
+      "difficulty": "intermediate"
     },
     {
       "id": "loop_break_value_001",
-      "path": "question/items/loop_break_value_001.json"
+      "path": "question/items/functions_control/loop_break_value_001.json",
+      "title": "Rustの `loop` から値を返す方法として正しいものはどれですか？",
+      "category": "functions_control",
+      "difficulty": "beginner"
     },
     {
       "id": "macro_vec_001",
-      "path": "question/items/macro_vec_001.json"
+      "path": "question/items/macro/macro_vec_001.json",
+      "title": "`vec![1, 2, 3]` のような書き方の分類として正しいものはどれですか？",
+      "category": "macro",
+      "difficulty": "intermediate"
     },
     {
       "id": "match_binding_001",
-      "path": "question/items/match_binding_001.json"
+      "path": "question/items/functions_control/match_binding_001.json",
+      "title": "`match` で `value @ pattern` を使う目的として適切なのはどれですか？",
+      "category": "functions_control",
+      "difficulty": "intermediate"
     },
     {
       "id": "match_exhaustive_001",
-      "path": "question/items/match_exhaustive_001.json"
+      "path": "question/items/functions_control/match_exhaustive_001.json",
+      "title": "`match` がコンパイル時に要求する性質はどれですか？",
+      "category": "functions_control",
+      "difficulty": "beginner"
     },
     {
       "id": "match_guard_001",
-      "path": "question/items/match_guard_001.json"
+      "path": "question/items/functions_control/match_guard_001.json",
+      "title": "`match` のガード条件（`if`）の用途として適切なのはどれですか？",
+      "category": "functions_control",
+      "difficulty": "intermediate"
     },
     {
       "id": "module_super_001",
-      "path": "question/items/module_super_001.json"
+      "path": "question/items/modules/module_super_001.json",
+      "title": "モジュール内で親モジュール参照に使うキーワードはどれですか？",
+      "category": "modules",
+      "difficulty": "intermediate"
     },
     {
       "id": "module_use_001",
-      "path": "question/items/module_use_001.json"
+      "path": "question/items/modules/module_use_001.json",
+      "title": "`use` 文の主な目的として正しいものはどれですか？",
+      "category": "modules",
+      "difficulty": "intermediate"
     },
     {
       "id": "mutex_lock_001",
-      "path": "question/items/mutex_lock_001.json"
+      "path": "question/items/concurrency/mutex_lock_001.json",
+      "title": "`Mutex<T>` の `lock()` の戻り値を扱う際の基本として正しいものはどれですか？",
+      "category": "concurrency",
+      "difficulty": "advanced"
     },
     {
       "id": "mutex_poison_001",
-      "path": "question/items/mutex_poison_001.json"
+      "path": "question/items/concurrency/mutex_poison_001.json",
+      "title": "Mutexの毒化（poisoning）に関する説明として正しいものはどれですか？",
+      "category": "concurrency",
+      "difficulty": "advanced"
     },
     {
       "id": "option_match_001",
-      "path": "question/items/option_match_001.json"
+      "path": "question/items/error_handling/option_match_001.json",
+      "title": "`Option<T>` から値を安全に取り出す方法として適切なのはどれですか？",
+      "category": "error_handling",
+      "difficulty": "beginner"
     },
     {
       "id": "option_unwrap_or_001",
-      "path": "question/items/option_unwrap_or_001.json"
+      "path": "question/items/error_handling/option_unwrap_or_001.json",
+      "title": "`unwrap_or(default)` の説明として正しいものはどれですか？",
+      "category": "error_handling",
+      "difficulty": "beginner"
     },
     {
       "id": "ownership_borrow_001",
-      "path": "question/items/ownership_borrow_001.json"
+      "path": "question/items/ownership/ownership_borrow_001.json",
+      "title": "次のうち、所有権をムーブせずに値へアクセスする方法として最も適切なのはどれですか？",
+      "category": "ownership",
+      "difficulty": "beginner"
     },
     {
       "id": "ownership_clone_001",
-      "path": "question/items/ownership_clone_001.json"
+      "path": "question/items/ownership/ownership_clone_001.json",
+      "title": "`String` の値を元の変数でも引き続き使いたい場合、最も適切な方法はどれですか？",
+      "category": "ownership",
+      "difficulty": "beginner"
     },
     {
       "id": "ownership_deref_001",
-      "path": "question/items/ownership_deref_001.json"
+      "path": "question/items/ownership/ownership_deref_001.json",
+      "title": "`*` によるデリファレンス演算の説明として正しいものはどれですか？",
+      "category": "ownership",
+      "difficulty": "beginner"
     },
     {
       "id": "ownership_function_001",
-      "path": "question/items/ownership_function_001.json"
+      "path": "question/items/ownership/ownership_function_001.json",
+      "title": "関数に `String` を値渡しした後の元変数の扱いとして正しいものはどれですか？",
+      "category": "ownership",
+      "difficulty": "beginner"
     },
     {
       "id": "ownership_move_001",
-      "path": "question/items/ownership_move_001.json"
+      "path": "question/items/ownership/ownership_move_001.json",
+      "title": "次のうち、所有権ムーブが発生するものはどれですか？",
+      "category": "ownership",
+      "difficulty": "beginner"
     },
     {
       "id": "ownership_slice_001",
-      "path": "question/items/ownership_slice_001.json"
+      "path": "question/items/ownership/ownership_slice_001.json",
+      "title": "`String` 全体の所有権を取らず、文字列の一部を扱いたいときに使う型はどれですか？",
+      "category": "ownership",
+      "difficulty": "beginner"
     },
     {
       "id": "path_crate_001",
-      "path": "question/items/path_crate_001.json"
+      "path": "question/items/modules/path_crate_001.json",
+      "title": "クレートルートからの絶対パスで使うキーワードはどれですか？",
+      "category": "modules",
+      "difficulty": "intermediate"
     },
     {
       "id": "pattern_ignore_001",
-      "path": "question/items/pattern_ignore_001.json"
+      "path": "question/items/pattern/pattern_ignore_001.json",
+      "title": "パターン中の `_` の意味として適切なのはどれですか？",
+      "category": "pattern",
+      "difficulty": "beginner"
     },
     {
       "id": "pattern_refutability_001",
-      "path": "question/items/pattern_refutability_001.json"
+      "path": "question/items/pattern/pattern_refutability_001.json",
+      "title": "反駁可能（refutable）パターンを使う場所として適切なのはどれですか？",
+      "category": "pattern",
+      "difficulty": "advanced"
     },
     {
       "id": "pin_projection_001",
-      "path": "question/items/pin_projection_001.json"
+      "path": "question/items/async/pin_projection_001.json",
+      "title": "Pinを扱う際に気をつける点として適切なのはどれですか？",
+      "category": "async",
+      "difficulty": "advanced"
     },
     {
       "id": "pin_unpin_001",
-      "path": "question/items/pin_unpin_001.json"
+      "path": "question/items/async/pin_unpin_001.json",
+      "title": "`Unpin` の説明として適切なのはどれですか？",
+      "category": "async",
+      "difficulty": "advanced"
     },
     {
       "id": "rc_refcell_001",
-      "path": "question/items/rc_refcell_001.json"
+      "path": "question/items/rc/rc_refcell_001.json",
+      "title": "単一スレッドで共有可変性を実現する定番の組み合わせはどれですか？",
+      "category": "rc",
+      "difficulty": "intermediate"
     },
     {
       "id": "result_and_then_001",
-      "path": "question/items/result_and_then_001.json"
+      "path": "question/items/error_handling/result_and_then_001.json",
+      "title": "`and_then` の用途として正しいものはどれですか？",
+      "category": "error_handling",
+      "difficulty": "intermediate"
     },
     {
       "id": "result_map_err_001",
-      "path": "question/items/result_map_err_001.json"
+      "path": "question/items/error_handling/result_map_err_001.json",
+      "title": "`Result<T, E>` の `map_err` の用途として適切なのはどれですか？",
+      "category": "error_handling",
+      "difficulty": "intermediate"
     },
     {
       "id": "result_question_mark_001",
-      "path": "question/items/result_question_mark_001.json"
+      "path": "question/items/error_handling/result_question_mark_001.json",
+      "title": "`?` 演算子の挙動として正しいものはどれですか？",
+      "category": "error_handling",
+      "difficulty": "advanced"
     },
     {
       "id": "send_bound_001",
-      "path": "question/items/send_bound_001.json"
+      "path": "question/items/concurrency/send_bound_001.json",
+      "title": "スレッドへ値を渡す際に関係する主要トレイトはどれですか？",
+      "category": "concurrency",
+      "difficulty": "advanced"
     },
     {
       "id": "send_sync_001",
-      "path": "question/items/send_sync_001.json"
+      "path": "question/items/concurrency/send_sync_001.json",
+      "title": "`Send` と `Sync` の説明として正しいものはどれですか？",
+      "category": "concurrency",
+      "difficulty": "advanced"
     },
     {
       "id": "shadowing_001",
-      "path": "question/items/shadowing_001.json"
+      "path": "question/items/shadowing/shadowing_001.json",
+      "title": "シャドーイング（`let x = ...` の再定義）の説明として正しいものはどれですか？",
+      "category": "shadowing",
+      "difficulty": "beginner"
     },
     {
       "id": "slice_array_001",
-      "path": "question/items/slice_array_001.json"
+      "path": "question/items/slice/slice_array_001.json",
+      "title": "配列スライス `&arr[..]` の説明として正しいものはどれですか？",
+      "category": "slice",
+      "difficulty": "beginner"
     },
     {
       "id": "slice_utf8_001",
-      "path": "question/items/slice_utf8_001.json"
+      "path": "question/items/slice/slice_utf8_001.json",
+      "title": "UTF-8文字列スライスで注意すべき点として適切なのはどれですか？",
+      "category": "slice",
+      "difficulty": "intermediate"
     },
     {
       "id": "string_format_001",
-      "path": "question/items/string_format_001.json"
+      "path": "question/items/types_collections/string_format_001.json",
+      "title": "`format!` マクロの説明として正しいものはどれですか？",
+      "category": "types_collections",
+      "difficulty": "beginner"
     },
     {
       "id": "string_vs_str_001",
-      "path": "question/items/string_vs_str_001.json"
+      "path": "question/items/types_collections/string_vs_str_001.json",
+      "title": "`String` と `&str` の違いとして正しいものはどれですか？",
+      "category": "types_collections",
+      "difficulty": "beginner"
     },
     {
       "id": "struct_update_001",
-      "path": "question/items/struct_update_001.json"
+      "path": "question/items/struct/struct_update_001.json",
+      "title": "構造体更新構文 `..old` の説明として正しいものはどれですか？",
+      "category": "struct",
+      "difficulty": "beginner"
     },
     {
       "id": "test_assert_001",
-      "path": "question/items/test_assert_001.json"
+      "path": "question/items/tooling_testing/test_assert_001.json",
+      "title": "Rustの単体テストで値の一致確認に一般的に使うマクロはどれですか？",
+      "category": "tooling_testing",
+      "difficulty": "beginner"
     },
     {
       "id": "thread_join_001",
-      "path": "question/items/thread_join_001.json"
+      "path": "question/items/thread/thread_join_001.json",
+      "title": "`JoinHandle::join()` の目的として正しいものはどれですか？",
+      "category": "thread",
+      "difficulty": "advanced"
     },
     {
       "id": "thread_spawn_move_001",
-      "path": "question/items/thread_spawn_move_001.json"
+      "path": "question/items/thread/thread_spawn_move_001.json",
+      "title": "`thread::spawn` で `move` クロージャをよく使う理由として適切なのはどれですか？",
+      "category": "thread",
+      "difficulty": "advanced"
     },
     {
       "id": "trait_bound_001",
-      "path": "question/items/trait_bound_001.json"
+      "path": "question/items/traits_generics/trait_bound_001.json",
+      "title": "`T: Display` のようなトレイト境界の意味として正しいものはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
     },
     {
       "id": "trait_default_impl_001",
-      "path": "question/items/trait_default_impl_001.json"
+      "path": "question/items/traits_generics/trait_default_impl_001.json",
+      "title": "トレイトのデフォルト実装について正しいものはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
     },
     {
       "id": "trait_impl_001",
-      "path": "question/items/trait_impl_001.json"
+      "path": "question/items/traits_generics/trait_impl_001.json",
+      "title": "トレイトの目的として最も適切なのはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
     },
     {
       "id": "trait_object_001",
-      "path": "question/items/trait_object_001.json"
+      "path": "question/items/traits_generics/trait_object_001.json",
+      "title": "トレイトオブジェクト `&dyn Trait` の特徴として正しいものはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "trait_std_asref_001",
+      "path": "question/items/traits_generics/trait_std_asref_001.json",
+      "title": "`AsRef<T>` トレイトの主な用途として正しいものはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "trait_std_clone_001",
+      "path": "question/items/traits_generics/trait_std_clone_001.json",
+      "title": "`Clone` トレイトの説明として最も適切なのはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "trait_std_default_001",
+      "path": "question/items/traits_generics/trait_std_default_001.json",
+      "title": "`Default` トレイトの主な用途として正しいものはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "trait_std_deref_001",
+      "path": "question/items/traits_generics/trait_std_deref_001.json",
+      "title": "`Deref` トレイトの効果として最も適切なのはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "trait_std_display_debug_001",
+      "path": "question/items/traits_generics/trait_std_display_debug_001.json",
+      "title": "`Display` と `Debug` の使い分けとして適切なのはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "trait_std_eq_ord_001",
+      "path": "question/items/traits_generics/trait_std_eq_ord_001.json",
+      "title": "`Ord` を実装したい型で通常あわせて必要になるトレイト群として最も適切なのはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "trait_std_from_into_001",
+      "path": "question/items/traits_generics/trait_std_from_into_001.json",
+      "title": "型変換トレイト `From<T>` と `Into<U>` の関係として正しいものはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "trait_std_hash_001",
+      "path": "question/items/traits_generics/trait_std_hash_001.json",
+      "title": "`HashMap` のキー型に求められる主要トレイトの組み合わせとして適切なのはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "trait_std_iterator_001",
+      "path": "question/items/traits_generics/trait_std_iterator_001.json",
+      "title": "`Iterator` トレイトに関する説明として最も適切なのはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "trait_std_send_sync_001",
+      "path": "question/items/traits_generics/trait_std_send_sync_001.json",
+      "title": "`Send` と `Sync` の関係として正しいものはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "advanced"
     },
     {
       "id": "tuple_destructure_001",
-      "path": "question/items/tuple_destructure_001.json"
+      "path": "question/items/types_collections/tuple_destructure_001.json",
+      "title": "タプルの分解（destructuring）の例として正しいものはどれですか？",
+      "category": "types_collections",
+      "difficulty": "beginner"
     },
     {
       "id": "unsafe_contract_001",
-      "path": "question/items/unsafe_contract_001.json"
+      "path": "question/items/unsafe/unsafe_contract_001.json",
+      "title": "`unsafe fn` を設計する際に重要な点として適切なのはどれですか？",
+      "category": "unsafe",
+      "difficulty": "advanced"
     },
     {
       "id": "unsafe_minimize_001",
-      "path": "question/items/unsafe_minimize_001.json"
+      "path": "question/items/unsafe/unsafe_minimize_001.json",
+      "title": "`unsafe` を扱う際の推奨方針として最も適切なのはどれですか？",
+      "category": "unsafe",
+      "difficulty": "advanced"
     },
     {
       "id": "unsafe_raw_pointer_001",
-      "path": "question/items/unsafe_raw_pointer_001.json"
+      "path": "question/items/unsafe/unsafe_raw_pointer_001.json",
+      "title": "生ポインタ（`*const T`, `*mut T`）の特徴として正しいものはどれですか？",
+      "category": "unsafe",
+      "difficulty": "advanced"
     },
     {
       "id": "vec_push_capacity_001",
-      "path": "question/items/vec_push_capacity_001.json"
+      "path": "question/items/types_collections/vec_push_capacity_001.json",
+      "title": "`Vec<T>` に `push` を繰り返したときに起こりうることとして正しいものはどれですか？",
+      "category": "types_collections",
+      "difficulty": "beginner"
     },
     {
       "id": "vector_get_001",
-      "path": "question/items/vector_get_001.json"
+      "path": "question/items/vector/vector_get_001.json",
+      "title": "`vec.get(i)` の利点として正しいものはどれですか？",
+      "category": "vector",
+      "difficulty": "beginner"
     },
     {
       "id": "vector_iter_mut_001",
-      "path": "question/items/vector_iter_mut_001.json"
+      "path": "question/items/vector/vector_iter_mut_001.json",
+      "title": "`iter_mut()` の説明として正しいものはどれですか？",
+      "category": "vector",
+      "difficulty": "beginner"
     },
     {
       "id": "where_clause_001",
-      "path": "question/items/where_clause_001.json"
+      "path": "question/items/traits_generics/where_clause_001.json",
+      "title": "`where` 句を使う主な理由として適切なのはどれですか？",
+      "category": "traits_generics",
+      "difficulty": "intermediate"
     },
     {
       "id": "while_let_001",
-      "path": "question/items/while_let_001.json"
+      "path": "question/items/while/while_let_001.json",
+      "title": "`while let` の用途として適切なのはどれですか？",
+      "category": "while",
+      "difficulty": "beginner"
     }
   ]
 }

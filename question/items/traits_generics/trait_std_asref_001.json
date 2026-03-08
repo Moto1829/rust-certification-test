@@ -1,0 +1,17 @@
+{
+  "id": "trait_std_asref_001",
+  "question": "`AsRef<T>` トレイトの主な用途として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "所有権を移して `T` を返す" },
+    { "id": "b", "text": "複数の入力型を参照 `&T` に統一して受け取る" },
+    { "id": "c", "text": "可変参照 `&mut T` だけを返す" },
+    { "id": "d", "text": "型間の暗黙変換を常に有効にする" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`AsRef<T>` は借用変換の共通インターフェースで、関数引数を柔軟に受ける際によく使います。",
+  "sources": [
+    "https://doc.rust-lang.org/std/convert/trait.AsRef.html#tymethod.as_ref"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["trait", "asref", "standard-trait"]
+}

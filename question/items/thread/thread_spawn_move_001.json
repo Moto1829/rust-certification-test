@@ -1,0 +1,32 @@
+{
+  "id": "thread_spawn_move_001",
+  "question": "`thread::spawn` で `move` クロージャをよく使う理由として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "親スレッド側の借用問題を避け、値をスレッドへ移動するため"
+    },
+    {
+      "id": "b",
+      "text": "実行を同期的にするため"
+    },
+    {
+      "id": "c",
+      "text": "`Send` を不要にするため"
+    },
+    {
+      "id": "d",
+      "text": "デバッグ情報を消すため"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "別スレッドで使う値を安全に渡すために `move` が有効です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-01-what-is-ownership.html"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "thread",
+    "move"
+  ]
+}

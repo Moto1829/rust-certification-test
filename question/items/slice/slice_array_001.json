@@ -1,0 +1,32 @@
+{
+  "id": "slice_array_001",
+  "question": "配列スライス `&arr[..]` の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "配列全体への借用ビューを作る"
+    },
+    {
+      "id": "b",
+      "text": "配列をコピーして新規作成する"
+    },
+    {
+      "id": "c",
+      "text": "配列長を変更する"
+    },
+    {
+      "id": "d",
+      "text": "所有権を奪う"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "スライスは元データを借用して範囲を参照します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-03-slices.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "slice",
+    "array"
+  ]
+}

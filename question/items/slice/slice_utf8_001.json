@@ -1,0 +1,32 @@
+{
+  "id": "slice_utf8_001",
+  "question": "UTF-8文字列スライスで注意すべき点として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "常に1文字=1バイト"
+    },
+    {
+      "id": "b",
+      "text": "不正なバイト境界でのスライスはパニックの原因になる"
+    },
+    {
+      "id": "c",
+      "text": "`String` はUTF-16で保持される"
+    },
+    {
+      "id": "d",
+      "text": "スライスは常に所有権を持つ"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`String` はUTF-8なので、境界を誤ると無効なスライスになります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch08-02-strings.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "string",
+    "utf8"
+  ]
+}

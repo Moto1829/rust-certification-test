@@ -1,0 +1,32 @@
+{
+  "id": "hashmap_insert_001",
+  "question": "`HashMap<K, V>` の `insert` に関する説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "常に新しいキーだけを追加できる"
+    },
+    {
+      "id": "b",
+      "text": "既存キーがある場合は値を上書きする"
+    },
+    {
+      "id": "c",
+      "text": "戻り値は常に `bool`"
+    },
+    {
+      "id": "d",
+      "text": "キーは `Copy` 必須"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "同じキーが既にある場合、`insert` は値を更新します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch08-03-hash-maps.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "hashmap",
+    "collections"
+  ]
+}

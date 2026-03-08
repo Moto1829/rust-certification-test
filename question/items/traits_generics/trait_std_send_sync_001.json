@@ -1,0 +1,17 @@
+{
+  "id": "trait_std_send_sync_001",
+  "question": "`Send` と `Sync` の関係として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`Send` は `&T` をスレッド間共有できることを示す" },
+    { "id": "b", "text": "`Sync` は `T` を別スレッドへムーブできることだけを示す" },
+    { "id": "c", "text": "`T` が `Sync` なら `&T` は `Send` とみなせる" },
+    { "id": "d", "text": "両者は非同期処理では使われない" }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "`Sync` の定義は「`&T` が `Send` である」ことに対応し、共有参照のスレッド安全性を表します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch16-04-extensible-concurrency-sync-and-send.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["trait", "send", "sync", "standard-trait"]
+}

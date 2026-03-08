@@ -1,0 +1,17 @@
+{
+  "id": "trait_std_default_001",
+  "question": "`Default` トレイトの主な用途として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "型の比較順序を定義する" },
+    { "id": "b", "text": "型のデフォルト値を生成する" },
+    { "id": "c", "text": "必ず `new()` を自動実装する" },
+    { "id": "d", "text": "所有権を共有に変換する" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`Default` を実装すると `T::default()` で初期値を取得できます。オプション引数相当の初期化にもよく使われます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/appendix-03-derivable-traits.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["trait", "default", "standard-trait"]
+}

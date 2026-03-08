@@ -1,0 +1,32 @@
+{
+  "id": "async_runtime_001",
+  "question": "`async fn` を実行するために通常必要なものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Futureを駆動するランタイム"
+    },
+    {
+      "id": "b",
+      "text": "専用コンパイラ"
+    },
+    {
+      "id": "c",
+      "text": "GC"
+    },
+    {
+      "id": "d",
+      "text": "unsafeブロック"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Futureはランタイム等でポーリングされて進行します。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/01_getting_started/03_state_of_async_rust.html"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "async",
+    "runtime"
+  ]
+}

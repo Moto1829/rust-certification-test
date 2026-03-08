@@ -1,65 +1,78 @@
-import { access, mkdir, writeFile } from "node:fs/promises";
+#!/usr/bin/env node
+import { promises as fs } from "node:fs";
 import path from "node:path";
-
-const [, , idArg, difficultyArg] = process.argv;
-
-const usage =
-  "Usage: npm run new:question -- <id> <difficulty>\n" +
-  "  <id>: lowercase letters/numbers/_/- (e.g. ownership_move_002)\n" +
-  "  <difficulty>: beginner | intermediate | advanced";
-
-if (!idArg || !difficultyArg) {
-  console.error(usage);
-  process.exit(1);
-}
-
-const id = idArg.trim();
-const difficulty = difficultyArg.trim();
-const idPattern = /^[a-z0-9_-]+$/;
-const difficulties = new Set(["beginner", "intermediate", "advanced"]);
-
-if (!idPattern.test(id)) {
-  console.error("❌ invalid id format");
-  console.error(usage);
-  process.exit(1);
-}
-
-if (!difficulties.has(difficulty)) {
-  console.error("❌ invalid difficulty");
-  console.error(usage);
-  process.exit(1);
-}
 
 const projectRoot = process.cwd();
 const itemsDir = path.join(projectRoot, "question", "items");
-const filePath = path.join(itemsDir, `${id}.json`);
 
-await mkdir(itemsDir, { recursive: true });
-
-try {
-  await access(filePath);
-  console.error(`❌ file already exists: ${filePath}`);
-  process.exit(1);
-} catch {
+function usage() {
+  console.log("Usage: npm run new:question -- --id q0106 [--category-dir ownership]");
 }
 
-const template = {
-  id,
-  question: "ここに問題文を記入してください",
-  choices: [
-    { id: "a", text: "選択肢A" },
-    { id: "b", text: "選択肢B" },
-    { id: "c", text: "選択肢C" },
-    { id: "d", text: "選択肢D" }
-  ],
-  correctChoiceId: "a",
-  explanation: "ここに解説を記入してください",
-  sources: ["https://example.com"],
-  difficulty,
-  tags: ["topic"]
-};
+function parseArgs(argv) {
+  const args = {};
+  for (let i = 2; i < argv.length; i += 1) {
+    const token = argv[i];
+    if (token === "--id") {
+      args.id = argv[i + 1];
+      i += 1;
+    } else if (token === "--category-dir") {
+      args.categoryDir = argv[i + 1];
+      i += 1;
+    }
+  }
+  return args;
+}
 
-await writeFile(filePath, `${JSON.stringify(template, null, 2)}\n`, "utf-8");
+function sanitizeDirName(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9_-]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
 
-console.log(`✅ created: ${path.relative(projectRoot, filePath)}`);
-console.log("next: npm run sync:index && npm run validate:questions");
+async function main() {
+  const args = parseArgs(process.argv);
+
+  if (!args.id) {
+    usage();
+    throw new Error("--id is required");
+  }
+
+  const categoryDir = sanitizeDirName(args.categoryDir);
+  const targetDir = categoryDir ? path.join(itemsDir, categoryDir) : itemsDir;
+  const filePath = path.join(targetDir, `${args.id}.json`);
+
+  await fs.mkdir(targetDir, { recursive: true });
+
+  try {
+    await fs.access(filePath);
+    throw new Error(`${path.relative(projectRoot, filePath)} already exists`);
+  } catch {
+  }
+
+  const template = {
+    id: args.id,
+    difficulty: "beginner",
+    question: "ここに問題文を記載してください。",
+    choices: [
+      { id: "a", text: "選択肢1" },
+      { id: "b", text: "選択肢2" },
+      { id: "c", text: "選択肢3" },
+      { id: "d", text: "選択肢4" }
+    ],
+    correctChoiceId: "a",
+    explanation: "ここに解説を記載してください。",
+    tags: ["ownership"],
+    sources: ["https://doc.rust-lang.org/book/"]
+  };
+
+  await fs.writeFile(filePath, `${JSON.stringify(template, null, 2)}\n`, "utf8");
+  console.log(`Created ${path.relative(projectRoot, filePath)}`);
+}
+
+main().catch((error) => {
+  console.error("Failed to create question template:", error.message);
+  process.exitCode = 1;
+});

@@ -1,0 +1,32 @@
+{
+  "id": "iterator_into_iter_001",
+  "question": "`into_iter()` の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "常に参照イテレータを返す"
+    },
+    {
+      "id": "b",
+      "text": "コレクションの所有権を消費する場合がある"
+    },
+    {
+      "id": "c",
+      "text": "`iter()` と完全に同一"
+    },
+    {
+      "id": "d",
+      "text": "`Vec` では使えない"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`into_iter` は所有権を消費するイテレータになることがあります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch13-02-iterators.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "iterator",
+    "ownership"
+  ]
+}

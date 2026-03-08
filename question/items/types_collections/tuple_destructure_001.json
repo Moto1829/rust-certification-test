@@ -1,0 +1,32 @@
+{
+  "id": "tuple_destructure_001",
+  "question": "タプルの分解（destructuring）の例として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`let (x, y) = point;`"
+    },
+    {
+      "id": "b",
+      "text": "`let [x, y] = point;`（タプルに常に有効）"
+    },
+    {
+      "id": "c",
+      "text": "`let x.y = point;`"
+    },
+    {
+      "id": "d",
+      "text": "タプルは分解できない"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "タプルは `(a, b)` のようなパターンで分解できます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch18-03-pattern-syntax.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "tuple",
+    "pattern"
+  ]
+}

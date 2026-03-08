@@ -20,6 +20,13 @@ h1 {
   color: #4b5563;
 }
 
+.disclaimer {
+  margin-top: -4px;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
 .card {
   background: #fff;
   border: 1px solid #e5e7eb;
@@ -54,6 +61,18 @@ button {
 button:disabled {
   background: #93c5fd;
   cursor: not-allowed;
+}
+
+.subtle-btn {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.subtle-btn:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  border-color: #e5e7eb;
 }
 
 .quiz-header {
@@ -134,4 +153,30 @@ button:disabled {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 13px;
   white-space: pre;
+}
+
+.inline-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9em;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: #f3f4f6;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+#question-text code,
+.choice-btn code,
+.feedback p code,
+.feedback li code,
+.review-item p code,
+.review-item li code,
+code.inline-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9em;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: #f3f4f6;
+  color: #111827;
+  border: 1px solid #e5e7eb;
 }

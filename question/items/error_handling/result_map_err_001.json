@@ -1,0 +1,32 @@
+{
+  "id": "result_map_err_001",
+  "question": "`Result<T, E>` の `map_err` の用途として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "成功値だけを変換する"
+    },
+    {
+      "id": "b",
+      "text": "エラー値だけを変換する"
+    },
+    {
+      "id": "c",
+      "text": "`Result` を `Option` に変換する"
+    },
+    {
+      "id": "d",
+      "text": "必ず `panic!` する"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`map_err` はエラー側の型変換に使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "result",
+    "error"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "pin_unpin_001",
+  "question": "`Unpin` の説明として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "常にピン留めが必要な型である"
+    },
+    {
+      "id": "b",
+      "text": "ピン留め後も安全に移動できることを示す"
+    },
+    {
+      "id": "c",
+      "text": "`Copy` の別名である"
+    },
+    {
+      "id": "d",
+      "text": "非同期では無関係"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`Unpin` な型は `Pin` コンテキストでも移動が許容されます。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/02_execution/02_future.html",
+    "https://www.lurklurk.org/effective-rust/borrows.html"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "pin",
+    "unpin"
+  ]
+}

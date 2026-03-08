@@ -3,16 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rust Certification Test</title>
+    <title>Rust言語検定</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="container">
-      <h1>Rust Certification Test</h1>
+      <h1>Rust言語検定</h1>
       <p class="description">Rust学習向けの日本語クイズです。難易度と出題数を選んで開始できます。</p>
+      <p class="disclaimer">※ 本サイトは非公式であり、Rust Foundation / Rust Project 公式ではありません。</p>
 
       <section id="setup-section" class="card">
         <h2>出題設定</h2>
+        <div class="field-row">
+          <label for="category">カテゴリ</label>
+          <select id="category">
+            <option value="all">すべて</option>
+          </select>
+        </div>
+
         <div class="field-row">
           <label for="difficulty">難易度</label>
           <select id="difficulty">
@@ -47,11 +55,13 @@
         <div id="choices" class="choices"></div>
         <div id="feedback" class="feedback"></div>
         <button id="next-btn" type="button" class="hidden">次の問題へ</button>
+        <button id="quit-btn" type="button" class="subtle-btn">中断してトップへ戻る</button>
       </section>
 
       <section id="result-section" class="card hidden">
         <h2>結果</h2>
         <p id="result-summary"></p>
+        <button id="back-to-top-btn" type="button">トップへ戻る</button>
         <h3>振り返り</h3>
         <ul id="review-list" class="review-list"></ul>
       </section>

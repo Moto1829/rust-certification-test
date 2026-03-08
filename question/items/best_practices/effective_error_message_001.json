@@ -1,0 +1,33 @@
+{
+  "id": "effective_error_message_001",
+  "question": "良いエラーメッセージ設計の観点として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "原因と対処の手掛かりを含める"
+    },
+    {
+      "id": "b",
+      "text": "短い記号のみを返す"
+    },
+    {
+      "id": "c",
+      "text": "常に同じ文言"
+    },
+    {
+      "id": "d",
+      "text": "内部情報を完全非表示"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "利用者が原因特定できる情報を適切に含めるのが重要です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html",
+    "https://www.lurklurk.org/effective-rust/errors.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "error",
+    "message"
+  ]
+}

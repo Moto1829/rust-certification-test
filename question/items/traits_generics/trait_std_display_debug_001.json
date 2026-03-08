@@ -1,0 +1,18 @@
+{
+  "id": "trait_std_display_debug_001",
+  "question": "`Display` と `Debug` の使い分けとして適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`Display` は開発者向け詳細表示、`Debug` はユーザー向け表示" },
+    { "id": "b", "text": "`Display` は `{}`、`Debug` は `{:?}` で使い分ける" },
+    { "id": "c", "text": "`Debug` は常に手書き実装が必須" },
+    { "id": "d", "text": "両者は完全に同じ意味を持つ" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "通常 `Display` はユーザー向け整形、`Debug` は開発時の診断向けで、フォーマット指定子も `{}` と `{:?}` で異なります。",
+  "sources": [
+    "https://doc.rust-lang.org/std/fmt/trait.Display.html#tymethod.fmt",
+    "https://doc.rust-lang.org/std/fmt/trait.Debug.html#tymethod.fmt"
+  ],
+  "difficulty": "beginner",
+  "tags": ["trait", "display", "debug", "standard-trait"]
+}

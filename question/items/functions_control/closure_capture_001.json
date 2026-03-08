@@ -1,0 +1,32 @@
+{
+  "id": "closure_capture_001",
+  "question": "クロージャが環境をキャプチャする方法として存在するものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "借用・可変借用・ムーブ"
+    },
+    {
+      "id": "b",
+      "text": "常にムーブのみ"
+    },
+    {
+      "id": "c",
+      "text": "キャプチャは不可能"
+    },
+    {
+      "id": "d",
+      "text": "所有権モデルを無視する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "クロージャは状況に応じて借用/可変借用/ムーブを使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch13-01-closures.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "closure",
+    "capture"
+  ]
+}

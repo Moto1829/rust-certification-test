@@ -1,5 +1,35 @@
 type Difficulty = "beginner" | "intermediate" | "advanced";
 type DifficultyFilter = Difficulty | "all";
+type CategoryFilter = string | "all";
+
+const CATEGORY_LABELS: Record<string, string> = {
+  async: "非同期",
+  best_practices: "ベストプラクティス",
+  borrow: "借用",
+  concurrency: "並行処理",
+  enum: "列挙型",
+  error_handling: "エラーハンドリング",
+  ffi: "FFI",
+  function: "関数",
+  functions_control: "関数・制御構文",
+  iterator: "イテレータ",
+  macro: "マクロ",
+  modules: "モジュール",
+  ownership: "所有権",
+  pattern: "パターン",
+  rc: "Rc/RefCell",
+  shadowing: "シャドーイング",
+  slice: "スライス",
+  struct: "構造体",
+  thread: "スレッド",
+  tooling_testing: "ツール・テスト",
+  traits_generics: "トレイト・ジェネリクス",
+  types_collections: "型・コレクション",
+  uncategorized: "未分類",
+  unsafe: "unsafe",
+  vector: "ベクタ",
+  while: "while"
+};
 
 type Choice = {
   id: string;
@@ -8,6 +38,7 @@ type Choice = {
 
 type QuizItem = {
   id: string;
+  category: string;
   question: string;
   choices: Choice[];
   correctChoiceId: string;
@@ -34,6 +65,13 @@ const escapeHtml = (value: string): string =>
     .replace(/\"/g, "&quot;")
     .replace(/'/g, "&#39;");
 
+const renderInlineText = (escapedText: string): string => {
+  const inlineCodePattern = /`([^`]+?)`/g;
+  return escapedText.replace(inlineCodePattern, (_full, codeBody) => {
+    return `<code class="inline-code">${codeBody}</code>`;
+  });
+};
+
 const renderRichText = (input: string): string => {
   const escaped = escapeHtml(input);
   const codePattern = /```([\s\S]*?)```/g;
@@ -44,14 +82,14 @@ const renderRichText = (input: string): string => {
   while (match) {
     const [full, codeBody] = match;
     const start = match.index;
-    const plain = escaped.slice(lastIndex, start).replace(/\n/g, "<br>");
+    const plain = renderInlineText(escaped.slice(lastIndex, start)).replace(/\n/g, "<br>");
     chunks.push(plain);
     chunks.push(`<pre class="code-block"><code>${codeBody.trim()}</code></pre>`);
     lastIndex = start + full.length;
     match = codePattern.exec(escaped);
   }
 
-  chunks.push(escaped.slice(lastIndex).replace(/\n/g, "<br>"));
+  chunks.push(renderInlineText(escaped.slice(lastIndex)).replace(/\n/g, "<br>"));
   return chunks.join("");
 };
 
@@ -59,6 +97,7 @@ const setupSection = document.getElementById("setup-section") as HTMLElement;
 const quizSection = document.getElementById("quiz-section") as HTMLElement;
 const resultSection = document.getElementById("result-section") as HTMLElement;
 
+const categorySelect = document.getElementById("category") as HTMLSelectElement;
 const difficultySelect = document.getElementById("difficulty") as HTMLSelectElement;
 const questionCountSelect = document.getElementById("question-count") as HTMLSelectElement;
 const setupMessage = document.getElementById("setup-message") as HTMLParagraphElement;
@@ -70,9 +109,11 @@ const questionTextElement = document.getElementById("question-text") as HTMLHead
 const choicesElement = document.getElementById("choices") as HTMLDivElement;
 const feedbackElement = document.getElementById("feedback") as HTMLDivElement;
 const nextButton = document.getElementById("next-btn") as HTMLButtonElement;
+const quitButton = document.getElementById("quit-btn") as HTMLButtonElement;
 
 const resultSummary = document.getElementById("result-summary") as HTMLParagraphElement;
 const reviewList = document.getElementById("review-list") as HTMLUListElement;
+const backToTopButton = document.getElementById("back-to-top-btn") as HTMLButtonElement;
 
 let allQuestions: QuizItem[] = [];
 let currentQuestions: QuizItem[] = [];
@@ -101,8 +142,28 @@ const resolveChoiceText = (question: QuizItem, choiceId: string): string => {
   return choice ? choice.text : "(未選択)";
 };
 
+const renderChoiceText = (text: string): string => renderInlineText(escapeHtml(text));
+
 const renderSetupMessage = (message: string): void => {
   setupMessage.textContent = message;
+};
+
+const renderCategoryOptions = (): void => {
+  const categorySet = new Set(allQuestions.map((question) => question.category).filter(Boolean));
+  const categories = [...categorySet].sort((left, right) => left.localeCompare(right));
+  const previous = categorySelect.value || "all";
+
+  categorySelect.innerHTML = [
+    '<option value="all">すべて</option>',
+    ...categories.map((category) => `<option value="${category}">${CATEGORY_LABELS[category] ?? category}</option>`)
+  ].join("");
+
+  if (categories.includes(previous)) {
+    categorySelect.value = previous;
+    return;
+  }
+
+  categorySelect.value = "all";
 };
 
 const renderProgress = (): void => {
@@ -122,7 +183,7 @@ const renderFeedback = (question: QuizItem, selectedChoiceId: string): void => {
 
   feedbackElement.innerHTML = `
     <p><strong>${status}</strong></p>
-    <p>正答: ${correctText}</p>
+    <p>正答: ${renderChoiceText(correctText)}</p>
     <p>${explanation}</p>
     <ul>${sources}</ul>
   `;
@@ -172,7 +233,7 @@ const renderQuestion = (): void => {
   const choicesHtml = question.choices
     .map(
       (choice) =>
-        `<button type="button" class="choice-btn" data-choice-id="${choice.id}">${choice.id.toUpperCase()}. ${choice.text}</button>`
+        `<button type="button" class="choice-btn" data-choice-id="${choice.id}">${choice.id.toUpperCase()}. ${renderChoiceText(choice.text)}</button>`
     )
     .join("");
 
@@ -206,8 +267,8 @@ const renderReview = (): void => {
       return `
         <li class="review-item">
           <p><strong>${mark} Q${index + 1}. ${renderRichText(question.question)}</strong></p>
-          <p>あなたの回答: ${selectedText}</p>
-          <p>正答: ${correctText}</p>
+          <p>あなたの回答: ${renderChoiceText(selectedText)}</p>
+          <p>正答: ${renderChoiceText(correctText)}</p>
           <p>${renderRichText(question.explanation ?? "解説はありません。")}</p>
           <ul>${sources}</ul>
         </li>
@@ -230,6 +291,27 @@ const finishQuiz = (): void => {
   renderReview();
 };
 
+const backToTop = (message = ""): void => {
+  currentQuestions = [];
+  answers = [];
+  currentIndex = 0;
+  progressElement.textContent = "";
+  scorePreviewElement.textContent = "";
+  questionTextElement.innerHTML = "";
+  choicesElement.innerHTML = "";
+  feedbackElement.innerHTML = "";
+  nextButton.classList.add("hidden");
+
+  quizSection.classList.add("hidden");
+  resultSection.classList.add("hidden");
+  setupSection.classList.remove("hidden");
+  renderSetupMessage(message);
+};
+
+const quitQuiz = (): void => {
+  backToTop("クイズを中断しました。");
+};
+
 const nextQuestion = (): void => {
   if (answers.length <= currentIndex) {
     return;
@@ -244,17 +326,18 @@ const nextQuestion = (): void => {
   renderQuestion();
 };
 
-const selectQuestions = (difficulty: DifficultyFilter, count: number): QuizItem[] => {
+const selectQuestions = (category: CategoryFilter, difficulty: DifficultyFilter, count: number): QuizItem[] => {
   const filtered =
-    difficulty === "all"
+    category === "all"
       ? allQuestions
-      : allQuestions.filter((question) => question.difficulty === difficulty);
+      : allQuestions.filter((question) => question.category === category);
 
-  if (filtered.length < count) {
-    return [];
-  }
+  const filteredByDifficulty =
+    difficulty === "all"
+      ? filtered
+      : filtered.filter((question) => question.difficulty === difficulty);
 
-  return shuffle(filtered).slice(0, count);
+  return shuffle(filteredByDifficulty).slice(0, count);
 };
 
 const startQuiz = async (): Promise<void> => {
@@ -264,14 +347,16 @@ const startQuiz = async (): Promise<void> => {
 
     if (allQuestions.length === 0) {
       allQuestions = await loadQuestions();
+      renderCategoryOptions();
     }
 
+    const category = categorySelect.value as CategoryFilter;
     const difficulty = difficultySelect.value as DifficultyFilter;
     const count = Number(questionCountSelect.value);
-    const selected = selectQuestions(difficulty, count);
+    const selected = selectQuestions(category, difficulty, count);
 
     if (selected.length === 0) {
-      renderSetupMessage("選択条件で出題できる問題数が不足しています。難易度か出題数を変更してください。");
+      renderSetupMessage("選択したカテゴリ・難易度に該当する問題がありません。条件を変更してください。");
       return;
     }
 
@@ -291,6 +376,17 @@ const startQuiz = async (): Promise<void> => {
   }
 };
 
+const initializeSetup = async (): Promise<void> => {
+  try {
+    if (allQuestions.length === 0) {
+      allQuestions = await loadQuestions();
+    }
+    renderCategoryOptions();
+  } catch {
+    renderSetupMessage("問題データの読み込みに失敗しました。時間をおいて再試行してください。");
+  }
+};
+
 startButton.addEventListener("click", () => {
   void startQuiz();
 });
@@ -298,3 +394,13 @@ startButton.addEventListener("click", () => {
 nextButton.addEventListener("click", () => {
   nextQuestion();
 });
+
+backToTopButton.addEventListener("click", () => {
+  backToTop();
+});
+
+quitButton.addEventListener("click", () => {
+  quitQuiz();
+});
+
+void initializeSetup();

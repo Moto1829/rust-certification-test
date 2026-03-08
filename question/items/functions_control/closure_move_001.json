@@ -1,0 +1,32 @@
+{
+  "id": "closure_move_001",
+  "question": "`move` クロージャの主な効果はどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "キャプチャ値の所有権をクロージャへ移す"
+    },
+    {
+      "id": "b",
+      "text": "常に借用に変換する"
+    },
+    {
+      "id": "c",
+      "text": "型を固定する"
+    },
+    {
+      "id": "d",
+      "text": "高速化専用"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`move` はキャプチャを所有権移動にします。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-01-what-is-ownership.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "closure",
+    "move"
+  ]
+}

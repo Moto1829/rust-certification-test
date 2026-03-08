@@ -1,0 +1,33 @@
+{
+  "id": "option_unwrap_or_001",
+  "question": "`unwrap_or(default)` の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`Some` なら値、`None` ならデフォルトを返す"
+    },
+    {
+      "id": "b",
+      "text": "常にデフォルトを返す"
+    },
+    {
+      "id": "c",
+      "text": "`Result` にしか使えない"
+    },
+    {
+      "id": "d",
+      "text": "所有権を常に失う"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`Option` でデフォルト値を指定する基本メソッドです。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch06-01-defining-an-enum.html",
+    "https://doc.rust-lang.org/std/option/enum.Option.html#method.unwrap_or"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "option",
+    "default"
+  ]
+}

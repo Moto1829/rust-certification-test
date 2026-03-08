@@ -1,0 +1,32 @@
+{
+  "id": "effective_newtype_001",
+  "question": "newtypeパターンの利点として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "型安全性を高め、意味を明確化できる"
+    },
+    {
+      "id": "b",
+      "text": "メモリを必ず削減"
+    },
+    {
+      "id": "c",
+      "text": "トレイト実装不能になる"
+    },
+    {
+      "id": "d",
+      "text": "所有権を不要化"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "newtypeは意味的に異なる値を型で区別できます。",
+  "sources": [
+    "https://www.lurklurk.org/effective-rust/newtype.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "newtype",
+    "type-safety"
+  ]
+}

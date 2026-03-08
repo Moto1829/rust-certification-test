@@ -1,0 +1,17 @@
+{
+  "id": "trait_std_from_into_001",
+  "question": "型変換トレイト `From<T>` と `Into<U>` の関係として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "`Into<U>` を実装すると自動で `From<T>` も実装される" },
+    { "id": "b", "text": "`From<T> for U` を実装すると `Into<U> for T` が自動で使える" },
+    { "id": "c", "text": "どちらも標準ライブラリには存在しない" },
+    { "id": "d", "text": "両者はエラー処理専用トレイト" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "一般に `From<T> for U` を実装するのが推奨で、その結果として `Into<U> for T` が利用できます。",
+  "sources": [
+    "https://doc.rust-lang.org/std/convert/trait.From.html#tymethod.from"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["trait", "from", "into", "standard-trait"]
+}

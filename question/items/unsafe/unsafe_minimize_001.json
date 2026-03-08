@@ -1,0 +1,18 @@
+{
+  "id": "unsafe_minimize_001",
+  "question": "`unsafe` を扱う際の推奨方針として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "パフォーマンスのため可能な限り広い範囲で使う" },
+    { "id": "b", "text": "安全性コメントなしで使用し、テストで補う" },
+    { "id": "c", "text": "`unsafe` ブロックを最小化し、境界を明確にする" },
+    { "id": "d", "text": "標準ライブラリ内では `unsafe` は禁止されている" }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "`unsafe` は必要最小限に閉じ込め、前提条件と安全性境界を明確に保つのが重要です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch19-01-unsafe-rust.html",
+    "https://www.lurklurk.org/effective-rust/unsafe.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["unsafe", "best-practice"]
+}

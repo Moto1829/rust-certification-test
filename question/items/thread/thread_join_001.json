@@ -1,0 +1,33 @@
+{
+  "id": "thread_join_001",
+  "question": "`JoinHandle::join()` の目的として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "スレッド終了を待って結果を回収する"
+    },
+    {
+      "id": "b",
+      "text": "スレッドを強制再起動"
+    },
+    {
+      "id": "c",
+      "text": "所有権を共有化"
+    },
+    {
+      "id": "d",
+      "text": "mutexを解放"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`join` は子スレッドの終了待機と結果取得に使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch16-01-threads.html#join-%E3%83%8F%E3%83%B3%E3%83%89%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E5%85%A8%E3%81%A6%E3%81%AE%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89%E3%81%AE%E7%B5%82%E4%BA%86%E3%82%92%E5%BE%85%E3%81%A4",
+    "https://doc.rust-lang.org/std/thread/struct.JoinHandle.html#method.join"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "thread",
+    "join"
+  ]
+}

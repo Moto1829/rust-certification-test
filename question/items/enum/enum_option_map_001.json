@@ -1,0 +1,33 @@
+{
+  "id": "enum_option_map_001",
+  "question": "`Option<T>` の `map` の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`None` を `Some` に変換する"
+    },
+    {
+      "id": "b",
+      "text": "`Some` の値に関数を適用し、`None` はそのまま"
+    },
+    {
+      "id": "c",
+      "text": "常に `Result` を返す"
+    },
+    {
+      "id": "d",
+      "text": "可変参照が必須"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`map` は `Some` の中身を変換し、`None` は維持します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch06-01-defining-an-enum.html",
+    "https://doc.rust-lang.org/std/option/enum.Option.html#method.map"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "option",
+    "map"
+  ]
+}

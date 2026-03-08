@@ -1,0 +1,32 @@
+{
+  "id": "test_assert_001",
+  "question": "Rustの単体テストで値の一致確認に一般的に使うマクロはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`println!`"
+    },
+    {
+      "id": "b",
+      "text": "`assert_eq!`"
+    },
+    {
+      "id": "c",
+      "text": "`todo!`"
+    },
+    {
+      "id": "d",
+      "text": "`panic_any!`"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`assert_eq!` は期待値と実際値の一致確認でよく使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch11-01-writing-tests.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "test",
+    "assert"
+  ]
+}

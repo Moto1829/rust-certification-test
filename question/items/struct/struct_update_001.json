@@ -1,0 +1,32 @@
+{
+  "id": "struct_update_001",
+  "question": "構造体更新構文 `..old` の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "未指定フィールドを既存インスタンスから引き継ぐ"
+    },
+    {
+      "id": "b",
+      "text": "全フィールドをゼロ初期化する"
+    },
+    {
+      "id": "c",
+      "text": "privateフィールドも強制更新する"
+    },
+    {
+      "id": "d",
+      "text": "参照だけに使える"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "更新構文は一部フィールドだけ変更して新しい値を作るときに使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch05-01-defining-structs.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "struct",
+    "update-syntax"
+  ]
+}
