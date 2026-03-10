@@ -1,0 +1,17 @@
+{
+  "id": "borrow_scope_end_001",
+  "question": "不変参照 `r1`, `r2` の最後の使用後に、同じ値へ可変参照 `r3` を作れる理由として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "可変参照は不変参照より常に優先されるから" },
+    { "id": "b", "text": "参照の有効範囲は最後の使用位置までで、以降は借用が終了するから" },
+    { "id": "c", "text": "`mut` を付けると借用規則が無効化されるから" },
+    { "id": "d", "text": "コンパイラは参照の衝突をチェックしないから" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Rustでは参照の生存範囲を最後の使用位置までとして解析し、競合しない場合に後続の可変参照を許可します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["borrow", "scope", "nll"]
+}

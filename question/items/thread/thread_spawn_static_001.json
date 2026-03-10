@@ -1,0 +1,18 @@
+{
+  "id": "thread_spawn_static_001",
+  "question": "`thread::spawn` で渡すクロージャに `'static` 制約が問題になる理由として最も適切なのはどれですか？",
+  "choices": [
+    { "id": "a", "text": "新しいスレッドが呼び出し元スコープより長く生存する可能性があるから" },
+    { "id": "b", "text": "`'static` がないとCPUコアを利用できないから" },
+    { "id": "c", "text": "`'static` は常にヒープ確保を強制するから" },
+    { "id": "d", "text": "`'static` はデバッグビルド専用の制約だから" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "spawnしたスレッドは呼び出し元より長生きし得るため、短命な借用を持ち込まないよう `'static` が要求されます。",
+  "sources": [
+    "https://doc.rust-lang.org/std/thread/fn.spawn.html",
+    "https://doc.rust-jp.rs/book-ja/ch16-01-threads.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["thread", "spawn", "lifetime"]
+}

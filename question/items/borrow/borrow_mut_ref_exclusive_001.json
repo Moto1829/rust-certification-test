@@ -1,0 +1,17 @@
+{
+  "id": "borrow_mut_ref_exclusive_001",
+  "question": "同じ値に対する可変参照のルールとして正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "同一スコープで複数の可変参照を同時に作ってよい" },
+    { "id": "b", "text": "同一スコープでは可変参照は同時に1つだけ許可される" },
+    { "id": "c", "text": "可変参照と不変参照は常に同時に使える" },
+    { "id": "d", "text": "借用違反は実行時にのみ検出される" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "データ競合を防ぐため、同一スコープで同じ値への可変参照は同時に1つだけ許可されます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["borrow", "mutable-reference", "ownership"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "thread_panic_join_result_001",
+  "question": "子スレッドが `panic!` したとき、`JoinHandle::join()` の戻り値として正しい説明はどれですか？",
+  "choices": [
+    { "id": "a", "text": "常に `Ok(T)` を返す" },
+    { "id": "b", "text": "`Err` を返し、パニック情報を取得できる" },
+    { "id": "c", "text": "親スレッドも必ず即時終了する" },
+    { "id": "d", "text": "コンパイルエラーになり実行できない" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`join` は `Result` を返し、子スレッドがパニックした場合は `Err` になります。",
+  "sources": [
+    "https://doc.rust-lang.org/std/thread/struct.JoinHandle.html#method.join",
+    "https://doc.rust-jp.rs/book-ja/ch16-01-threads.html"
+  ],
+  "difficulty": "advanced",
+  "tags": ["thread", "join", "panic"]
+}

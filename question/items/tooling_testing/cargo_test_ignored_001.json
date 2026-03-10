@@ -1,0 +1,17 @@
+{
+  "id": "cargo_test_ignored_001",
+  "question": "`#[ignore]` を付けたテストについて、`cargo test` 実行時のデフォルト挙動として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "通常の `cargo test` では実行されない" },
+    { "id": "b", "text": "通常の `cargo test` で必ず最初に実行される" },
+    { "id": "c", "text": "`#[ignore]` はコンパイルエラーになる" },
+    { "id": "d", "text": "`#[ignore]` を付けるとテストは削除される" }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`#[ignore]` テストはデフォルトではスキップされ、必要時に `cargo test -- --ignored` で実行します。",
+  "sources": [
+    "https://doc.rust-lang.org/book/ch11-02-running-tests.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": ["cargo", "test", "ignore"]
+}

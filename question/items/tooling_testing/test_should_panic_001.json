@@ -1,0 +1,17 @@
+{
+  "id": "test_should_panic_001",
+  "question": "テスト関数に `#[should_panic]` を付けた場合の挙動として正しいものはどれですか？",
+  "choices": [
+    { "id": "a", "text": "panicしなければ成功、panicすれば失敗" },
+    { "id": "b", "text": "panicしたときに成功と判定される" },
+    { "id": "c", "text": "リリースビルドでのみ有効" },
+    { "id": "d", "text": "`Result` を返す関数では必ず無効" }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`#[should_panic]` はパニックすること自体を期待するテスト属性です。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch11-01-writing-tests.html"
+  ],
+  "difficulty": "beginner",
+  "tags": ["test", "panic", "attribute"]
+}

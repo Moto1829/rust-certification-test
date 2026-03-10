@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moto1829.github.io/rust-certification-test/sitemap.xml

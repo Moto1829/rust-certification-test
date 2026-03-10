@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-08T10:58:55.378Z",
-  "count": 151,
+  "generatedAt": "2026-03-09T12:08:02.744Z",
+  "count": 157,
   "items": [
     {
       "id": "arc_clone_shared_001",
@@ -136,6 +136,20 @@
       "difficulty": "intermediate"
     },
     {
+      "id": "borrow_mut_ref_exclusive_001",
+      "path": "question/items/borrow/borrow_mut_ref_exclusive_001.json",
+      "title": "同じ値に対する可変参照のルールとして正しいものはどれですか？",
+      "category": "borrow",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "borrow_scope_end_001",
+      "path": "question/items/borrow/borrow_scope_end_001.json",
+      "title": "不変参照 `r1`, `r2` の最後の使用後に、同じ値へ可変参照 `r3` を作れる理由として最も適切なのはどれですか？",
+      "category": "borrow",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "borrowing_mut_001",
       "path": "question/items/ownership/borrowing_mut_001.json",
       "title": "可変参照 `&mut T` に関する説明として正しいものはどれですか？",
@@ -160,6 +174,13 @@
       "id": "cargo_test_filter_001",
       "path": "question/items/tooling_testing/cargo_test_filter_001.json",
       "title": "`cargo test` で特定テストだけ実行する方法として適切なのはどれですか？",
+      "category": "tooling_testing",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "cargo_test_ignored_001",
+      "path": "question/items/tooling_testing/cargo_test_ignored_001.json",
+      "title": "`#[ignore]` を付けたテストについて、`cargo test` 実行時のデフォルト挙動として正しいものはどれですか？",
       "category": "tooling_testing",
       "difficulty": "intermediate"
     },
@@ -808,6 +829,13 @@
       "difficulty": "beginner"
     },
     {
+      "id": "test_should_panic_001",
+      "path": "question/items/tooling_testing/test_should_panic_001.json",
+      "title": "テスト関数に `#[should_panic]` を付けた場合の挙動として正しいものはどれですか？",
+      "category": "tooling_testing",
+      "difficulty": "beginner"
+    },
+    {
       "id": "thread_handle_drop_detach_001",
       "path": "question/items/thread/thread_handle_drop_detach_001.json",
       "title": "`JoinHandle` を `join()` せずにドロップした場合の説明として最も適切なのはどれですか？",
@@ -822,9 +850,23 @@
       "difficulty": "advanced"
     },
     {
+      "id": "thread_panic_join_result_001",
+      "path": "question/items/thread/thread_panic_join_result_001.json",
+      "title": "子スレッドが `panic!` したとき、`JoinHandle::join()` の戻り値として正しい説明はどれですか？",
+      "category": "thread",
+      "difficulty": "advanced"
+    },
+    {
       "id": "thread_spawn_move_001",
       "path": "question/items/thread/thread_spawn_move_001.json",
       "title": "`thread::spawn` で `move` クロージャをよく使う理由として適切なのはどれですか？",
+      "category": "thread",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "thread_spawn_static_001",
+      "path": "question/items/thread/thread_spawn_static_001.json",
+      "title": "`thread::spawn` で渡すクロージャに `'static` 制約が問題になる理由として最も適切なのはどれですか？",
       "category": "thread",
       "difficulty": "advanced"
     },
