@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-09T12:08:02.744Z",
-  "count": 157,
+  "generatedAt": "2026-03-12T13:14:47.338Z",
+  "count": 173,
   "items": [
     {
       "id": "arc_clone_shared_001",
@@ -283,6 +283,13 @@
       "difficulty": "intermediate"
     },
     {
+      "id": "effective_result_context_001",
+      "path": "question/items/best_practices/effective_result_context_001.json",
+      "title": "`Result` を返すAPIの設計で、調査しやすさの観点から有効な方針はどれですか？",
+      "category": "best_practices",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "enum_match_001",
       "path": "question/items/enum/enum_match_001.json",
       "title": "`match` 式の説明として正しいものはどれですか？",
@@ -339,9 +346,23 @@
       "difficulty": "advanced"
     },
     {
+      "id": "ffi_call_requires_unsafe_001",
+      "path": "question/items/ffi/ffi_call_requires_unsafe_001.json",
+      "title": "`extern` ブロックで宣言した外部関数を呼ぶときの原則として正しいものはどれですか？",
+      "category": "ffi",
+      "difficulty": "advanced"
+    },
+    {
       "id": "ffi_extern_001",
       "path": "question/items/ffi/ffi_extern_001.json",
       "title": "FFIで外部関数を宣言する際に使うキーワードはどれですか？",
+      "category": "ffi",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "ffi_no_mangle_001",
+      "path": "question/items/ffi/ffi_no_mangle_001.json",
+      "title": "Rust関数をC側から想定したシンボル名で呼び出しやすくするために使う属性として適切なのはどれですか？",
       "category": "ffi",
       "difficulty": "advanced"
     },
@@ -360,9 +381,23 @@
       "difficulty": "beginner"
     },
     {
+      "id": "function_never_type_001",
+      "path": "question/items/function/function_never_type_001.json",
+      "title": "関数の戻り値型 `!`（never type）の説明として正しいものはどれですか？",
+      "category": "function",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "function_return_tuple_001",
       "path": "question/items/function/function_return_tuple_001.json",
       "title": "関数から複数値を返したいときの一般的手法はどれですか？",
+      "category": "function",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "function_unit_return_001",
+      "path": "question/items/function/function_unit_return_001.json",
+      "title": "関数末尾の式に `;` を付けたときの影響として正しいものはどれですか？",
       "category": "function",
       "difficulty": "beginner"
     },
@@ -505,6 +540,20 @@
       "title": "Rustの `loop` から値を返す方法として正しいものはどれですか？",
       "category": "functions_control",
       "difficulty": "beginner"
+    },
+    {
+      "id": "macro_repeat_initializer_001",
+      "path": "question/items/macro/macro_repeat_initializer_001.json",
+      "title": "`vec![x; n]` の意味として正しいものはどれですか？",
+      "category": "macro",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "macro_rules_expr_001",
+      "path": "question/items/macro/macro_rules_expr_001.json",
+      "title": "`macro_rules!` で `$x:expr` の `expr` が表すものとして正しいのはどれですか？",
+      "category": "macro",
+      "difficulty": "intermediate"
     },
     {
       "id": "macro_vec_001",
@@ -668,6 +717,13 @@
       "difficulty": "beginner"
     },
     {
+      "id": "pattern_match_guard_001",
+      "path": "question/items/pattern/pattern_match_guard_001.json",
+      "title": "`match` アームの `if` ガードの役割として正しいものはどれですか？",
+      "category": "pattern",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "pattern_refutability_001",
       "path": "question/items/pattern/pattern_refutability_001.json",
       "title": "反駁可能（refutable）パターンを使う場所として適切なのはどれですか？",
@@ -692,6 +748,13 @@
       "id": "rc_refcell_001",
       "path": "question/items/rc/rc_refcell_001.json",
       "title": "単一スレッドで共有可変性を実現する定番の組み合わせはどれですか？",
+      "category": "rc",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "rc_strong_count_clone_001",
+      "path": "question/items/rc/rc_strong_count_clone_001.json",
+      "title": "`Rc::clone(&rc)` を呼んだ直後の `strong_count` の変化として正しいものはどれですか？",
       "category": "rc",
       "difficulty": "intermediate"
     },
@@ -736,6 +799,13 @@
       "title": "シャドーイング（`let x = ...` の再定義）の説明として正しいものはどれですか？",
       "category": "shadowing",
       "difficulty": "beginner"
+    },
+    {
+      "id": "shadowing_mut_difference_001",
+      "path": "question/items/shadowing/shadowing_mut_difference_001.json",
+      "title": "`let x = x + 1;` のようなシャドーイングと `let mut x` の違いとして正しいものはどれですか？",
+      "category": "shadowing",
+      "difficulty": "intermediate"
     },
     {
       "id": "slice_array_001",
@@ -855,6 +925,13 @@
       "title": "子スレッドが `panic!` したとき、`JoinHandle::join()` の戻り値として正しい説明はどれですか？",
       "category": "thread",
       "difficulty": "advanced"
+    },
+    {
+      "id": "thread_sleep_granularity_001",
+      "path": "question/items/thread/thread_sleep_granularity_001.json",
+      "title": "`std::thread::sleep(duration)` の挙動として正しいものはどれですか？",
+      "category": "thread",
+      "difficulty": "intermediate"
     },
     {
       "id": "thread_spawn_move_001",
@@ -1081,11 +1158,32 @@
       "difficulty": "beginner"
     },
     {
+      "id": "vector_pop_option_001",
+      "path": "question/items/vector/vector_pop_option_001.json",
+      "title": "`Vec<T>::pop()` の戻り値として正しいものはどれですか？",
+      "category": "vector",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "vector_reserve_capacity_001",
+      "path": "question/items/vector/vector_reserve_capacity_001.json",
+      "title": "`Vec<T>` の再確保回数を減らしたい場合に有効な方法として最も適切なのはどれですか？",
+      "category": "vector",
+      "difficulty": "beginner"
+    },
+    {
       "id": "weak_break_cycle_001",
       "path": "question/items/rc/weak_break_cycle_001.json",
       "title": "`Rc` を使うグラフ構造で循環参照リークを避ける設計として適切なのはどれですか？",
       "category": "rc",
       "difficulty": "advanced"
+    },
+    {
+      "id": "weak_upgrade_option_001",
+      "path": "question/items/rc/weak_upgrade_option_001.json",
+      "title": "`Weak<T>::upgrade()` の戻り値として正しいものはどれですか？",
+      "category": "rc",
+      "difficulty": "intermediate"
     },
     {
       "id": "where_clause_001",
@@ -1095,9 +1193,23 @@
       "difficulty": "intermediate"
     },
     {
+      "id": "while_condition_bool_001",
+      "path": "question/items/while/while_condition_bool_001.json",
+      "title": "`while` の条件式に必要な型として正しいものはどれですか？",
+      "category": "while",
+      "difficulty": "beginner"
+    },
+    {
       "id": "while_let_001",
       "path": "question/items/while/while_let_001.json",
       "title": "`while let` の用途として適切なのはどれですか？",
+      "category": "while",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "while_let_pop_001",
+      "path": "question/items/while/while_let_pop_001.json",
+      "title": "`while let Some(x) = vec.pop()` の使い方として適切なのはどれですか？",
       "category": "while",
       "difficulty": "beginner"
     }

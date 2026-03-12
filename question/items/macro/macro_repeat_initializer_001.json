@@ -1,0 +1,33 @@
+{
+  "id": "macro_repeat_initializer_001",
+  "question": "`vec![x; n]` の意味として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`x` を `n` 個並べた `Vec` を生成する"
+    },
+    {
+      "id": "b",
+      "text": "`x` から `n` を減算した値を1つだけ格納する"
+    },
+    {
+      "id": "c",
+      "text": "長さ `n` の未初期化メモリだけ確保する"
+    },
+    {
+      "id": "d",
+      "text": "常に空の `Vec` を返す"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`vec![x; n]` は同じ値を `n` 回並べたベクタを作る記法です。",
+  "sources": [
+    "https://doc.rust-lang.org/std/macro.vec.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "macro",
+    "vec",
+    "initializer"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "effective_result_context_001",
+  "question": "`Result` を返すAPIの設計で、調査しやすさの観点から有効な方針はどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "失敗箇所が分かる文脈情報をエラーに含める"
+    },
+    {
+      "id": "b",
+      "text": "すべての失敗を同じ固定文字列で返す"
+    },
+    {
+      "id": "c",
+      "text": "失敗時は常に `panic!` して終了する"
+    },
+    {
+      "id": "d",
+      "text": "呼び出し側には失敗理由を隠す"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "原因や対象を示す文脈があると、呼び出し側でのハンドリングと障害調査が容易になります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html",
+    "https://www.lurklurk.org/effective-rust/errors.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices",
+    "result",
+    "error"
+  ]
+}

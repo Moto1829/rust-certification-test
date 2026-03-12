@@ -1,0 +1,34 @@
+{
+  "id": "ffi_call_requires_unsafe_001",
+  "question": "`extern` ブロックで宣言した外部関数を呼ぶときの原則として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "通常は `unsafe` コンテキストで呼び出す必要がある"
+    },
+    {
+      "id": "b",
+      "text": "`extern` なら常に完全に安全として扱える"
+    },
+    {
+      "id": "c",
+      "text": "`unsafe` は宣言側にしか書けない"
+    },
+    {
+      "id": "d",
+      "text": "`unsafe` を書くとABI指定が不要になる"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "FFI呼び出しでは引数・戻り値・契約違反の責任が呼び出し側にあるため、`unsafe` で明示します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch19-01-unsafe-rust.html",
+    "https://doc.rust-lang.org/reference/items/external-blocks.html"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "ffi",
+    "unsafe",
+    "extern"
+  ]
+}

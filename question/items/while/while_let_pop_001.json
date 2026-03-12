@@ -1,0 +1,33 @@
+{
+  "id": "while_let_pop_001",
+  "question": "`while let Some(x) = vec.pop()` の使い方として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`pop()` が `Some` を返す間、要素を取り出して繰り返し処理する"
+    },
+    {
+      "id": "b",
+      "text": "`vec` の要素数をコンパイル時定数に固定する"
+    },
+    {
+      "id": "c",
+      "text": "`None` のときだけループ本体を実行する"
+    },
+    {
+      "id": "d",
+      "text": "すべての要素を参照で借用し続ける"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`while let` はパターン一致が続く間ループし、`pop()` が `None` になった時点で終了します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch18-01-all-the-places-for-patterns.html#while-let-%E6%9D%A1%E4%BB%B6%E4%BB%98%E3%81%8D%E3%83%AB%E3%83%BC%E3%83%97"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "while-let",
+    "option",
+    "vector"
+  ]
+}

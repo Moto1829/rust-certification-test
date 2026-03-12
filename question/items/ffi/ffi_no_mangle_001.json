@@ -1,0 +1,34 @@
+{
+  "id": "ffi_no_mangle_001",
+  "question": "Rust関数をC側から想定したシンボル名で呼び出しやすくするために使う属性として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`#[no_mangle]`"
+    },
+    {
+      "id": "b",
+      "text": "`#[inline(always)]`"
+    },
+    {
+      "id": "c",
+      "text": "`#[derive(Debug)]`"
+    },
+    {
+      "id": "d",
+      "text": "`#[test]`"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "FFIでは公開シンボル名の互換性が重要で、`#[no_mangle]` は名前修飾を抑制して外部から参照しやすくします。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch19-01-unsafe-rust.html",
+    "https://doc.rust-lang.org/reference/abi.html#the-no_mangle-attribute"
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "ffi",
+    "abi",
+    "symbol"
+  ]
+}

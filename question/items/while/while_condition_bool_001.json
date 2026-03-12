@@ -1,0 +1,33 @@
+{
+  "id": "while_condition_bool_001",
+  "question": "`while` の条件式に必要な型として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`bool`"
+    },
+    {
+      "id": "b",
+      "text": "`usize`"
+    },
+    {
+      "id": "c",
+      "text": "`Option<bool>`"
+    },
+    {
+      "id": "d",
+      "text": "真偽値に暗黙変換できる任意の型"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Rustでは `while` の条件は `bool` である必要があり、他言語のような暗黙的な真偽変換は行われません。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch03-05-control-flow.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "while",
+    "control-flow",
+    "bool"
+  ]
+}

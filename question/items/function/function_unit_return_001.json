@@ -1,0 +1,33 @@
+{
+  "id": "function_unit_return_001",
+  "question": "関数末尾の式に `;` を付けたときの影響として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "その式は文になり、戻り値として `()` になる"
+    },
+    {
+      "id": "b",
+      "text": "末尾式でも自動的に `return` される"
+    },
+    {
+      "id": "c",
+      "text": "関数の実行速度が必ず向上する"
+    },
+    {
+      "id": "d",
+      "text": "`mut` 変数が必須になる"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Rustでは末尾式に `;` を付けると値を返さない文として扱われ、`()` が返ります。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch03-03-how-functions-work.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "function",
+    "expression",
+    "unit"
+  ]
+}

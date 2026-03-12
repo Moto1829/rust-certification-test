@@ -1,0 +1,33 @@
+{
+  "id": "macro_rules_expr_001",
+  "question": "`macro_rules!` で `$x:expr` の `expr` が表すものとして正しいのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "任意の式（expression）"
+    },
+    {
+      "id": "b",
+      "text": "任意の型定義"
+    },
+    {
+      "id": "c",
+      "text": "任意のライフタイム宣言"
+    },
+    {
+      "id": "d",
+      "text": "コンパイル後の機械語命令"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`expr` はマクロのフラグメント指定子で、式として解釈可能な構文要素にマッチします。",
+  "sources": [
+    "https://doc.rust-lang.org/reference/macros-by-example.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "macro",
+    "macro_rules",
+    "expr"
+  ]
+}

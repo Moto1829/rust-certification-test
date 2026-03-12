@@ -1,0 +1,34 @@
+{
+  "id": "rc_strong_count_clone_001",
+  "question": "`Rc::clone(&rc)` を呼んだ直後の `strong_count` の変化として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "通常は強参照カウントが1増える"
+    },
+    {
+      "id": "b",
+      "text": "強参照カウントは0になる"
+    },
+    {
+      "id": "c",
+      "text": "弱参照カウントだけが増え、強参照は不変"
+    },
+    {
+      "id": "d",
+      "text": "常に参照先の値を深いコピーする"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`Rc::clone` は参照カウントを増やして所有権を共有します。参照先データの深い複製は行いません。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch15-04-rc.html",
+    "https://doc.rust-lang.org/std/rc/struct.Rc.html#method.strong_count"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "rc",
+    "ownership",
+    "reference-count"
+  ]
+}

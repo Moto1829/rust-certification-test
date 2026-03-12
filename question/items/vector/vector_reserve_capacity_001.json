@@ -1,0 +1,34 @@
+{
+  "id": "vector_reserve_capacity_001",
+  "question": "`Vec<T>` の再確保回数を減らしたい場合に有効な方法として最も適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "あらかじめ `with_capacity` や `reserve` を使う"
+    },
+    {
+      "id": "b",
+      "text": "`push` のたびに `clone` する"
+    },
+    {
+      "id": "c",
+      "text": "`get` を先に呼んでから `push` する"
+    },
+    {
+      "id": "d",
+      "text": "`iter()` で走査してから `insert` する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "要素数の見込みがある場合は事前に容量を確保すると、動的な再確保・再配置の回数を抑えられます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch08-01-vectors.html",
+    "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.reserve"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "vector",
+    "capacity",
+    "performance"
+  ]
+}

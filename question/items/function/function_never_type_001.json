@@ -1,0 +1,33 @@
+{
+  "id": "function_never_type_001",
+  "question": "関数の戻り値型 `!`（never type）の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "その関数が正常に値を返して終了しないことを示す"
+    },
+    {
+      "id": "b",
+      "text": "`bool` の別名である"
+    },
+    {
+      "id": "c",
+      "text": "`()` と常に同じ意味である"
+    },
+    {
+      "id": "d",
+      "text": "非同期関数でのみ使える"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`!` は発散する計算（panicや無限ループなど）を表し、呼び出し元へ通常の値を返しません。",
+  "sources": [
+    "https://doc.rust-lang.org/reference/types/never.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "function",
+    "type-system",
+    "never"
+  ]
+}

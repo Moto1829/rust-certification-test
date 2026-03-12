@@ -1,0 +1,33 @@
+{
+  "id": "weak_upgrade_option_001",
+  "question": "`Weak<T>::upgrade()` の戻り値として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`Option<Rc<T>>`"
+    },
+    {
+      "id": "b",
+      "text": "`Rc<T>`"
+    },
+    {
+      "id": "c",
+      "text": "`Result<Rc<T>, String>`"
+    },
+    {
+      "id": "d",
+      "text": "`&T`"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "強参照先がすでに解放されている可能性があるため、`upgrade()` は `Option<Rc<T>>` を返します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch15-06-reference-cycles.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "rc",
+    "weak",
+    "option"
+  ]
+}

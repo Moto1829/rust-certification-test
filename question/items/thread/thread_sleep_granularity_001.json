@@ -1,0 +1,33 @@
+{
+  "id": "thread_sleep_granularity_001",
+  "question": "`std::thread::sleep(duration)` の挙動として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "少なくとも指定時間は停止するが、環境によりそれより長くなることがある"
+    },
+    {
+      "id": "b",
+      "text": "指定時間ぴったりで必ず再開される"
+    },
+    {
+      "id": "c",
+      "text": "他スレッドも同時に停止する"
+    },
+    {
+      "id": "d",
+      "text": "CPU使用率を必ず0%にする"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`sleep` の実際の待機時間はスケジューラやタイマ分解能の影響を受け、指定より長くなる場合があります。",
+  "sources": [
+    "https://doc.rust-lang.org/std/thread/fn.sleep.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "thread",
+    "timing",
+    "runtime"
+  ]
+}

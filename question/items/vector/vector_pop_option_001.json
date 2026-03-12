@@ -1,0 +1,34 @@
+{
+  "id": "vector_pop_option_001",
+  "question": "`Vec<T>::pop()` の戻り値として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`Option<T>`（空なら `None`）"
+    },
+    {
+      "id": "b",
+      "text": "常に `T`（空でも既定値を返す）"
+    },
+    {
+      "id": "c",
+      "text": "`Result<T, usize>`"
+    },
+    {
+      "id": "d",
+      "text": "`&T`"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`pop()` は末尾要素を取り出せれば `Some(T)`、空なら `None` を返します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch08-01-vectors.html",
+    "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.pop"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "vector",
+    "option",
+    "collections"
+  ]
+}
