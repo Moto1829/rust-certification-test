@@ -55,6 +55,16 @@ type AnswerRecord = {
   isCorrect: boolean;
 };
 
+type LastScore = {
+  correctCount: number;
+  total: number;
+  rate: number;
+  finishedAt: string;
+};
+
+const LAST_SCORE_STORAGE_KEY = "rust-quiz-last-score-v1";
+const MAX_SCORE_HISTORY = 5;
+
 const appWindow = window as Window & { __QUIZ_DATA__?: QuizItem[] };
 
 const escapeHtml = (value: string): string =>
@@ -101,6 +111,7 @@ const categorySelect = document.getElementById("category") as HTMLSelectElement;
 const difficultySelect = document.getElementById("difficulty") as HTMLSelectElement;
 const questionCountSelect = document.getElementById("question-count") as HTMLSelectElement;
 const questionTotalElement = document.getElementById("question-total") as HTMLParagraphElement;
+const lastScoreElement = document.getElementById("last-score") as HTMLParagraphElement;
 const setupMessage = document.getElementById("setup-message") as HTMLParagraphElement;
 const startButton = document.getElementById("start-btn") as HTMLButtonElement;
 
@@ -152,6 +163,86 @@ const renderSetupMessage = (message: string): void => {
 const renderQuestionTotal = (): void => {
   const total = allQuestions.length;
   questionTotalElement.textContent = total > 0 ? `現在の公開問題数: ${total}問` : "";
+};
+
+const toLastScore = (value: unknown): LastScore | null => {
+  if (!value || typeof value !== "object") {
+    return null;
+  }
+
+  const candidate = value as Partial<LastScore>;
+  const correctCount = candidate.correctCount;
+  const total = candidate.total;
+  const rate = candidate.rate;
+  const finishedAt = candidate.finishedAt;
+
+  if (
+    typeof correctCount !== "number" ||
+    !Number.isFinite(correctCount) ||
+    typeof total !== "number" ||
+    !Number.isFinite(total) ||
+    typeof rate !== "number" ||
+    !Number.isFinite(rate) ||
+    typeof finishedAt !== "string" ||
+    finishedAt.length === 0
+  ) {
+    return null;
+  }
+
+  return {
+    correctCount,
+    total,
+    rate,
+    finishedAt
+  };
+};
+
+const readLastScoreHistory = (): LastScore[] => {
+  try {
+    const raw = window.localStorage.getItem(LAST_SCORE_STORAGE_KEY);
+    if (!raw) {
+      return [];
+    }
+
+    const parsed: unknown = JSON.parse(raw);
+
+    if (Array.isArray(parsed)) {
+      return parsed
+        .map((item) => toLastScore(item))
+        .filter((item): item is LastScore => item !== null)
+        .slice(0, MAX_SCORE_HISTORY);
+    }
+
+    const legacySingle = toLastScore(parsed);
+    return legacySingle ? [legacySingle] : [];
+  } catch {
+    return [];
+  }
+};
+
+const saveLastScore = (lastScore: LastScore): void => {
+  try {
+    const history = readLastScoreHistory();
+    const nextHistory = [lastScore, ...history].slice(0, MAX_SCORE_HISTORY);
+    window.localStorage.setItem(LAST_SCORE_STORAGE_KEY, JSON.stringify(nextHistory));
+  } catch {
+  }
+};
+
+const renderLastScore = (): void => {
+  const history = readLastScoreHistory();
+  if (history.length === 0) {
+    lastScoreElement.textContent = "直近の成績（最大5件）: まだありません";
+    return;
+  }
+
+  const lines = history.map((item, index) => {
+    const finishedAt = new Date(item.finishedAt);
+    const finishedAtText = Number.isNaN(finishedAt.getTime()) ? item.finishedAt : finishedAt.toLocaleString("ja-JP");
+    return `${index + 1}. ${item.correctCount} / ${item.total}（正答率: ${item.rate}%）・${finishedAtText}`;
+  });
+
+  lastScoreElement.innerHTML = `<strong>直近の成績（最大5件）</strong><br>${lines.map((line) => escapeHtml(line)).join("<br>")}`;
 };
 
 const renderCategoryOptions = (): void => {
@@ -294,6 +385,13 @@ const finishQuiz = (): void => {
   const rate = total > 0 ? Math.round((correctCount / total) * 1000) / 10 : 0;
 
   resultSummary.textContent = `正答数: ${correctCount} / ${total}（正答率: ${rate}%）`;
+  saveLastScore({
+    correctCount,
+    total,
+    rate,
+    finishedAt: new Date().toISOString()
+  });
+  renderLastScore();
   renderReview();
 };
 
@@ -385,6 +483,7 @@ const startQuiz = async (): Promise<void> => {
 
 const initializeSetup = async (): Promise<void> => {
   try {
+    renderLastScore();
     if (allQuestions.length === 0) {
       allQuestions = await loadQuestions();
     }
