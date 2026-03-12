@@ -20,6 +20,12 @@ h1 {
   color: #4b5563;
 }
 
+.question-total {
+  margin: -2px 0 0;
+  color: #374151;
+  font-weight: 600;
+}
+
 .disclaimer {
   margin-top: -4px;
   margin-bottom: 0;

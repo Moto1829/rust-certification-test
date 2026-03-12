@@ -100,6 +100,7 @@ const resultSection = document.getElementById("result-section") as HTMLElement;
 const categorySelect = document.getElementById("category") as HTMLSelectElement;
 const difficultySelect = document.getElementById("difficulty") as HTMLSelectElement;
 const questionCountSelect = document.getElementById("question-count") as HTMLSelectElement;
+const questionTotalElement = document.getElementById("question-total") as HTMLParagraphElement;
 const setupMessage = document.getElementById("setup-message") as HTMLParagraphElement;
 const startButton = document.getElementById("start-btn") as HTMLButtonElement;
 
@@ -146,6 +147,11 @@ const renderChoiceText = (text: string): string => renderInlineText(escapeHtml(t
 
 const renderSetupMessage = (message: string): void => {
   setupMessage.textContent = message;
+};
+
+const renderQuestionTotal = (): void => {
+  const total = allQuestions.length;
+  questionTotalElement.textContent = total > 0 ? `現在の公開問題数: ${total}問` : "";
 };
 
 const renderCategoryOptions = (): void => {
@@ -348,6 +354,7 @@ const startQuiz = async (): Promise<void> => {
     if (allQuestions.length === 0) {
       allQuestions = await loadQuestions();
       renderCategoryOptions();
+      renderQuestionTotal();
     }
 
     const category = categorySelect.value as CategoryFilter;
@@ -382,6 +389,7 @@ const initializeSetup = async (): Promise<void> => {
       allQuestions = await loadQuestions();
     }
     renderCategoryOptions();
+    renderQuestionTotal();
   } catch {
     renderSetupMessage("問題データの読み込みに失敗しました。時間をおいて再試行してください。");
   }
