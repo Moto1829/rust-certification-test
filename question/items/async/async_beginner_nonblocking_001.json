@@ -20,7 +20,7 @@
     }
   ],
   "correctChoiceId": "a",
-  "explanation": "非同期では待機中の時間を活用して別のタスクを進められるため、スループット向上が期待できます。",
+  "explanation": "非同期ではI/O待ちなどの待機中に別のタスクを進めやすく、特に待機の多い処理で効率向上が期待できます。",
   "sources": [
     "https://rust-lang.github.io/async-book/01_getting_started/02_why_async.html"
   ],

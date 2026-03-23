@@ -1,0 +1,33 @@
+{
+  "id": "async_beginner_inert_future_001",
+  "question": "RustのFutureについて正しい説明はどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "作成しただけで自動的に最後まで実行される"
+    },
+    {
+      "id": "b",
+      "text": "ポーリングされるまで自動では進行しない"
+    },
+    {
+      "id": "c",
+      "text": "必ず別スレッドで実行される"
+    },
+    {
+      "id": "d",
+      "text": "完了後しか生成できない"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "RustのFutureはinertで、ポーリングされるまで自動では進行しません。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/01_getting_started/02_why_async.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "async",
+    "future",
+    "poll"
+  ]
+}

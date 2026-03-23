@@ -1,0 +1,32 @@
+{
+  "id": "ffi_beginner_purpose_001",
+  "question": "FFI の主な目的として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "他言語で書かれた関数やライブラリと連携する"
+    },
+    {
+      "id": "b",
+      "text": "所有権規則を完全に無効にする"
+    },
+    {
+      "id": "c",
+      "text": "Rustコードを自動で非同期化する"
+    },
+    {
+      "id": "d",
+      "text": "マクロ展開を高速化する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "FFIはForeign Function Interfaceの略で、Rustと他言語のコードを接続するために使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch19-01-unsafe-rust.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "ffi",
+    "basics"
+  ]
+}

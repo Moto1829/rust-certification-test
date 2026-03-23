@@ -1,0 +1,33 @@
+{
+  "id": "async_beginner_threads_001",
+  "question": "Rustの非同期処理に関する説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "タスクごとに必ず新しいOSスレッドが必要になる"
+    },
+    {
+      "id": "b",
+      "text": "少数のOSスレッドで多くのタスクを扱いやすい"
+    },
+    {
+      "id": "c",
+      "text": "同期コードより常に高速になる"
+    },
+    {
+      "id": "d",
+      "text": "CPU負荷の高い処理だけに使うのが基本である"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "asyncは少数のOSスレッド上で多数のタスクを扱いやすく、特にI/O待ちの多い処理で有効です。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/01_getting_started/02_why_async.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "async",
+    "threads",
+    "basics"
+  ]
+}

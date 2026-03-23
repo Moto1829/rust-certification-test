@@ -1,0 +1,33 @@
+{
+  "id": "concurrency_beginner_thread_spawn_001",
+  "question": "`std::thread::spawn` の基本的な役割として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "新しいスレッドで処理を開始する"
+    },
+    {
+      "id": "b",
+      "text": "所有権規則を無効化する"
+    },
+    {
+      "id": "c",
+      "text": "Mutexを自動生成する"
+    },
+    {
+      "id": "d",
+      "text": "非同期Futureへ自動変換する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`thread::spawn` はクロージャを新しいOSスレッドで実行するために使います。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch16-01-threads.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "concurrency",
+    "thread",
+    "spawn"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "async_intermediate_join_macro_001",
+  "question": "独立した複数のFutureを並行に待ちたいときの方法として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`join!` などでまとめて待機する"
+    },
+    {
+      "id": "b",
+      "text": "各Futureを毎回別のOSスレッドに変換する"
+    },
+    {
+      "id": "c",
+      "text": "Futureを `unsafe` に包む"
+    },
+    {
+      "id": "d",
+      "text": "すべてのFutureを即座に同期関数へ変換する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "互いに独立したFutureは `join!` などを使うことで、順番に `await` するより並行に進めやすくなります。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/06_multiple_futures/02_join.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "async",
+    "join",
+    "future"
+  ]
+}

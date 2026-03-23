@@ -1,0 +1,33 @@
+{
+  "id": "concurrency_intermediate_recv_block_001",
+  "question": "`std::sync::mpsc::Receiver::recv()` の基本挙動として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "メッセージが届くかチャネルが閉じるまで待機する"
+    },
+    {
+      "id": "b",
+      "text": "常に即座に `None` を返す"
+    },
+    {
+      "id": "c",
+      "text": "呼ぶたびに送信側を複製する"
+    },
+    {
+      "id": "d",
+      "text": "`unsafe` でしか呼べない"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`recv()` は受信可能になるまでブロックし、すべての送信側が閉じていればエラーになります。",
+  "sources": [
+    "https://doc.rust-lang.org/std/sync/mpsc/struct.Receiver.html#method.recv"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "concurrency",
+    "channel",
+    "recv"
+  ]
+}

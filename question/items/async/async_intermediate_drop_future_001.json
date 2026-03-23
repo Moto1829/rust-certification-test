@@ -1,0 +1,33 @@
+{
+  "id": "async_intermediate_drop_future_001",
+  "question": "まだ完了していないFutureを途中でドロップしたときの説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "自動的に最後まで実行される"
+    },
+    {
+      "id": "b",
+      "text": "それ以上進行しなくなる"
+    },
+    {
+      "id": "c",
+      "text": "必ず別スレッドへ移される"
+    },
+    {
+      "id": "d",
+      "text": "コンパイルエラーになる"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "RustのFutureはポーリングされている間だけ進み、ドロップされるとそれ以上進行しません。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/01_getting_started/02_why_async.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "async",
+    "future",
+    "cancellation"
+  ]
+}

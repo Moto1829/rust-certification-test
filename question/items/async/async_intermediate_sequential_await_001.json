@@ -1,0 +1,33 @@
+{
+  "id": "async_intermediate_sequential_await_001",
+  "question": "独立した2つのFutureに対して `a.await; b.await;` と順に書いた場合の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`a` の完了を待ってから `b` を進めるため、順次実行に近い"
+    },
+    {
+      "id": "b",
+      "text": "常に `join!` と同じ並行実行になる"
+    },
+    {
+      "id": "c",
+      "text": "必ず2本のOSスレッドが生成される"
+    },
+    {
+      "id": "d",
+      "text": "Rustではこの書き方は許可されない"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "独立したFutureでも単純に順番に `await` すると、前の完了を待ってから次を進める形になります。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/06_multiple_futures/02_join.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "async",
+    "await",
+    "join"
+  ]
+}

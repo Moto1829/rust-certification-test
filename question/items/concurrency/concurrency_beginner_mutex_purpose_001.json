@@ -1,0 +1,33 @@
+{
+  "id": "concurrency_beginner_mutex_purpose_001",
+  "question": "`Mutex<T>` の主な目的として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "複数スレッドから同時に自由に書き換えられるようにする"
+    },
+    {
+      "id": "b",
+      "text": "一度に1つのスレッドだけがデータへアクセスできるようにする"
+    },
+    {
+      "id": "c",
+      "text": "データを自動的に不変にする"
+    },
+    {
+      "id": "d",
+      "text": "チャネル通信を高速化する"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`Mutex` は排他制御のために使い、同時に複数スレッドが同じ可変データを触らないようにします。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch16-03-shared-state.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "concurrency",
+    "mutex",
+    "shared-state"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "async_beginner_builtin_runtime_001",
+  "question": "Rustの非同期ランタイムについて正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "標準ライブラリに組み込みランタイムがあり、外部crateは不要である"
+    },
+    {
+      "id": "b",
+      "text": "Rustは通常、コミュニティ提供のランタイムを利用する"
+    },
+    {
+      "id": "c",
+      "text": "ランタイムを使うには必ず `unsafe` が必要である"
+    },
+    {
+      "id": "d",
+      "text": "ランタイムはWindowsでしか利用できない"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Rustには組み込みの非同期ランタイムはなく、通常はTokioなどのコミュニティ提供crateを利用します。",
+  "sources": [
+    "https://rust-lang.github.io/async-book/01_getting_started/02_why_async.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "async",
+    "runtime",
+    "basics"
+  ]
+}

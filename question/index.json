@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-12T14:16:34.594Z",
-  "count": 173,
+  "generatedAt": "2026-03-23T14:44:47.359Z",
+  "count": 185,
   "items": [
     {
       "id": "arc_clone_shared_001",
@@ -52,6 +52,13 @@
       "difficulty": "beginner"
     },
     {
+      "id": "async_beginner_builtin_runtime_001",
+      "path": "question/items/async/async_beginner_builtin_runtime_001.json",
+      "title": "Rustの非同期ランタイムについて正しいものはどれですか？",
+      "category": "async",
+      "difficulty": "beginner"
+    },
+    {
       "id": "async_beginner_concept_001",
       "path": "question/items/async/async_beginner_concept_001.json",
       "title": "Rustの `async`/`await` の基本的な目的として最も適切なのはどれですか？",
@@ -62,6 +69,13 @@
       "id": "async_beginner_future_001",
       "path": "question/items/async/async_beginner_future_001.json",
       "title": "`async fn` を呼び出した直後に得られるものはどれですか？",
+      "category": "async",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "async_beginner_inert_future_001",
+      "path": "question/items/async/async_beginner_inert_future_001.json",
+      "title": "RustのFutureについて正しい説明はどれですか？",
       "category": "async",
       "difficulty": "beginner"
     },
@@ -80,6 +94,13 @@
       "difficulty": "beginner"
     },
     {
+      "id": "async_beginner_threads_001",
+      "path": "question/items/async/async_beginner_threads_001.json",
+      "title": "Rustの非同期処理に関する説明として正しいものはどれですか？",
+      "category": "async",
+      "difficulty": "beginner"
+    },
+    {
       "id": "async_cancel_001",
       "path": "question/items/async/async_cancel_001.json",
       "title": "Futureのキャンセルに関する説明として適切なのはどれですか？",
@@ -92,6 +113,27 @@
       "title": "`Future` の実行モデルについて最も適切な説明はどれですか？",
       "category": "async",
       "difficulty": "advanced"
+    },
+    {
+      "id": "async_intermediate_drop_future_001",
+      "path": "question/items/async/async_intermediate_drop_future_001.json",
+      "title": "まだ完了していないFutureを途中でドロップしたときの説明として正しいものはどれですか？",
+      "category": "async",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "async_intermediate_join_macro_001",
+      "path": "question/items/async/async_intermediate_join_macro_001.json",
+      "title": "独立した複数のFutureを並行に待ちたいときの方法として適切なのはどれですか？",
+      "category": "async",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "async_intermediate_sequential_await_001",
+      "path": "question/items/async/async_intermediate_sequential_await_001.json",
+      "title": "独立した2つのFutureに対して `a.await; b.await;` と順に書いた場合の説明として正しいものはどれですか？",
+      "category": "async",
+      "difficulty": "intermediate"
     },
     {
       "id": "async_join_001",
@@ -220,6 +262,34 @@
       "difficulty": "intermediate"
     },
     {
+      "id": "concurrency_beginner_mutex_purpose_001",
+      "path": "question/items/concurrency/concurrency_beginner_mutex_purpose_001.json",
+      "title": "`Mutex<T>` の主な目的として正しいものはどれですか？",
+      "category": "concurrency",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "concurrency_beginner_thread_spawn_001",
+      "path": "question/items/concurrency/concurrency_beginner_thread_spawn_001.json",
+      "title": "`std::thread::spawn` の基本的な役割として正しいものはどれですか？",
+      "category": "concurrency",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "concurrency_intermediate_mpsc_meaning_001",
+      "path": "question/items/concurrency/concurrency_intermediate_mpsc_meaning_001.json",
+      "title": "Rust標準ライブラリの `mpsc` チャネル名の意味として正しいものはどれですか？",
+      "category": "concurrency",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "concurrency_intermediate_recv_block_001",
+      "path": "question/items/concurrency/concurrency_intermediate_recv_block_001.json",
+      "title": "`std::sync::mpsc::Receiver::recv()` の基本挙動として正しいものはどれですか？",
+      "category": "concurrency",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "const_static_001",
       "path": "question/items/functions_control/const_static_001.json",
       "title": "`const` と `static` の違いとして正しいものはどれですか？",
@@ -344,6 +414,13 @@
       "title": "FFIで `extern \"C\"` を指定する主目的として正しいものはどれですか？",
       "category": "ffi",
       "difficulty": "advanced"
+    },
+    {
+      "id": "ffi_beginner_purpose_001",
+      "path": "question/items/ffi/ffi_beginner_purpose_001.json",
+      "title": "FFI の主な目的として正しいものはどれですか？",
+      "category": "ffi",
+      "difficulty": "beginner"
     },
     {
       "id": "ffi_call_requires_unsafe_001",
@@ -1071,6 +1148,13 @@
       "path": "question/items/types_collections/tuple_destructure_001.json",
       "title": "タプルの分解（destructuring）の例として正しいものはどれですか？",
       "category": "types_collections",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "unsafe_beginner_meaning_001",
+      "path": "question/items/unsafe/unsafe_beginner_meaning_001.json",
+      "title": "`unsafe` ブロックについて正しい説明はどれですか？",
+      "category": "unsafe",
       "difficulty": "beginner"
     },
     {

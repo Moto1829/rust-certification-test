@@ -1,0 +1,32 @@
+{
+  "id": "unsafe_beginner_meaning_001",
+  "question": "`unsafe` ブロックについて正しい説明はどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "借用チェッカーや型検査を完全に無効化する"
+    },
+    {
+      "id": "b",
+      "text": "コンパイラが自動では保証できない操作を明示的に許可する"
+    },
+    {
+      "id": "c",
+      "text": "コードを必ず高速化する"
+    },
+    {
+      "id": "d",
+      "text": "外部crateでは使用できない"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "`unsafe` は任意の安全性を捨てる機能ではなく、一部の操作について開発者が前提条件を担保することを明示します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch19-01-unsafe-rust.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "unsafe",
+    "basics"
+  ]
+}

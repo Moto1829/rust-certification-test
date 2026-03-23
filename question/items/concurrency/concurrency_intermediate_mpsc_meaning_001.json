@@ -1,0 +1,33 @@
+{
+  "id": "concurrency_intermediate_mpsc_meaning_001",
+  "question": "Rust標準ライブラリの `mpsc` チャネル名の意味として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "multiple producer, single consumer"
+    },
+    {
+      "id": "b",
+      "text": "multiple process, shared channel"
+    },
+    {
+      "id": "c",
+      "text": "mutable pointer, safe copy"
+    },
+    {
+      "id": "d",
+      "text": "main program, secondary coroutine"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "標準の `mpsc` は複数送信者と単一受信者を表すメッセージパッシングの仕組みです。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch16-02-message-passing.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "concurrency",
+    "channel",
+    "mpsc"
+  ]
+}
