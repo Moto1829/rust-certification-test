@@ -1,0 +1,33 @@
+{
+  "id": "enum_match_expression_001",
+  "question": "enum に対する `match` を式として使う説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "各アームが値を返せば、その `match` 全体も値として扱える"
+    },
+    {
+      "id": "b",
+      "text": "`match` は文なので変数に代入できない"
+    },
+    {
+      "id": "c",
+      "text": "enum に対する `match` では常に `()` しか返せない"
+    },
+    {
+      "id": "d",
+      "text": "値を返す `match` では `_` パターンを使えない"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Rustの `match` は式なので、各アームが互換性のある値を返せば `let value = match ...` のように結果を変数へ代入できます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch06-02-match.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "enum",
+    "match",
+    "expression"
+  ]
+}

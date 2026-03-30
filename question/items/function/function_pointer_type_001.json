@@ -1,0 +1,33 @@
+{
+  "id": "function_pointer_type_001",
+  "question": "関数ポインタ型 `fn(i32) -> i32` の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "関数を値として受け渡すために使える"
+    },
+    {
+      "id": "b",
+      "text": "環境をキャプチャするクロージャでしか使えない"
+    },
+    {
+      "id": "c",
+      "text": "非同期関数専用の型である"
+    },
+    {
+      "id": "d",
+      "text": "必ず `unsafe fn` として宣言しなければならない"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`fn(...) -> ...` は関数ポインタ型で、関数を引数や戻り値として扱うときに使えます。環境をキャプチャするクロージャそのものとは役割が異なります。",
+  "sources": [
+    "https://doc.rust-lang.org/reference/types/function-pointer.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "function",
+    "function-pointer",
+    "type-system"
+  ]
+}

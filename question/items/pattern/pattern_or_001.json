@@ -1,0 +1,33 @@
+{
+  "id": "pattern_or_001",
+  "question": "`match` で `1 | 2 | 3` のような or パターンを使う利点として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "同じ処理を行う複数パターンを1つにまとめて書ける"
+    },
+    {
+      "id": "b",
+      "text": "パターンの網羅性チェックが無効になる"
+    },
+    {
+      "id": "c",
+      "text": "必ず `if` ガードが不要になる"
+    },
+    {
+      "id": "d",
+      "text": "値を自動的にソートしてから比較する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "or パターンを使うと、同じ分岐処理を行う複数の値やパターンを1つのアームにまとめられ、重複を減らせます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch18-03-pattern-syntax.html"
+  ],
+  "difficulty": "beginner",
+  "tags": [
+    "pattern",
+    "or",
+    "match"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "effective_documentation_001",
+  "question": "ライブラリAPIのドキュメントコメントに使用例を含める利点として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "利用方法を具体的に伝えられ、doctest で例を検証しやすい"
+    },
+    {
+      "id": "b",
+      "text": "公開APIの型定義が不要になる"
+    },
+    {
+      "id": "c",
+      "text": "エラーハンドリングの実装を自動生成できる"
+    },
+    {
+      "id": "d",
+      "text": "private な内部実装も自動で外部公開される"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "使用例を含むドキュメントコメントは、利用者に意図を伝えやすく、doctest によってサンプルコードの正しさも保ちやすくなります。",
+  "sources": [
+    "https://www.lurklurk.org/effective-rust/documentation.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "documentation",
+    "api"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "struct_method_receiver_001",
+  "question": "構造体メソッドでインスタンスの状態を変更したい場合、第一引数として通常もっとも適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`&mut self`"
+    },
+    {
+      "id": "b",
+      "text": "`&self`"
+    },
+    {
+      "id": "c",
+      "text": "引数なし"
+    },
+    {
+      "id": "d",
+      "text": "常に `Self` を返す必要がある"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "インスタンス内部の状態を書き換えるメソッドは、通常 `&mut self` で可変借用して受け取ります。`&self` は読み取り専用で、`self` は所有権を消費します。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch05-03-method-syntax.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "struct",
+    "method",
+    "borrowing"
+  ]
+}

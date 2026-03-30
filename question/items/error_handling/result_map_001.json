@@ -1,0 +1,34 @@
+{
+  "id": "result_map_001",
+  "question": "`Result<T, E>` の `map` の用途として適切なのはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "成功値だけを変換する"
+    },
+    {
+      "id": "b",
+      "text": "エラー値だけを変換する"
+    },
+    {
+      "id": "c",
+      "text": "常に `panic!` を発生させる"
+    },
+    {
+      "id": "d",
+      "text": "`Result` を必ず `Option` に変換する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`map` は `Ok` 側の値にだけ関数を適用し、`Err` 側はそのまま残します。`map_err` と役割が対になっています。",
+  "sources": [
+    "https://doc.rust-lang.org/std/result/enum.Result.html#method.map",
+    "https://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "result",
+    "combinator",
+    "map"
+  ]
+}

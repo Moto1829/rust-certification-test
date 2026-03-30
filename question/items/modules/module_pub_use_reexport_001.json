@@ -1,0 +1,33 @@
+{
+  "id": "module_pub_use_reexport_001",
+  "question": "`pub use some_module::TypeName;` の主な目的として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "別の場所にある公開アイテムを再エクスポートして外部APIとして見せる"
+    },
+    {
+      "id": "b",
+      "text": "その型を private に変更する"
+    },
+    {
+      "id": "c",
+      "text": "クレート外からの利用を常に禁止する"
+    },
+    {
+      "id": "d",
+      "text": "モジュールのファイル名を自動変更する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`pub use` は、内部の構造を保ったまま、外部利用者には別の公開パスとしてアイテムを見せるために使います。ライブラリAPIの整理でよく使われます。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "module",
+    "pub",
+    "reexport"
+  ]
+}

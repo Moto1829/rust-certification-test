@@ -1,0 +1,34 @@
+{
+  "id": "slice_mutable_borrow_001",
+  "question": "可変スライス `&mut data[..]` を `part` として借用している間の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "同じデータを別の可変参照で同時に借用することはできない"
+    },
+    {
+      "id": "b",
+      "text": "可変スライスを作ると元の配列の所有権は `part` に移る"
+    },
+    {
+      "id": "c",
+      "text": "可変スライスは自動的に独立した配列へコピーされる"
+    },
+    {
+      "id": "d",
+      "text": "可変スライスを作ると元の配列の長さは変更できるようになる"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`&mut [T]` も可変借用なので、同じデータに対する同時の複数可変参照は許されません。これはデータ競合や不整合を防ぐためです。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html",
+    "https://doc.rust-jp.rs/book-ja/ch04-03-slices.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "slice",
+    "borrowing",
+    "mutable-reference"
+  ]
+}

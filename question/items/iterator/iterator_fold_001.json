@@ -1,0 +1,34 @@
+{
+  "id": "iterator_fold_001",
+  "question": "イテレータの `fold` の説明として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "初期値とクロージャを使って、要素を1つの値へ畳み込む"
+    },
+    {
+      "id": "b",
+      "text": "元のコレクションをその場でソートする"
+    },
+    {
+      "id": "c",
+      "text": "常に `Vec` を返す"
+    },
+    {
+      "id": "d",
+      "text": "`collect` の別名である"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`fold` はアキュムレータの初期値と処理クロージャを使って、イテレータ全体を1つの結果へ集約します。合計や連結などに使えます。",
+  "sources": [
+    "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.fold",
+    "https://doc.rust-jp.rs/book-ja/ch13-02-iterators.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "iterator",
+    "fold",
+    "accumulator"
+  ]
+}

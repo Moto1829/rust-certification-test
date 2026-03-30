@@ -1,0 +1,33 @@
+{
+  "id": "test_cfg_test_001",
+  "question": "`#[cfg(test)]` 属性の役割として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "通常ビルドでは除外し、テスト時だけそのコードを有効にする"
+    },
+    {
+      "id": "b",
+      "text": "すべてのテストを逐次実行に固定する"
+    },
+    {
+      "id": "c",
+      "text": "`assert_eq!` を使わなくても自動で比較する"
+    },
+    {
+      "id": "d",
+      "text": "ドキュメントテスト専用の属性である"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`#[cfg(test)]` は条件付きコンパイルにより、テストビルド時だけテスト用モジュールや補助コードを含めるために使います。",
+  "sources": [
+    "https://doc.rust-lang.org/book/ch11-03-test-organization.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "test",
+    "attribute",
+    "conditional-compilation"
+  ]
+}

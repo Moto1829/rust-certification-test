@@ -1,0 +1,34 @@
+{
+  "id": "ffi_repr_c_001",
+  "question": "Rustの構造体をC互換のメモリレイアウトで扱いたいときに使う属性として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`#[repr(C)]`"
+    },
+    {
+      "id": "b",
+      "text": "`#[derive(C)]`"
+    },
+    {
+      "id": "c",
+      "text": "`#[ffi_layout]`"
+    },
+    {
+      "id": "d",
+      "text": "`#[extern(C)]`"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "`#[repr(C)]` を付けると、Cとの相互運用を意識したレイアウト規則が使われます。FFIで構造体を受け渡す場面では重要です。",
+  "sources": [
+    "https://doc.rust-lang.org/reference/type-layout.html#reprc-structs",
+    "https://doc.rust-lang.org/reference/abi.html#the-repr-attribute"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "ffi",
+    "repr",
+    "abi"
+  ]
+}

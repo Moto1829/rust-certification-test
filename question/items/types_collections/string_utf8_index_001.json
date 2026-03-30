@@ -1,0 +1,33 @@
+{
+  "id": "string_utf8_index_001",
+  "question": "Rustで `String` に対して `s[0]` のような整数インデックスアクセスが許されない主な理由として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "UTF-8では1文字が常に1バイトとは限らず、固定長インデックスが不適切だから"
+    },
+    {
+      "id": "b",
+      "text": "`String` が常にASCIIだけを保持する型だから"
+    },
+    {
+      "id": "c",
+      "text": "整数インデックスは `Vec` でしか使えないと仕様で完全に分離されているから"
+    },
+    {
+      "id": "d",
+      "text": "文字列の長さがコンパイル時に決まらないと参照できないから"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Rustの `String` はUTF-8で保持されるため、見た目の1文字が1バイトとは限りません。そのため整数インデックスでの1文字取得は安全で明確な操作になりません。",
+  "sources": [
+    "https://doc.rust-jp.rs/book-ja/ch08-02-strings.html"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "string",
+    "utf8",
+    "indexing"
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-23T14:44:47.359Z",
-  "count": 185,
+  "generatedAt": "2026-03-30T12:05:44.174Z",
+  "count": 199,
   "items": [
     {
       "id": "arc_clone_shared_001",
@@ -339,6 +339,13 @@
       "difficulty": "advanced"
     },
     {
+      "id": "effective_documentation_001",
+      "path": "question/items/best_practices/effective_documentation_001.json",
+      "title": "ライブラリAPIのドキュメントコメントに使用例を含める利点として適切なのはどれですか？",
+      "category": "best_practices",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "effective_error_message_001",
       "path": "question/items/best_practices/effective_error_message_001.json",
       "title": "良いエラーメッセージ設計の観点として適切なのはどれですか？",
@@ -365,6 +372,13 @@
       "title": "`match` 式の説明として正しいものはどれですか？",
       "category": "enum",
       "difficulty": "beginner"
+    },
+    {
+      "id": "enum_match_expression_001",
+      "path": "question/items/enum/enum_match_expression_001.json",
+      "title": "enum に対する `match` を式として使う説明として正しいものはどれですか？",
+      "category": "enum",
+      "difficulty": "intermediate"
     },
     {
       "id": "enum_option_map_001",
@@ -444,6 +458,13 @@
       "difficulty": "advanced"
     },
     {
+      "id": "ffi_repr_c_001",
+      "path": "question/items/ffi/ffi_repr_c_001.json",
+      "title": "Rustの構造体をC互換のメモリレイアウトで扱いたいときに使う属性として正しいものはどれですか？",
+      "category": "ffi",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "function_expression_statement_001",
       "path": "question/items/function/function_expression_statement_001.json",
       "title": "Rustにおける「式」と「文」の違いとして正しいものはどれですか？",
@@ -461,6 +482,13 @@
       "id": "function_never_type_001",
       "path": "question/items/function/function_never_type_001.json",
       "title": "関数の戻り値型 `!`（never type）の説明として正しいものはどれですか？",
+      "category": "function",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "function_pointer_type_001",
+      "path": "question/items/function/function_pointer_type_001.json",
+      "title": "関数ポインタ型 `fn(i32) -> i32` の説明として正しいものはどれですか？",
       "category": "function",
       "difficulty": "intermediate"
     },
@@ -554,6 +582,13 @@
       "title": "`iter().filter(...).map(...).collect()` のチェーンについて適切な説明はどれですか？",
       "category": "iterator",
       "difficulty": "advanced"
+    },
+    {
+      "id": "iterator_fold_001",
+      "path": "question/items/iterator/iterator_fold_001.json",
+      "title": "イテレータの `fold` の説明として正しいものはどれですか？",
+      "category": "iterator",
+      "difficulty": "intermediate"
     },
     {
       "id": "iterator_for_sugar_001",
@@ -658,6 +693,13 @@
       "path": "question/items/functions_control/match_guard_001.json",
       "title": "`match` のガード条件（`if`）の用途として適切なのはどれですか？",
       "category": "functions_control",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "module_pub_use_reexport_001",
+      "path": "question/items/modules/module_pub_use_reexport_001.json",
+      "title": "`pub use some_module::TypeName;` の主な目的として正しいものはどれですか？",
+      "category": "modules",
       "difficulty": "intermediate"
     },
     {
@@ -801,6 +843,13 @@
       "difficulty": "intermediate"
     },
     {
+      "id": "pattern_or_001",
+      "path": "question/items/pattern/pattern_or_001.json",
+      "title": "`match` で `1 | 2 | 3` のような or パターンを使う利点として適切なのはどれですか？",
+      "category": "pattern",
+      "difficulty": "beginner"
+    },
+    {
       "id": "pattern_refutability_001",
       "path": "question/items/pattern/pattern_refutability_001.json",
       "title": "反駁可能（refutable）パターンを使う場所として適切なのはどれですか？",
@@ -822,6 +871,13 @@
       "difficulty": "advanced"
     },
     {
+      "id": "rc_downgrade_weak_count_001",
+      "path": "question/items/rc/rc_downgrade_weak_count_001.json",
+      "title": "`Rc::downgrade(&rc)` を呼んで `Weak<T>` を1つ作成した直後の参照カウントとして正しいものはどれですか？",
+      "category": "rc",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "rc_refcell_001",
       "path": "question/items/rc/rc_refcell_001.json",
       "title": "単一スレッドで共有可変性を実現する定番の組み合わせはどれですか？",
@@ -839,6 +895,13 @@
       "id": "result_and_then_001",
       "path": "question/items/error_handling/result_and_then_001.json",
       "title": "`and_then` の用途として正しいものはどれですか？",
+      "category": "error_handling",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "result_map_001",
+      "path": "question/items/error_handling/result_map_001.json",
+      "title": "`Result<T, E>` の `map` の用途として適切なのはどれですか？",
       "category": "error_handling",
       "difficulty": "intermediate"
     },
@@ -892,6 +955,13 @@
       "difficulty": "beginner"
     },
     {
+      "id": "slice_mutable_borrow_001",
+      "path": "question/items/slice/slice_mutable_borrow_001.json",
+      "title": "可変スライス `&mut data[..]` を `part` として借用している間の説明として正しいものはどれですか？",
+      "category": "slice",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "slice_range_end_exclusive_001",
       "path": "question/items/slice/slice_range_end_exclusive_001.json",
       "title": "`let s = &text[0..4];` の範囲指定について正しいものはどれですか？",
@@ -927,6 +997,13 @@
       "difficulty": "beginner"
     },
     {
+      "id": "string_utf8_index_001",
+      "path": "question/items/types_collections/string_utf8_index_001.json",
+      "title": "Rustで `String` に対して `s[0]` のような整数インデックスアクセスが許されない主な理由として正しいものはどれですか？",
+      "category": "types_collections",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "string_vs_str_001",
       "path": "question/items/types_collections/string_vs_str_001.json",
       "title": "`String` と `&str` の違いとして正しいものはどれですか？",
@@ -946,6 +1023,13 @@
       "title": "構造体初期化時のフィールド初期化省略記法（field init shorthand）が使える条件はどれですか？",
       "category": "struct",
       "difficulty": "beginner"
+    },
+    {
+      "id": "struct_method_receiver_001",
+      "path": "question/items/struct/struct_method_receiver_001.json",
+      "title": "構造体メソッドでインスタンスの状態を変更したい場合、第一引数として通常もっとも適切なのはどれですか？",
+      "category": "struct",
+      "difficulty": "intermediate"
     },
     {
       "id": "struct_method_self_001",
@@ -976,6 +1060,13 @@
       "difficulty": "beginner"
     },
     {
+      "id": "test_cfg_test_001",
+      "path": "question/items/tooling_testing/test_cfg_test_001.json",
+      "title": "`#[cfg(test)]` 属性の役割として正しいものはどれですか？",
+      "category": "tooling_testing",
+      "difficulty": "intermediate"
+    },
+    {
       "id": "test_should_panic_001",
       "path": "question/items/tooling_testing/test_should_panic_001.json",
       "title": "テスト関数に `#[should_panic]` を付けた場合の挙動として正しいものはどれですか？",
@@ -995,6 +1086,13 @@
       "title": "`JoinHandle::join()` の目的として正しいものはどれですか？",
       "category": "thread",
       "difficulty": "advanced"
+    },
+    {
+      "id": "thread_mpsc_send_error_001",
+      "path": "question/items/thread/thread_mpsc_send_error_001.json",
+      "title": "`std::sync::mpsc::channel` で受信側がすでにドロップされているとき、`Sender::send(value)` の結果として正しいものはどれですか？",
+      "category": "thread",
+      "difficulty": "intermediate"
     },
     {
       "id": "thread_panic_join_result_001",

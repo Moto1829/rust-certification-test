@@ -1,0 +1,34 @@
+{
+  "id": "thread_mpsc_send_error_001",
+  "question": "`std::sync::mpsc::channel` で受信側がすでにドロップされているとき、`Sender::send(value)` の結果として正しいものはどれですか？",
+  "choices": [
+    {
+      "id": "a",
+      "text": "`Err` を返し、送信に失敗したことを示す"
+    },
+    {
+      "id": "b",
+      "text": "常に `Ok(())` を返す"
+    },
+    {
+      "id": "c",
+      "text": "新しい受信側が作られるまで無期限に待つ"
+    },
+    {
+      "id": "d",
+      "text": "呼び出し元スレッドが必ず panic する"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "チャネルの受信側がすでに閉じられていると、`send` は送信先がないことを示す `Err` を返します。スレッド間通信の失敗は `Result` で表現されます。",
+  "sources": [
+    "https://doc.rust-lang.org/std/sync/mpsc/struct.Sender.html#method.send",
+    "https://doc.rust-lang.org/std/sync/mpsc/"
+  ],
+  "difficulty": "intermediate",
+  "tags": [
+    "thread",
+    "channel",
+    "mpsc"
+  ]
+}
